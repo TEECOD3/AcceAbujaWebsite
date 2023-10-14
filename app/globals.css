@@ -108,7 +108,7 @@
     height: 36rem !important;
   }
   .swiper-slide img {
-    width: 28rem !important;
+    width: 30rem !important;
     height: 36rem !important;
   }
 }
@@ -134,8 +134,8 @@
 }
 
 .slider-controler .swiper-button-next {
-  left: 40% !important;
-  transform: translateX(-40%) !important;
+  left: 48% !important;
+  transform: translateX(-48%) !important;
 }
 
 @media (max-width: 990px) {
