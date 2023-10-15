@@ -3,6 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Arrowright from "./Arrowright";
 import Arrowleft from "./ui/Arrowleft";
+// import Slider from "react-slick";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -74,14 +75,14 @@ function Slider() {
                 <Arrowleft /> Prev
               </div>
             </div>
-            <div className="swiper-button-next slider-arrow text-black">
+            <div className="swiper-button-next slider-arrow">
               Next <Arrowright />
             </div>
           </div>
 
-          {/* <div className="w-full flex items-center justify-center bg-red-400">
+          <div className="w-full flex items-center justify-center bg-red-400">
             <div className="swiper-pagination"></div>
-          </div> */}
+          </div>
         </div>
       </Swiper>
     </div>

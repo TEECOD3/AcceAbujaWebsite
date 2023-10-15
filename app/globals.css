@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 @layer base {
   :root {
@@ -134,8 +136,8 @@
 }
 
 .slider-controler .swiper-button-next {
-  left: 48% !important;
-  transform: translateX(-48%) !important;
+  left: 52% !important;
+  transform: translateX(-52%) !important;
 }
 
 @media (max-width: 990px) {
@@ -196,4 +198,15 @@
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
+}
+
+.slick-slider:not(.slick-initialized),
+.slick-slider:not(.slick-initialized) .slick-slide,
+.slick-slider:not(.slick-initialized)
+  .slick-slide
+  .simple-slide-container:after {
+  display: none !important;
+}
+.simple-slider:not(.slick-initialized) .simple-slide-container:after {
+  display: none;
 }
