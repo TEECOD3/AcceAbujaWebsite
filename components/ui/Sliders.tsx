@@ -27,6 +27,7 @@ const Sliders = (props: Props) => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
+    adaptiveHeight: true,
     centerPadding: "60px",
     arrows: false,
     slidesToScroll: 1,
@@ -64,15 +65,15 @@ const Sliders = (props: Props) => {
   };
   return (
     <div className="w-full">
-      <div className="w-full h-[400px] flex items-center justify-center mx-0 my-4 px-0 py-5 ">
+      <div className="w-full h-[300px]  lg:h-[400px] flex items-center justify-center mx-0 my-4 px-0 py-5 ">
         <Slider {...settings}>
           {images.map((image, idx) => (
             <div
               className={cn(
-                `cursor-pointer mx-4 mt-0 w-[800px] relative  ${
+                `cursor-pointer mx-4 mt-0 shadow-xl ${
                   idx === slideindex
-                    ? "z-[100000000000000000] scale-[2]"
-                    : "-z-[2] w-[700px] pointer-events-none rounded-lg scale-[0.9]"
+                    ? "z-[100000000000000000] scale-[1.26] rounded-xl lg:scale-[2] w-[90%] mx-auto h-[300px] lg:w-[800px] lg:h-[506px]"
+                    : "-z-[2] w-[160px] lg:w-[1000px] h-[200px] relative lg:h-[400px] pointer-events-none  mr-10 mt-8 "
                 }`
               )}
               key={idx}
@@ -81,7 +82,7 @@ const Sliders = (props: Props) => {
                 src={image}
                 alt="sliderimage"
                 className={cn(
-                  `max-sm:w-[300px] h-[300px] lg:h-[400px] object-cover  rounded-sm ${
+                  `lg:h-full w-full object-cover rounded-sm ${
                     idx === slideindex && "shadow-xl"
                   }`
                 )}
@@ -89,7 +90,7 @@ const Sliders = (props: Props) => {
               {idx !== slideindex && (
                 <div
                   className={cn(
-                    `absolute top-0 left-0 h-full w-full bg-white/50 `
+                    `absolute top-0 left-0 h-full w-full bg-white/80`
                   )}
                 ></div>
               )}
