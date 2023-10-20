@@ -8,7 +8,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="h-32 w-full bg-gradient-to-r from-[#fac61b] from-10% via-[#f39f20] via-30% to-[#f38120] to-90% flex items-center">
+    <header className="h-32 w-full bg-gradient-to-r from-[#fac61b] from-10% via-[#f39f20] via-30% to-[#f38120] to-90% py-3">
       <div className=" px-4 lg:max-w-[90%] lg:w-[80%] mx-auto flex items-center justify-between ">
         <Image height={80} width={80} src={image} alt="acce_logo" />
         <div className="hidden lg:inline-flex">
