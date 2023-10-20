@@ -10,7 +10,7 @@ const HeadSection = (props: Props) => {
     <section className="px-3 lg:w-[80%] mx-auto flex flex-col xl:flex-row">
       <div className="w-full flex items-center justify-center">
         <div className="flex flex-col   max-xl:text-center xl:items-start justify-center gap-y-4 lg:gap-y-6 w-full lg:w-[70%] text-texts ">
-          <p className="text-orange-500  text-[18px] uppercase font-medium ">
+          <p className="text-orange-500  text-[18px] uppercase max-md:font-bold font-medium ">
             Head of school
           </p>
           <p className="font-bold max-md:text-center text-3xl leading-[38.4px]">
@@ -30,7 +30,7 @@ const HeadSection = (props: Props) => {
             environment where everybody is welcome and diversity is celebrated.
           </p>
 
-          <Button className=" uppercase max-xl:mx-auto max-lg:w-2/4 py-6 bg-orange-400 text-white  mt-10 rounded-none">
+          <Button className=" uppercase max-xl:mx-auto w-2/4 py-6 bg-orange-400 text-white  mt-10 rounded-none">
             read more
           </Button>
         </div>

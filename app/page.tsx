@@ -10,7 +10,7 @@ export default function Home() {
           <p className="uppercase text-base text-white mb-2 font-semibold">
             Lorem ipsum dolor sit{" "}
           </p>
-          <p className=" text-3xl lg:text-5xl font-semibold text-white capitalize mb-4">
+          <p className="max-md:leading-[44px] text-5xl font-semibold text-white capitalize mb-4">
             inspiring excellence
           </p>
           <p className="text-white font-semibold max-sm:px-3">
