@@ -1,5 +1,6 @@
 import AboutSchool from "@/components/Section/AboutSchool";
 import HeadSection from "@/components/Section/HeadSection";
+import Slider from "@/components/Slider";
 import Sliders from "@/components/ui/Sliders";
 
 export default function Home() {
