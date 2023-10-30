@@ -36,7 +36,7 @@ function AboutCard(props: AboutCardProps) {
   return (
     <>
       <div className={cn(`${className} bg-black/80 relative`)}>
-        <div className="absolute bg-black p-6 bottom-8 left-4 w-[80%] md:w-[50%] lg:w-[60%] text-white">
+        <div className="absolute bg-black p-6 bottom-8 left-4 w-[80%] md:w-[50%] text-white">
           <h2 className="capitalize  text-base lg:text-xl">
             an educational and international comunity
           </h2>

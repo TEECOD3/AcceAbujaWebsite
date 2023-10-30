@@ -25,9 +25,8 @@ const Sliders = (props: Props) => {
     className: "w-full rounded-lg",
     dots: false,
     infinite: true,
-    speed: 1000000,
+    speed: 5000,
     slidesToShow: 3,
-
     adaptiveHeight: true,
     centerPadding: "60px",
     arrows: false,
@@ -71,9 +70,9 @@ const Sliders = (props: Props) => {
           {images.map((image, idx) => (
             <div
               className={cn(
-                `mx-4 mt-0 shadow-xl rounded-lg cursor-grab ${
+                `mx-4 mt-0 shadow-xl rounded-lg ${
                   idx === slideindex
-                    ? "z-[100000000000000000] cursor-grabbing rounded-xl focus:border-none  scale-[1.26] lg:scale-[2] w-[90%] mx-auto h-[300px] lg:w-[800px] lg:h-[506px]"
+                    ? "z-[100000000000000000] rounded-xl  scale-[1.26] lg:scale-[2] w-[90%] mx-auto h-[300px] lg:w-[800px] lg:h-[506px]"
                     : "-z-[2] w-[160px] lg:w-[1000px] h-[200px] relative lg:h-[400px] pointer-events-none backdrop-blur-lg mr-10 mt-8 "
                 }`
               )}
