@@ -1,4 +1,5 @@
 import AboutSchool from "@/components/Section/AboutSchool";
+import GradeLevels from "@/components/Section/GradeLevels";
 import HeadSection from "@/components/Section/HeadSection";
 import Slider from "@/components/Slider";
 import Sliders from "@/components/ui/Sliders";
@@ -21,15 +22,18 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="w-full -mt-10">
+      <section className="w-full bg-gray-300/40 -mt-10">
         <Sliders />
       </section>
 
-      <section className="mt-32 lg:mt-40">
+      <section className="-mt-28">
         <HeadSection />
       </section>
       <section className="mt-24 lg:mt-10">
         <AboutSchool />
+      </section>
+      <section className="mt-8 lg:mt-10">
+        <GradeLevels />
       </section>
     </main>
   );

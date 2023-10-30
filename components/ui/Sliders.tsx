@@ -65,7 +65,7 @@ const Sliders = (props: Props) => {
     ],
   };
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="w-full h-[300px]  lg:h-[400px] flex items-center justify-center mx-0 my-4 px-0 py-5  ">
         <Slider {...settings}>
           {images.map((image, idx) => (
