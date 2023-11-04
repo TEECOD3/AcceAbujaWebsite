@@ -1,6 +1,7 @@
 import AboutSchool from "@/components/Section/AboutSchool";
 import GradeLevels from "@/components/Section/GradeLevels";
 import HeadSection from "@/components/Section/HeadSection";
+import InspiringSection from "@/components/Section/InspiringSection";
 import Slider from "@/components/Slider";
 import Sliders from "@/components/ui/Sliders";
 
@@ -22,8 +23,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="w-full bg-gray-300/40 -mt-10">
-        <Sliders />
+      <section className="w-full bg-gradient-to-r from-[#fac61b] from-10% via-[#f39f20] via-30%  to-[#f38120] to-90%  -mt-10">
+        <Slider />
       </section>
 
       <section className="-mt-28">
@@ -34,6 +35,10 @@ export default function Home() {
       </section>
       <section className="mt-8 lg:mt-10">
         <GradeLevels />
+      </section>
+
+      <section className="mt-10">
+        <InspiringSection />
       </section>
     </main>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "./button";
 
 type Props = {
   gradetype: string;
@@ -12,7 +13,7 @@ const GradeschoolTab = (props: Props) => {
         <h2 className="uppercase font-semibold text-base text-orange-400 lg:text-2xl ">
           grade k3-1
         </h2>
-        <h1 className="capitalize text-3xl font-bold text-black ">
+        <h1 className="capitalize text-3xl font-bold text-texts ">
           {gradetype}
         </h1>
         <div className="flex flex-col gap-y-4">
@@ -28,6 +29,9 @@ const GradeschoolTab = (props: Props) => {
             consectetur voluptatibus quae blanditiis, hic cumque rem a corporis
             asperiores voluptates! Inventore, architecto.
           </p>
+          <Button className="w-56  bg-orange-500 rounded-none text-white py-4 px-2">
+            READ MORE
+          </Button>
         </div>
       </div>
       <div className="h-[400px] bg-black/80 w-full"></div>

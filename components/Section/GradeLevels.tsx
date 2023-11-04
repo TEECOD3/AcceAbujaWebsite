@@ -37,29 +37,29 @@ type Props = {};
 const GradeLevels = (props: Props) => {
   return (
     <>
-      <div className="w-full flex items-center justify-center py-6">
-        <h3 className="text-2xl font-bold leading-[38.6px] capitalize text-texts max-md:text-center max-lg:mx-auto">
+      <div className="w-full flex items-center justify-center py-4 lg:py-6">
+        <h3 className="text-3xl font-bold leading-[38.6px] capitalize text-texts max-md:text-center max-lg:mx-auto">
           grade levels
         </h3>
       </div>
 
       <Tabs
         defaultValue={tabsdata[0].tabsvalue}
-        className="px-3 lg:w-[80%] mx-auto "
+        className="px-3 lg:w-[80%] mx-auto mt-8 "
       >
         <TabsList className="grid lg:w-[80%] mx-auto grid-cols-4 space-x-1 lg:space-x-3 !bg-transparent">
           {tabsdata.map((tabs) => (
             <TabsTrigger
               key={tabs.id}
               value={tabs.tabsvalue}
-              className="capitalize font-bold text-[10px] lg:text-base text-orange-400 bg-[#F38120]/20  "
+              className="capitalize font-bold text-[12px] lg:text-base text-orange-400 py-4 bg-[#F38120]/20  "
             >
               {tabs.tabsvalue}
             </TabsTrigger>
           ))}
         </TabsList>
         {tabsdata.map((tab) => (
-          <TabsContent value={tab.tabsvalue} key={tab.id}>
+          <TabsContent value={tab.tabsvalue} key={tab.id} className="mt-5">
             <GradeschoolTab gradetype={tab.tabsvalue} />
           </TabsContent>
         ))}
