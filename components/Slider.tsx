@@ -50,10 +50,8 @@ function Slider() {
     <div className="">
       <Swiper
         grabCursor={true}
-        centeredSlides={true}
         loop={true}
         navigation={false}
-        slidesPerView={2}
         on={{
           slideChange: () => {
             handleSlideChange;
@@ -68,7 +66,7 @@ function Slider() {
         {images.map((image, idx) => (
           <SwiperSlide
             className={cn(
-              `mx-4 mt-0 shadow-xl rounded-lg flex items-center justify-center `
+              `mx-4 mt-0 shadow-xl rounded-lg flex items-center justify-center  `
             )}
             key={idx}
           >
@@ -78,7 +76,7 @@ function Slider() {
               loading="lazy"
               placeholder="blur"
               className={cn(
-                `lg:h-full w-full object-cover rounded-sm ${
+                `h-[90%] w-full object-cover rounded-sm ${
                   idx === activeIndex && "shadow-xl"
                 }`
               )}

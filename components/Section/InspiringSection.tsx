@@ -19,7 +19,7 @@ const InspiringSection = (props: Props) => {
         </div>
       </div>
 
-      <div className="flex gap-x-4 overflow-x-scroll">
+      <div className="flex gap-x-8 overflow-x-scroll items-center ">
         <Inspirationboxs />
         <Inspirationboxs />
         <Inspirationboxs />
@@ -34,7 +34,7 @@ export default InspiringSection;
 function Inspirationboxs() {
   return (
     <div>
-      <div className="w-[300px] h-[400px] p-6">
+      <div className="w-[330px] h-[400px] p-6">
         <div className="rounded-full bg-black h-20 w-20"></div>
 
         <div className="flex flex-col gap-4 mt-10">
