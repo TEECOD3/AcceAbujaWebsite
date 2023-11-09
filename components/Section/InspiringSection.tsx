@@ -13,13 +13,13 @@ const InspiringSection = (props: Props) => {
           </h2>
         </div>
         <div className="hidden lg:block">
-          <Button className="w-56  bg-orange-500 rounded-none text-white py-4 px-2">
+          <Button className="w-56  bg-orange-500 rounded-none text-white py-4 px-2 uppercase">
             see all testimonies
           </Button>
         </div>
       </div>
 
-      <div className="flex gap-x-8 overflow-x-scroll items-center ">
+      <div className="flex mt-20 gap-x-5  max-lg:overflow-x-scroll items-center  scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-100">
         <Inspirationboxs />
         <Inspirationboxs />
         <Inspirationboxs />
@@ -34,13 +34,13 @@ export default InspiringSection;
 function Inspirationboxs() {
   return (
     <div>
-      <div className="w-[330px] h-[400px] p-6">
+      <div className="w-[300px] h-[400px] p-6 border-orange-400/30 border-[1px]">
         <div className="rounded-full bg-black h-20 w-20"></div>
 
         <div className="flex flex-col gap-4 mt-10">
           <div className="flex items-center gap-x-3 ">
             <p className="capitalize text-texts font-bold">temitope</p>
-            <div className="  bg-orange-500/30 text-orange-500 font-semibold text-base ">
+            <div className="  bg-orange-500/30 text-orange-500 px-1 font-semibold text-base ">
               student
             </div>
           </div>

@@ -22,6 +22,7 @@ import slide_image_5 from "../public/img_5.jpg";
 import slide_image_4 from "../public/img_5.jpg";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import SwiperButton from "./ui/SwiperButton";
 const images = [
   slide_image_1,
   slide_image_2,
@@ -29,17 +30,21 @@ const images = [
   slide_image_4,
   slide_image_5,
 ];
-function Slider() {
+function HomeSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const breakpoints = {
-    // When window width is >= 700px
-    700: {
-      slidesPerView: 2,
-    },
-    // When window width is < 700px
-    0: {
+    480: {
       slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 10,
     },
   };
 
@@ -47,9 +52,21 @@ function Slider() {
     setActiveIndex(swiper.activeIndex);
   };
   return (
-    <div className="">
+    <div className="max-lg:px-4 relative">
       <Swiper
+        effect="coverflow"
         grabCursor={true}
+        speed={1000}
+        autoplay={{
+          delay: 3000,
+        }}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 80,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
         loop={true}
         navigation={false}
         on={{
@@ -57,17 +74,14 @@ function Slider() {
             handleSlideChange;
           },
         }}
-        autoplay={true}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
-        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+        centeredSlides={true}
+        modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
         breakpoints={breakpoints}
         className="!mx-0 !px-0 h-[400px] lg:h-[600px] w-full flex items-center justify-center"
       >
         {images.map((image, idx) => (
           <SwiperSlide
-            className={cn(
-              `mx-4 mt-0 shadow-xl rounded-lg flex items-center justify-center  `
-            )}
+            className={cn(`rounded-lg flex items-center justify-center   `)}
             key={idx}
           >
             <Image
@@ -76,22 +90,19 @@ function Slider() {
               loading="lazy"
               placeholder="blur"
               className={cn(
-                `h-[90%] w-full object-cover rounded-sm ${
+                `h-[500px] w-full object-cover rounded-sm ${
                   idx === activeIndex && "shadow-xl"
                 }`
               )}
             />
           </SwiperSlide>
         ))}
-
-        <div className="slider-controler">
-          <div className="w-full flex items-center justify-center ">
-            <div className="swiper-pagination"></div>
-          </div>
+        <div className="absolute bottom-2 lg:bottom-4 z-[4000]  w-full flex items-center">
+          <SwiperButton className="w-full flex items-center justify-center" />
         </div>
       </Swiper>
     </div>
   );
 }
 
-export default Slider;
+export default HomeSlider;

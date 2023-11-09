@@ -5,7 +5,7 @@ type Props = {};
 
 const AboutSchool = (props: Props) => {
   return (
-    <section className="bg-gray-300/40 -mt-24 lg:-mt-10 py-10">
+    <section className="bg-gray-300/40 -mt-24 lg:-mt-10 py-20">
       <div className="max-lg:px-4 md:w-[80%] mx-auto  flex flex-col ">
         <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto">
           Why Choose Our School
