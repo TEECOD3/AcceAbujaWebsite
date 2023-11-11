@@ -23,6 +23,7 @@ import slide_image_4 from "../public/img_5.jpg";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import SwiperButton from "./ui/SwiperButton";
+import { Button } from "./ui/button";
 const images = [
   slide_image_1,
   slide_image_2,
@@ -35,7 +36,7 @@ function HomeSlider() {
 
   const breakpoints = {
     480: {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     768: {
@@ -52,7 +53,7 @@ function HomeSlider() {
     setActiveIndex(swiper.activeIndex);
   };
   return (
-    <div className="max-lg:px-4 relative">
+    <div className="relative">
       <Swiper
         effect="coverflow"
         grabCursor={true}
@@ -90,14 +91,12 @@ function HomeSlider() {
               loading="lazy"
               placeholder="blur"
               className={cn(
-                `h-[500px] w-full object-cover rounded-sm ${
-                  idx === activeIndex && "shadow-xl"
-                }`
+                `h-[300px] lg:h-[500px] w-full object-cover rounded-sm `
               )}
             />
           </SwiperSlide>
         ))}
-        <div className="absolute bottom-2 lg:bottom-4 z-[4000]  w-full flex items-center">
+        <div className="absolute bottom-4 z-[4000]  w-full flex items-center">
           <SwiperButton className="w-full flex items-center justify-center" />
         </div>
       </Swiper>

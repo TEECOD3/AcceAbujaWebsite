@@ -2,14 +2,14 @@ import React from "react";
 
 type Props = {};
 
-const Arrowright = (props: Props) => {
+const Arrowright = ({ className }: { className: string }) => {
   return (
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="currentColor"
-        className="w-6 h-6 text-black"
+        fill="#fff"
+        className={className}
       >
         <path
           fillRule="evenodd"
