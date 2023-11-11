@@ -36,11 +36,11 @@ function HomeSlider() {
 
   const breakpoints = {
     480: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 0,
     },
     1024: {

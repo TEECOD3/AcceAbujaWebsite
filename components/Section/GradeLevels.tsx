@@ -45,7 +45,7 @@ const GradeLevels = (props: Props) => {
 
       <Tabs
         defaultValue={tabsdata[0].tabsvalue}
-        className="px-3 lg:w-[80%] mx-auto mt-8 "
+        className="max-lg:px-3 lg:w-[80%] mx-auto mt-8 "
       >
         <TabsList className="grid lg:w-[80%] mx-auto grid-cols-4 space-x-1 lg:space-x-4 !bg-transparent">
           {tabsdata.map((tabs) => (

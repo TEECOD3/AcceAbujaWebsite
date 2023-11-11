@@ -4,6 +4,7 @@ import HeadSection from "@/components/Section/HeadSection";
 import Highlights from "@/components/Section/Highlights";
 import InspiringSection from "@/components/Section/InspiringSection";
 import HomeSlider from "@/components/HomeSlider";
+import EnquiresSection from "@/components/Section/EnquiresSection";
 
 export default function Home() {
   return (
@@ -42,6 +43,9 @@ export default function Home() {
       </section>
       <section className="mt-10">
         <Highlights />
+      </section>
+      <section className="mt-10">
+        <EnquiresSection />
       </section>
     </main>
   );

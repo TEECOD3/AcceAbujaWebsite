@@ -5,11 +5,11 @@ type Props = {};
 
 const InspiringSection = (props: Props) => {
   return (
-    <section className="w-[80%] mx-auto">
+    <section className="w-[80%] mx-auto mt-8">
       <div className="flex justify-between max-lg:justify-center  ">
         <div className="">
           <h2 className="text-texts text-3xl font-bold tracking-tight max-lg:text-center max-lg:my-8">
-            inspiring stories
+            Inspiring stories
           </h2>
         </div>
         <div className="hidden lg:block">
@@ -44,7 +44,7 @@ function Inspirationboxs() {
               student
             </div>
           </div>
-          <p>
+          <p className="text-texts">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
             delectus blanditiis doloremque quis aliquam obcaecati quos? Sapiente
             iste nobis cupiditate, optio id facilis quisquam similique quas.

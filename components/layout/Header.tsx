@@ -5,6 +5,7 @@ import image from "../../public/acceIcon.svg";
 import { NavigationMenuDemo } from "./menu";
 import Hamburger from "../icons/Hamburger";
 import AcceLogo from "../icons/AcceIcons";
+import { MobileNavigation } from "../ui/MobileNavigation";
 
 type Props = {};
 
@@ -18,8 +19,8 @@ const Header = (props: Props) => {
         <div className="hidden lg:inline-flex">
           <NavigationMenuDemo />
         </div>
-        <div className="lg:hidden">
-          <Hamburger className="h-10 w-10" />
+        <div className=" cursor-pointer  lg:hidden">
+          <MobileNavigation />
         </div>
       </div>
     </header>
