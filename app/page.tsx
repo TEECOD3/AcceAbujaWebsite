@@ -20,7 +20,7 @@ export default function Home() {
           <p className="text-white font-semibold max-sm:px-3">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
             accusamus quibusdam, assumenda iusto velit earum voluptas cupiditate
-            officiis fuga dignissimos{" "}
+            officiis fuga dignissimos
           </p>
         </div>
       </div>

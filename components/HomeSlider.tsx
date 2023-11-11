@@ -85,15 +85,29 @@ function HomeSlider() {
             className={cn(`rounded-lg flex items-center justify-center   `)}
             key={idx}
           >
-            <Image
-              src={image}
-              alt="sliderimage"
-              loading="lazy"
-              placeholder="blur"
-              className={cn(
-                `h-[300px] lg:h-[500px] w-full object-cover rounded-sm `
-              )}
-            />
+            <div className="relative">
+              <Image
+                src={image}
+                alt="sliderimage"
+                loading="lazy"
+                placeholder="blur"
+                className={cn(
+                  `h-[300px] lg:h-[500px] w-full object-cover rounded-sm `
+                )}
+              />
+              <div className="absolute top-0 left-0 h-full w-full bg-black/40 z-[10] text-white">
+                <div className=" absolute bottom-10 left-8 lg:w-[80%]">
+                  <p className="max-md:leading-[44px] text-5xl font-semibold text-white capitalize mb-4">
+                    inspiring excellence
+                  </p>
+                  <p className="text-white font-semibold  lg:w-3/4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Itaque accusamus quibusdam, assumenda iusto velit earum
+                    voluptas cupiditate officiis fuga dignissimos
+                  </p>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
         <div className="absolute bottom-4 z-[4000]  w-full flex items-center">
