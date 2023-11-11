@@ -29,24 +29,33 @@ const images = [
   slide_image_4,
   slide_image_5,
 ];
+
 function Hightlightlides() {
   const breakpoints = {
     480: {
       slidesPerView: 3,
       spaceBetween: 10,
     },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
     768: {
-      slidesPerView: 3,
-      spaceBetween: 0,
+      slidesPerView: 2,
+      spaceBetween: 10,
     },
     1024: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1300: {
       slidesPerView: 3,
       spaceBetween: 10,
     },
   };
 
   return (
-    <div className="relative max-lg:mt-32 mt-24">
+    <div className="relative max-lg:mt-28 mt-24">
       <Swiper
         grabCursor={true}
         speed={1000}
@@ -75,7 +84,7 @@ function Hightlightlides() {
         {images.map((image, idx) => (
           <SwiperSlide
             className={cn(
-              `rounded-lg flex items-center justify-center mt-20  `
+              `rounded-lg flex items-center justify-center mt-24  `
             )}
             key={idx}
           >

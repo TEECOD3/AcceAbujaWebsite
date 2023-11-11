@@ -19,7 +19,7 @@ const InspiringSection = (props: Props) => {
         </div>
       </div>
 
-      <div className="flex mt-5 gap-x-5  max-lg:overflow-x-scroll items-center  scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-100">
+      <div className="flex mt-5 gap-x-5  max-[1400px]:overflow-x-scroll items-center  scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-100">
         <Inspirationboxs />
         <Inspirationboxs />
         <Inspirationboxs />
