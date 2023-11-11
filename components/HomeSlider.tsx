@@ -15,10 +15,10 @@ import {
   Navigation,
   Autoplay,
 } from "swiper/modules";
-import slide_image_1 from "../public/img_1.jpg";
-import slide_image_2 from "../public/img_2.jpg";
-import slide_image_3 from "../public/img_3.jpg";
-import slide_image_5 from "../public/img_5.jpg";
+import slide_image_1 from "../public/grad1.jpg";
+import slide_image_2 from "../public/grad2.jpg";
+import slide_image_3 from "../public/grad4.jpeg";
+import slide_image_5 from "../public/7734217-graduating-students-smiling-and-laughing-with-diplomas-trees-in-background.jpg";
 import slide_image_4 from "../public/img_5.jpg";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
