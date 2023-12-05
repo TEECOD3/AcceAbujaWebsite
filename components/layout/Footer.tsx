@@ -14,14 +14,14 @@ const Footer = (props: Props) => {
 
           <div className="flex text-white mt-8 flex-1 justify-between flex-wrap">
             <ul className="space-y-2">
-              <h1 className="font-medium  text-xl mb-3 uppercase">company</h1>
+              <h1 className="font-bold  text-xl mb-3 uppercase">company</h1>
               <li>About us</li>
               <li>Become a Member</li>
               <li>Referral Program</li>
               <li>Contact us</li>
             </ul>
             <ul className="space-y-2">
-              <h1 className="font-medium   text-xl mb-3 uppercase">
+              <h1 className="font-bold  text-xl mb-3 uppercase">
                 registration
               </h1>
               <li>About us</li>
@@ -30,7 +30,7 @@ const Footer = (props: Props) => {
               <li>Contact us</li>
             </ul>
             <ul className="space-y-2">
-              <h1 className="font-medium  text-xl mb-3 uppercase max-sm:mt-8">
+              <h1 className="font-bold text-xl mb-3 uppercase max-sm:mt-8">
                 contacts
               </h1>
               <li>About us</li>
