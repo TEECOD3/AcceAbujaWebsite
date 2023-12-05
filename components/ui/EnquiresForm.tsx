@@ -20,6 +20,12 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
+  fullname: z.string().min(2, {
+    message: "fullname must be at least 2 characters.",
+  }),
+  surname: z.string().min(2, {
+    message: "surname must be at least 2 characters.",
+  }),
 });
 
 export function EnquiresForm() {
@@ -27,6 +33,7 @@ export function EnquiresForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
+      fullname: "",
     },
   });
 
@@ -44,7 +51,7 @@ export function EnquiresForm() {
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField
             control={form.control}
-            name="username"
+            name="fullname"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
@@ -57,11 +64,11 @@ export function EnquiresForm() {
           />
           <FormField
             control={form.control}
-            name="username"
+            name="surname"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Full Name" {...field} />
+                  <Input placeholder="surName" {...field} />
                 </FormControl>
 
                 <FormMessage className="h-1" />

@@ -98,7 +98,7 @@ function Hightlightlides() {
                 This weeks highlights
               </h2>
             </div>
-            <div className="max-lg:mr-5">
+            <div className=" max-lg:mr-5">
               <SwiperbuttonHighlight className="w-full flex items-center justify-end" />
             </div>
           </div>

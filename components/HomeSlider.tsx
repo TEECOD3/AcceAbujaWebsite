@@ -110,7 +110,7 @@ function HomeSlider() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="absolute bottom-4 z-[4000]  w-full flex items-center">
+        <div className="absolute bottom-10 z-[4000]  w-full flex items-center">
           <SwiperButton className="w-full flex items-center justify-center" />
         </div>
       </Swiper>

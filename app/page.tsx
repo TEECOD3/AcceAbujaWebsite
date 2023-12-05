@@ -24,7 +24,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="w-full bg-gray-300/40 -mt-10">
+      <section className="w-full -mt-10">
         <HomeSlider />
       </section>
 
