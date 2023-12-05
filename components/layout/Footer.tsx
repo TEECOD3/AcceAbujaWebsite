@@ -5,7 +5,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-gradient-to-r from-[#fac61b] py-8 from-10% via-[#f39f20] via-30% to-[#f38120] to-90%">
+    <footer className="bg-[#f38120] to-90% font-semibold">
       <div className="max-lg:px-4 md:w-[80%] mx-auto  ">
         <div className="flex flex-col lg:flex-row justify-between py-10 ">
           <div className=" w-full lg:w-[40%]">
@@ -42,9 +42,9 @@ const Footer = (props: Props) => {
         </div>
 
         <div className="w-full border-t border-t-white py-4 lg:py-10 flex justify-between flex-col lg:flex-row text-white">
-          <p>all right reserved 2023</p>
+          <p>All right reserved 2023</p>
 
-          <ul className=" lg:justify-between lg:items-center flex flex-col lg:flex-row max-md:mt-8 ">
+          <ul className=" max-lg:gap-y-4 lg:justify-between lg:items-center flex flex-col lg:flex-row max-md:mt-8 gap-x-4">
             <li>End user privacy policy</li>
             <li>privacy policy</li>
             <li>cookies policies</li>
