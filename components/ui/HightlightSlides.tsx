@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Slider from "react-slick";
 import "swiper/css";
@@ -37,7 +37,7 @@ function Hightlightlides() {
       spaceBetween: 10,
     },
     500: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     768: {

@@ -14,15 +14,15 @@ const SwiperbuttonHighlight = (props: swipperButtons) => {
     <div className={`${className} w-2/6 text-right space-x-6`}>
       <button
         onClick={() => swiper.slidePrev()}
-        className="flex items-center justify-center font-semibold p-3 rounded-full bg-black hover:bg-white transition-all duration-300 ease-in-out"
+        className="flex items-center justify-center hover:border-black hover:border-[1px] font-semibold hover:scale-80 p-3 group rounded-full bg-black hover:bg-white transition-all duration-300 ease-in-out"
       >
-        <Arrowleft className="text-white h-6 w-6 hover:text-black transition-all ease-in-out duration-300" />
+        <Arrowleft className="text-white h-6 w-6 group-hover:text-black  transition-all ease-in-out duration-300" />
       </button>
       <button
         onClick={() => swiper.slideNext()}
-        className="flex items-center justify-center font-semibold p-3 rounded-full bg-black"
+        className="flex items-center justify-center hover:border-black hover:border-[1px] font-semibold hover:scale-80 p-3 group rounded-full bg-black hover:bg-white transition-all duration-300 ease-in-out"
       >
-        <Arrowright className="w-6 h-6 text-white" />
+        <Arrowright className="text-white h-6 w-6 group-hover:text-black  transition-all ease-in-out duration-300" />
       </button>
     </div>
   );

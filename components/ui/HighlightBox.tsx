@@ -5,7 +5,7 @@ type Props = {};
 const HighlightBox = (props: Props) => {
   return (
     <div className="mt-2 ">
-      <div className="h-[250px] lg:h-[300px] w-full bg-black"></div>
+      <div className="h-[250px] sm:h-[300px] w-full bg-black"></div>
       <div className="flex flex-col lg:w-[80%] gap-y-4 ">
         <div className="text-texts text-base mt-3">
           By John Doe l Aug 23, 2021{" "}

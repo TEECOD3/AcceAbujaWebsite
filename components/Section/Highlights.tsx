@@ -6,11 +6,13 @@ type Props = {};
 
 const Highlights = (props: Props) => {
   return (
-    <section className="w-[80%] mx-auto mt-4">
-      <div className="w-full">
-        <Hightlightlides />
+    <div className="bg-gray-300/40 w-full">
+      <div className="w-[80%] mx-auto py-10">
+        <div className="w-full">
+          <Hightlightlides />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

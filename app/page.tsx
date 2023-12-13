@@ -5,6 +5,9 @@ import Highlights from "@/components/Section/Highlights";
 import InspiringSection from "@/components/Section/InspiringSection";
 import HomeSlider from "@/components/HomeSlider";
 import EnquiresSection from "@/components/Section/EnquiresSection";
+import MissionVision from "@/components/Section/MissionVision";
+import OurTeam from "@/components/Section/Our-Team";
+import AffiliatedCompanies from "@/components/Section/Affiliates-Companies";
 
 export default function Home() {
   return (
@@ -41,11 +44,22 @@ export default function Home() {
       <section className="mt-10">
         <InspiringSection />
       </section>
+
       <section className="mt-10">
+        <MissionVision />
+      </section>
+      <section className="">
         <Highlights />
       </section>
-      <section className="mt-10">
+
+      <section className="">
+        <OurTeam />
+      </section>
+      <section className="">
         <EnquiresSection />
+      </section>
+      <section className="">
+        <AffiliatedCompanies />
       </section>
     </main>
   );

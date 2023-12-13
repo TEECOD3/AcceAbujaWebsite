@@ -7,7 +7,7 @@ type Props = {};
 
 const HeadSection = (props: Props) => {
   return (
-    <section className="bg-gray-300/40 pt-20">
+    <section className="bg-gray-300/40 pt-32 -mt-32">
       <div className="px-3 md:w-[90%] xl:w-[90%] mx-auto flex flex-col xl:flex-row">
         <div className="w-full flex items-center justify-center">
           <div className="flex flex-col   max-xl:text-center xl:items-start justify-center gap-y-4 lg:gap-y-6 w-full lg:w-[70%] text-texts ">
