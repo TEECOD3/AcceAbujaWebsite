@@ -14,30 +14,16 @@ export const testimoonials = [
   {
     id: 1,
     description:
-      "I am incredibly satisfied with the services provided by Meeras Software Solutions. They have transformed our content management processes, making them more streamlined and efficient. The AI-powered solutions have revolutionized the way we organize and discover our digital assets. Highly recommended!",
-    name: "John Smith",
+      "Lorem ipsum dolor, sit amet consectetur  adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae",
+    name: "our mission",
     position: "Marketing Manager",
   },
   {
     id: 2,
     description:
-      "Meeras Software Solutions has been a game-changer for our business. Their IoT solutions have helped us achieve significant operational improvements and cost savings. We now have real-time visibility into our processes and can make data-driven decisions. We are delighted with the results!",
-    name: "Emily Johnson",
+      "Lorem ipsum dolor,  adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiaesit amet consectetur adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae? !",
+    name: "our vision",
     position: "Operations Director",
-  },
-  {
-    id: 3,
-    description:
-      "Choosing Meeras Software Solutions for our virtual display card needs was a fantastic decision. Their products have exceeded our expectations in terms of performance and visual quality. The team at Meeras has been extremely supportive throughout the process",
-    name: "David Thompson",
-    position: "Gaming Enthusiast",
-  },
-  {
-    id: 4,
-    description:
-      "Meeras Software Solutions has transformed our business with their exceptional virtual services. The virtual display cards have taken our design and animation projects to a whole new level. The realism and performance are unmatched. We highly recommend Meera's to all creative professionals!",
-    name: "Sophia Anderson",
-    position: "Creative Director",
   },
 ];
 
@@ -87,15 +73,14 @@ type TestimonialProps = {
 function TestimonialCard(props: TestimonialProps) {
   const { description, name, position } = props;
   return (
-    <div className="flex flex-col items-center py-10 px-4 sm:px-6 md:px-8 ">
-      <p className="text-white text-lg md:text-2xl xl:text-xl mt-8">
-        {description}
+    <div className="flex flex-col py-10 px-4 sm:px-6 md:px-8 ">
+      <p className="text-white text-lg md:text-2xl xl:text-xl mt-8 capitalize">
+        {name}
       </p>
-
-      <div className="w-full flex items-start flex-col mt-10 sm:mt-4">
-        <h3 className="capitalize font-extralight text-xl md:text-2xl text-white">
-          {name}
-        </h3>
+      <div className="w-full flex items-start flex-col mt-10">
+        <p className="capitalize font-light  text-white text-sm">
+          {description}
+        </p>
         <h4 className="uppercase font-medium text-base md:mt-3 text-white">
           {position}
         </h4>

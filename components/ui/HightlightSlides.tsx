@@ -95,7 +95,7 @@ function Hightlightlides() {
           <div className="flex justify-between w-full flex-col lg:flex-row max-lg:gap-y-2">
             <div className="">
               <h2 className="text-texts text-3xl font-bold tracking-tight max-lg:text-center ">
-                This weeks highlights
+                This Month&apos;s highlights
               </h2>
             </div>
             <div className=" max-lg:mr-5">
