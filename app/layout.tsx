@@ -12,7 +12,7 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: "Welcome - ACCE",
-  description: "Website for ACCE ABUJA",
+  description: "Al-Ansar Center for Comprehensive Education",
   icons: {
     icon: "/acceIcon.svg",
   },
