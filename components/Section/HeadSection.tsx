@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import image from "../../public/teacherimage.png";
+import image from "../../public/president.jpg";
 import { Button } from "../ui/button";
 
 type Props = {};
 
 const HeadSection = (props: Props) => {
   return (
-    <section className="bg-gray-300/40 pt-32 -mt-32">
-      <div className="px-3 md:w-[90%] xl:w-[90%] mx-auto flex flex-col xl:flex-row">
+    <section className="bg-gray-300/40 pt-36 -mt-32">
+      <div className="px-3 md:w-[90%] py-10 xl:w-[90%] mx-auto flex flex-col xl:flex-row">
         <div className="w-full flex items-center justify-center">
-          <div className="flex flex-col   max-xl:text-center xl:items-start justify-center gap-y-4 lg:gap-y-6 w-full lg:w-[70%] text-texts ">
+          <div className="flex flex-col  max-xl:text-center xl:items-start justify-center gap-y-4 lg:gap-y-6 w-full lg:w-[70%] text-texts ">
             <p className="text-orange-500  text-[18px] uppercase max-md:font-bold font-medium ">
               Head of school
             </p>
@@ -43,7 +43,7 @@ const HeadSection = (props: Props) => {
               src={image}
               alt="teacherimage"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
         </div>

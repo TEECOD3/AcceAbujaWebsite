@@ -14,14 +14,14 @@ export const testimoonials = [
   {
     id: 1,
     description:
-      "Lorem ipsum dolor, sit amet consectetur  adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae",
+      "Lorem ipsum dolor, sit amet icing elit. Recusandae rerum beatae itaque doloremque porro molestiae? !consectetur  adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae",
     name: "our mission",
     position: "Marketing Manager",
   },
   {
     id: 2,
     description:
-      "Lorem ipsum dolor,  adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiaesit amet consectetur adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae? !",
+      "Lorem ipsum dolor, icing elit. Recusandae rerum beatae itaque doloremque porro molestiae? !  adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiaesit amet consectetur adipisicing elit. Recusandae rerum beatae itaque doloremque porro molestiae? !",
     name: "our vision",
     position: "Operations Director",
   },
@@ -77,7 +77,7 @@ function TestimonialCard(props: TestimonialProps) {
       <p className="text-white text-lg md:text-2xl xl:text-xl mt-8 capitalize">
         {name}
       </p>
-      <div className="w-full flex items-start flex-col mt-10">
+      <div className="w-full flex items-start flex-col mt-10 gap-y-16">
         <p className="capitalize font-light  text-white text-sm">
           {description}
         </p>

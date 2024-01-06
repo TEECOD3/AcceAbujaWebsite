@@ -2,12 +2,13 @@ import AboutSchool from "@/components/Section/AboutSchool";
 import GradeLevels from "@/components/Section/GradeLevels";
 import HeadSection from "@/components/Section/HeadSection";
 import Highlights from "@/components/Section/Highlights";
-import InspiringSection from "@/components/Section/InspiringSection";
+import { InfiniteMovingCards } from "@/components/Section/InspiringSection";
 import HomeSlider from "@/components/HomeSlider";
 import EnquiresSection from "@/components/Section/EnquiresSection";
 import MissionVision from "@/components/Section/MissionVision";
 import OurTeam from "@/components/Section/Our-Team";
 import AffiliatedCompanies from "@/components/Section/Affiliates-Companies";
+import LetsGrow from "@/components/Section/LetsGrow";
 
 export default function Home() {
   return (
@@ -37,12 +38,17 @@ export default function Home() {
       <section className="mt-24 lg:mt-10">
         <AboutSchool />
       </section>
+
+      <section className="">
+        <LetsGrow />
+      </section>
+
       <section className="mt-8 lg:mt-10">
         <GradeLevels />
       </section>
 
       <section className="mt-10">
-        <InspiringSection />
+        <InfiniteMovingCards />
       </section>
 
       <section className="mt-10">
