@@ -19,7 +19,7 @@ const AffiliatedCompanies = (props: Props) => {
           <AcceLogo className="h-28 w-28" />
           <AcceLogo className="h-28 w-28" />
         </div>
-        <div className="w-full lg:w-[80%] mx-auto  grid grid-cols-2 max-md:grid-rows-2 md:grid-cols-4 place-items-center gap-y-4 lg:gap-8">
+        <div className="w-full lg:w-[80%] mx-auto grid grid-cols-2 max-md:grid-rows-2 md:grid-cols-4 place-items-center gap-y-4 lg:gap-8">
           <AcceLogo className="h-28 w-28" />
           <AcceLogo className="h-28 w-28" />
           <AcceLogo className="h-28 w-28" />
