@@ -12,16 +12,18 @@ import {
   Navigation,
   Autoplay,
 } from "swiper/modules";
-import slide_image_1 from "../../public/img_1.jpg";
-import slide_image_2 from "../../public/img_2.jpg";
-import slide_image_3 from "../../public/img_3.jpg";
-import slide_image_5 from "../../public/img_5.jpg";
-import slide_image_4 from "../../public/img_5.jpg";
+import slide_image_1 from "../../public/image/7.jpg";
+import slide_image_2 from "../../public/image/gallery2.jpeg";
+import slide_image_3 from "../../public/image/jaiz.jpg";
+import slide_image_5 from "../../public/image/fac-boarding.png";
+import slide_image_4 from "../../public/image/fac-canteen.png";
 import { cn } from "@/lib/utils";
-import SwiperButton from "./SwiperButton";
+
 import HighlightBox from "./HighlightBox";
 import SwiperbuttonHighlight from "./SwiperbuttonHighlight";
 
+
+// todo:convert to an array of objects
 const images = [
   slide_image_1,
   slide_image_2,
@@ -55,7 +57,7 @@ function Hightlightlides() {
   };
 
   return (
-    <div className="relative max-lg:mt-28 mt-24">
+    <div className="relative max-lg:mt-28 my-24">
       <Swiper
         grabCursor={true}
         speed={1000}
@@ -88,7 +90,7 @@ function Hightlightlides() {
             )}
             key={idx}
           >
-            <HighlightBox />
+            <HighlightBox image={image}/>
           </SwiperSlide>
         ))}
         <div className="absolute top-0 right-0 z-[4000] w-full flex items-center lg:mt-2">
@@ -99,7 +101,7 @@ function Hightlightlides() {
               </h2>
             </div>
             <div className=" max-lg:mr-5">
-              <SwiperbuttonHighlight className="w-full flex items-center justify-end" />
+              <SwiperbuttonHighlight className="w-full flex items-center justify-end max-lg:hidden" />
             </div>
           </div>
         </div>

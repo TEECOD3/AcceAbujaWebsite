@@ -26,6 +26,12 @@ const formSchema = z.object({
   surname: z.string().min(2, {
     message: "surname must be at least 2 characters.",
   }),
+  queryfield: z.string().min(2, {
+    message: "queryfield must be at least 10 characters.",
+  }),
+  message: z.string().min(2, {
+    message: " message must be at least 10 characters.",
+  }),
 });
 
 export function EnquiresForm() {
@@ -34,6 +40,8 @@ export function EnquiresForm() {
     defaultValues: {
       username: "",
       fullname: "",
+      queryfield: "",
+      message: "",
     },
   });
 
@@ -90,7 +98,7 @@ export function EnquiresForm() {
           />
           <FormField
             control={form.control}
-            name="username"
+            name="queryfield"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
@@ -103,7 +111,7 @@ export function EnquiresForm() {
           />
           <FormField
             control={form.control}
-            name="username"
+            name="message"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
