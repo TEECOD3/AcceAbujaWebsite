@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.className} font-semibold`}>
+      <body className={`${lato.className} font-[500]`}>
         <Provider>
           <Header />
           {children}
