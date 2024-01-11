@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["100", "300", "700", "900"],
+  weight: ["100", "400", "300", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.className} font-[500]`}>
+      <body className={`${lato.className} font-[400]`}>
         <Provider>
           <Header />
           {children}
