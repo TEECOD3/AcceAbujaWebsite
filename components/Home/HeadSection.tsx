@@ -14,6 +14,7 @@ const HeadSection = (props: Props) => {
             <p className="text-orange-500  text-[18px] uppercase max-md:font-bold font-bold ">
               Head of school
             </p>
+
             <p className="font-bold max-md:text-center text-3xl leading-[38.4px] ">
               You are welcome to our <br />
               School
