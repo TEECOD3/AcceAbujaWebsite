@@ -6,7 +6,7 @@ type Props = {};
 const Vacancy = (props: Props) => {
   return (
     <section className="py-8">
-      <div className="mx-auto max-w-7xl  mt-10 text-center">
+      <div className="mx-auto max-w-7xl  mt-10 text-center ">
         <h1 className="capitalize text-4xl font-bold">
           application for vacancy
         </h1>
@@ -18,7 +18,7 @@ const Vacancy = (props: Props) => {
         </p>
       </div>
 
-      <div className=" my-16 lg:w-3/4 mx-auto">
+      <div className=" my-16 lg:w-3/4 mx-auto max-lg:w-[80%]">
         <VacancyForm />
       </div>
     </section>

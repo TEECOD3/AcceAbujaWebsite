@@ -13,7 +13,7 @@ const Header = (props: Props) => {
       <div className=" px-4 lg:w-[80%] mx-auto flex items-center justify-between ">
         <div className="">
           <Link href={"/"}>
-            <AcceLogo className="h-16 w-16 lg:h-32 lg:w-32 cursor-pointer" />
+            <AcceLogo className="h-20 w-20 lg:h-32 lg:w-32 cursor-pointer" />
           </Link>
         </div>
         <div className="hidden lg:inline-flex">

@@ -19,15 +19,16 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Separator } from "./separator";
+import Link from "next/link";
 
 const accordiondata = [
   {
     id: 1,
-    linkname: "about",
+    linkname: "Career",
     item: "item-1",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "Vacancy", link: "/Vacancy" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
   {
@@ -35,8 +36,8 @@ const accordiondata = [
     linkname: "admissions",
     item: "item-2",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "about us", link: "/" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
   {
@@ -44,8 +45,8 @@ const accordiondata = [
     linkname: "academics",
     item: "item-3",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "about us", link: "/" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
   {
@@ -53,8 +54,8 @@ const accordiondata = [
     linkname: "school life",
     item: "item-4",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "about us", link: "/" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
   {
@@ -62,8 +63,8 @@ const accordiondata = [
     linkname: "departments",
     item: "item-5",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "about us", link: "/" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
   {
@@ -71,8 +72,8 @@ const accordiondata = [
     linkname: "research",
     item: "item-6",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "about us", link: "/" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
   {
@@ -80,8 +81,8 @@ const accordiondata = [
     linkname: "careers",
     item: "item-7",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "about us", link: "/" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
   {
@@ -89,8 +90,8 @@ const accordiondata = [
     linkname: "resources",
     item: "item-8",
     extralinks: [
-      { id: 1, extralinkname: "about us" },
-      { id: 1, extralinkname: "about our staffs" },
+      { id: 1, extralinkname: "about us", link: "/" },
+      { id: 1, extralinkname: "about our staffs", link: "/" },
     ],
   },
 ];
@@ -111,11 +112,12 @@ export function MobileNavigation() {
                 {data.linkname}
               </AccordionTrigger>
               <AccordionContent>
-                <ul className="flex-col flex gap-y-4">
+                <ul className="flex-col flex gap-y-2">
                   {data.extralinks.map((data) => (
-                    <li key={data.id} className="uppercase font-semibold">
-                      {data.extralinkname}
-                      <Separator className="w-1/2" />
+                    <li key={data.id} className="capitalize text-xl">
+                      <SheetClose>
+                        <Link href={data.link}>{data.extralinkname}</Link>
+                      </SheetClose>
                     </li>
                   ))}
                 </ul>
