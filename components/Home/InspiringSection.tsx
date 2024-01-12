@@ -150,6 +150,14 @@ export const InfiniteMovingCards = ({
           <Inspirationboxs />
         </ul>
       </div>
+      <div className="block lg:hidden">
+        <Button
+          className="w-56  bg-orange-500 rounded-none text-white py-4 px-2 uppercase"
+          onClick={() => Router.push("/InspiringStories")}
+        >
+          see all testimonies
+        </Button>
+      </div>
     </section>
   );
 };
