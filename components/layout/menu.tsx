@@ -162,7 +162,7 @@ export function NavigationMenuDemo() {
               </Button>
             </NavigationMenuLink>
           </Link>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/Vacancy" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <Button className="capitalize text-orange-400 bg-white rounded-none border-white border-[1px]">
                 vacancy

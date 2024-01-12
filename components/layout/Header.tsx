@@ -1,9 +1,6 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import image from "../../public/acceIcon.svg";
 import { NavigationMenuDemo } from "./menu";
-import Hamburger from "../icons/Hamburger";
 import AcceLogo from "../icons/AcceIcons";
 import { MobileNavigation } from "../ui/MobileNavigation";
 import Link from "next/link";
@@ -12,7 +9,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="h-32 w-full bg-gradient-to-r from-[#fac61b] py-8 from-10% via-[#f39f20] via-30% to-[#f38120] to-90% ">
+    <header className="w-full bg-gradient-to-r from-[#fac61b] py-8 from-10% via-[#f39f20] via-30% to-[#f38120] to-90% ">
       <div className=" px-4 lg:w-[80%] mx-auto flex items-center justify-between ">
         <div className="">
           <Link href={"/"}>
