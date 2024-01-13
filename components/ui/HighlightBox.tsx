@@ -18,9 +18,9 @@ const HighlightBox = (props: Props) => {
           className="h-full w-full object-cover"
         />
       </div>
-      <div className="flex flex-col lg:w-[80%] gap-y-4 ">
+      <div className="flex flex-col lg:w-[90%] gap-y-4 mx-auto ">
         <div className="text-texts text-base mt-3">
-          By John Doe l Aug 23, 2021{" "}
+          By John Doe l Aug 23, 2021
         </div>
         <h1 className="text-xl lg:text-2xl font-bold ">
           A UX Case Study Creating a Studious Environment for Students:
@@ -32,7 +32,7 @@ const HighlightBox = (props: Props) => {
           aspernatur! Necessitatibus iure suscipit autem!
         </p>
         <ClientButton
-          className="w-[90%] bg-orange-500 rounded-none capitalize font-bold"
+          className="w-full bg-orange-500 rounded-none capitalize font-bold"
           href={`WeeklyHighlights/292992`}
         >
           read more

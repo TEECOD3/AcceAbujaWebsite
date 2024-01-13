@@ -1,12 +1,16 @@
-import React from "react";
+import WeeklyHighlightsliders from "@/components/WeeklyHighLights/WeeklyHighlight-sliders";
+import WeeklyHighlightSlider from "@/components/WeeklyHighLights/WeeklyHighlightSlider";
+import Weeklyhighlighttexts from "@/components/WeeklyHighLights/Weeklyhighlight-texts";
 
 type Props = {};
 
 const WeeklyHighLight = (props: Props) => {
   return (
-    <section className="bg-red-400 h-screen w-full">
-      <div className="h-1/2 w-full bg-blue-900"></div>
-    </section>
+    <div className="">
+      <WeeklyHighlightSlider />
+      <Weeklyhighlighttexts />
+      <WeeklyHighlightsliders />
+    </div>
   );
 };
 

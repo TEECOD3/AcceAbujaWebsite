@@ -11,7 +11,7 @@ const SwiperbuttonHighlight = (props: swipperButtons) => {
   const { className } = props;
   const swiper = useSwiper();
   return (
-    <div className={`${className} w-2/6 text-right space-x-6`}>
+    <div className={` w-2/6  text-right space-x-6 ${className}`}>
       <button
         onClick={() => swiper.slidePrev()}
         className="flex items-center justify-center hover:border-black hover:border-[1px] font-semibold hover:scale-80 p-3 group rounded-full bg-black hover:bg-white transition-all duration-300 ease-in-out"

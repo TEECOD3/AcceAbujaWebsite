@@ -22,7 +22,6 @@ import { cn } from "@/lib/utils";
 import HighlightBox from "./HighlightBox";
 import SwiperbuttonHighlight from "./SwiperbuttonHighlight";
 
-
 // todo:convert to an array of objects
 const images = [
   slide_image_1,
@@ -73,11 +72,6 @@ function Hightlightlides() {
         }}
         loop={true}
         navigation={false}
-        // on={{
-        //   slideChange: () => {
-        //     handleSlideChange;
-        //   },
-        // }}
         centeredSlides={true}
         modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
         breakpoints={breakpoints}
@@ -90,7 +84,7 @@ function Hightlightlides() {
             )}
             key={idx}
           >
-            <HighlightBox image={image}/>
+            <HighlightBox image={image} />
           </SwiperSlide>
         ))}
         <div className="absolute top-0 right-0 z-[4000] w-full flex items-center lg:mt-2">
