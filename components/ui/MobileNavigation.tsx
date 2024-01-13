@@ -28,7 +28,7 @@ const accordiondata = [
     item: "item-1",
     extralinks: [
       { id: 1, extralinkname: "Vacancy", link: "/Vacancy" },
-      { id: 1, extralinkname: "about our staffs", link: "/" },
+      { id: 1, extralinkname: "Apply now", link: "/Vacancy" },
     ],
   },
   {
@@ -115,7 +115,7 @@ export function MobileNavigation() {
                 <ul className="flex-col flex gap-y-2">
                   {data.extralinks.map((data) => (
                     <li key={data.id} className="capitalize text-xl">
-                      <SheetClose>
+                      <SheetClose asChild>
                         <Link href={data.link}>{data.extralinkname}</Link>
                       </SheetClose>
                     </li>

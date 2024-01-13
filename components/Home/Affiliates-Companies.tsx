@@ -18,7 +18,6 @@ const companies = [
   { name: "Acholiland Security", image: company6 },
   { name: "Acholiland Security", image: company7 },
   { name: "Acholiland Security", image: company8 },
- 
 ];
 
 type Props = {};
@@ -27,7 +26,7 @@ const AffiliatedCompanies = (props: Props) => {
   return (
     <section className="  bg-[#FFF7F0] flex items-center justify-center flex-col gap-8 lg:gap-y-10  lg:px-0 py-20">
       <div className="flex flex-wrap items-center justify-center w-full capitalize">
-        <h1 className=" text-2xl lg:text-4xl font-bold text-black">
+        <h1 className=" text-2xl lg:text-4xl font-bold text-texts">
           affliated companies
         </h1>
       </div>

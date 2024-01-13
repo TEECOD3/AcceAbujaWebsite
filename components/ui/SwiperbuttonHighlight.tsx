@@ -1,6 +1,6 @@
 import { useSwiper } from "swiper/react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import Arrowright from "../Arrowright";
+import Arrowright from "./Arrowright";
 import Arrowleft from "./Arrowleft";
 
 type swipperButtons = {

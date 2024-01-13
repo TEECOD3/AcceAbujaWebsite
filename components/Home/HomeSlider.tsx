@@ -1,28 +1,30 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import Arrowright from "../Arrowright";
-import Arrowleft from "../ui/Arrowleft";
-// import Slider from "react-slick";
+import SwiperButton from "../ui/SwiperButton";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import {
   EffectCoverflow,
   Pagination,
   Navigation,
   Autoplay,
 } from "swiper/modules";
+
 import slide_image_1 from "../../public/image/gallery1.jpeg";
 import slide_image_2 from "../../public/image/gallery2.jpeg";
 import slide_image_3 from "../../public/image/gallery3.jpeg";
 import slide_image_5 from "../../public/image/5.jpg";
 import slide_image_4 from "../../public/image/1.jpg";
+
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import SwiperButton from "../ui/SwiperButton";
+
+import { motion } from "framer-motion";
+
 const images = [
   slide_image_1,
   slide_image_2,
@@ -31,8 +33,6 @@ const images = [
   slide_image_5,
 ];
 function HomeSlider() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const breakpoints = {
     480: {
       slidesPerView: 2,
@@ -48,9 +48,6 @@ function HomeSlider() {
     },
   };
 
-  const handleSlideChange = (swiper: any) => {
-    setActiveIndex(swiper.activeIndex);
-  };
   return (
     <section className="relative w-full -mt-10">
       <Swiper
@@ -69,29 +66,24 @@ function HomeSlider() {
         }}
         loop={true}
         navigation={false}
-        on={{
-          slideChange: () => {
-            handleSlideChange;
-          },
-        }}
         centeredSlides={true}
         modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
         breakpoints={breakpoints}
-        className="!mx-0 !px-0 h-[400px] lg:h-[600px] w-full flex items-center justify-center"
+        className="!mx-0 !px-0 h-[500px] lg:h-[600px] w-full flex items-center justify-center"
       >
         {images.map((image, idx) => (
           <SwiperSlide
             className={cn(`rounded-lg flex items-center justify-center   `)}
             key={idx}
           >
-            <div className="relative">
+            <motion.div className="relative">
               <Image
                 src={image}
                 alt="sliderimage"
                 loading="lazy"
                 placeholder="blur"
                 className={cn(
-                  `h-[300px] lg:h-[500px] w-full object-cover rounded-sm `
+                  `h-[400px] lg:h-[500px] w-full object-cover rounded-sm `
                 )}
               />
               <div className="absolute top-0 left-0 h-full w-full bg-black/40 z-[10] text-white">
@@ -106,7 +98,7 @@ function HomeSlider() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
         <div className="absolute bottom-10 z-[4000]  w-full flex items-center">

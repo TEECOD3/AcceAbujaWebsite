@@ -64,7 +64,7 @@ type Props = {};
 const GradeLevels = (props: Props) => {
   return (
     <>
-      <div className="w-full flex items-center justify-center py-4 lg:py-6 mt-28  lg:mt-8 relative">
+      <div className="w-full flex items-center justify-center py-4 lg:py-6 mt-24  lg:mt-8 relative">
         <h3 className="text-3xl font-bold leading-[38.6px] capitalize text-texts">
           grade levels
         </h3>
