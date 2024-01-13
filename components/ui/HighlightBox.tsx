@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
+import ClientButton from "./ClientButton";
 
 type Props = {
   image: StaticImageData;
@@ -30,6 +31,12 @@ const HighlightBox = (props: Props) => {
           commodi ea debitis consequatur ipsa totam pariatur mollitia
           aspernatur! Necessitatibus iure suscipit autem!
         </p>
+        <ClientButton
+          className="w-[90%] bg-orange-500 rounded-none capitalize font-bold"
+          href={`WeeklyHighlights/292992`}
+        >
+          read more
+        </ClientButton>
       </div>
     </div>
   );

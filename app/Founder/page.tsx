@@ -22,7 +22,7 @@ const Founderpage = (props: Props) => {
             </div>
           </div>
 
-          <div className="h-[500px] w-[400px] relative flex-shrink-0">
+          <div className="h-[500px] w-full sm:w-[400px] relative flex-shrink-0">
             <Image
               src={founderImage}
               alt="acce founder image"
