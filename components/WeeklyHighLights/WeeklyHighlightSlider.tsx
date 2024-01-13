@@ -58,7 +58,7 @@ const WeeklyHighlightSlider = (props: Props) => {
 
       <div className="flex relative z-[10] -mt-32 sm:-mt-48 lg:-mt-32 flex-col lg:flex-row max-lg:mb-5 max-lg:px-5 lg:w-[80%] mx-auto">
         {/* left */}
-        <div className="py-4  w-full flex ">
+        <div className="py-4 h-[250px] lg:h-[350px] w-full flex ">
           <div className="p-8 bg-white border-slate border-[1px] shadow-lg xl:w-[90%] mx-auto flex flex-col lg:flex-row h-full items-start">
             <div className="flex flex-col gap-y-6">
               <h2 className=" text-texts text-base mt-3 ">
