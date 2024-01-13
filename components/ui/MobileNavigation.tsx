@@ -99,10 +99,7 @@ const accordiondata = [
 export function MobileNavigation() {
   return (
     <Sheet>
-      <SheetTrigger
-        asChild
-        className="max-sm:pointer-events-none max-sm:user-select-none "
-      >
+      <SheetTrigger asChild className="">
         <div className="">
           <Hamburger className="" />
         </div>
