@@ -46,7 +46,7 @@ type Props = {};
 const WeeklyHighlightSlider = (props: Props) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   return (
-    <section className=" h-[90vh] sm:h-[100vh]">
+    <section className="h-[90vh] sm:h-[100vh]">
       <div className="h-[200px] sm:h-1/2 w-full bg-gray-300 relative">
         <Image
           src={heroimage2}
@@ -56,10 +56,10 @@ const WeeklyHighlightSlider = (props: Props) => {
         />
       </div>
 
-      <div className="flex relative z-[10] -mt-32 sm:-mt-48 lg:-mt-32 flex-col lg:flex-row max-lg:mb-5 max-lg:px-5 lg:w-[80%] mx-auto">
+      <div className="flex relative z-[10] -mt-32 sm:-mt-48 lg:-mt-32 flex-col lg:flex-row max-lg:mb-5 max-lg:px-5 lg:w-[90%] mx-auto">
         {/* left */}
         <div className="py-4 h-[250px] lg:h-[350px] w-full flex ">
-          <div className="p-8 bg-white border-slate border-[1px] shadow-lg xl:w-[90%] mx-auto flex flex-col lg:flex-row h-full items-start">
+          <div className="py-8 px-10 lg:px-20 bg-white  xl:w-[90%] mx-auto flex flex-col lg:flex-row h-full items-start">
             <div className="flex flex-col gap-y-6">
               <h2 className=" text-texts text-base mt-3 ">
                 {arraydata[activeSlideIndex]?.text1}
@@ -73,7 +73,7 @@ const WeeklyHighlightSlider = (props: Props) => {
 
         {/* right */}
 
-        <div className="relative h-[400px] lg:w-1/2  flex lg:justify-end">
+        <div className="relative h-[400px] lg:w-1/2  flex lg:justify-end lg:mt-4">
           <Swiper
             slidesPerView={1}
             effect={"fade"}

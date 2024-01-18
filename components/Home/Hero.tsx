@@ -7,7 +7,7 @@ const Hero = (props: Props) => {
     <div className="w-full h-[40%] bg-gradient-to-r from-[#fac61b] from-10% via-[#f39f20] via-30% pt-16 pb-40 to-[#f38120] to-90% ">
       <div className="flex flex-col gap-y-2 lg:w-[50%] h-full mx-auto text-center items-center justify-center ">
         <p className="uppercase text-base text-white mb-2 font-semibold">
-          Lorem ipsum dolor sit{" "}
+          Al-Ansar Centre for Comprehensive Education (ACCE)
         </p>
         <p className="max-md:leading-[44px] text-5xl font-semibold text-white capitalize mb-4">
           inspiring excellence

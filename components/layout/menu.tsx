@@ -155,7 +155,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/Vacancy" target="_blank" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <Button className="capitalize text-white bg-orange-400 rounded-none border-white border-[1px]">
                 apply now
@@ -165,7 +165,7 @@ export function NavigationMenuDemo() {
           <Link href="/Vacancy" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <Button className="capitalize text-orange-400 bg-white rounded-none border-white border-[1px]">
-                vacancy
+                apply for vacancy
               </Button>
             </NavigationMenuLink>
           </Link>

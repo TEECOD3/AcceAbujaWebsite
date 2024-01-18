@@ -11,13 +11,13 @@ const OurTeam = (props: Props) => {
           meet our team of experts
         </h1>
       </div>
-      <div className="w-full lg:w-[80%] mx-auto  grid grid-cols-1 md:grid-cols-4 place-items-center gap-8">
+      <div className="w-full md:w-[65%] lg:w-[80%] mx-auto  grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 x1place-items-center gap-20">
         <OurTeamItem />
         <OurTeamItem />
         <OurTeamItem />
         <OurTeamItem />
       </div>
-      <div className="w-full lg:w-[80%] mx-auto  grid grid-cols-1 max-md:grid-rows-3 md:grid-cols-3 place-items-center gap-6">
+      <div className="w-full lg:w-[80%] mx-auto  grid grid-cols-1 max-md:grid-rows-3 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-6">
         <OurTeamItem />
         <OurTeamItem />
         <OurTeamItem />
