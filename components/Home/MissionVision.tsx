@@ -1,7 +1,7 @@
 import React from "react";
 import BrandcoreSlider from "../ui/BrandCoreSlider";
 import Image from "next/image";
-import image from "../../public/image/gallery3.jpeg";
+import image from "../../public/image/pexel.jpg";
 
 type Props = {};
 
