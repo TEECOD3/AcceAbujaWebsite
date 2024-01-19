@@ -81,9 +81,6 @@ function TestimonialCard(props: TestimonialProps) {
         <p className="capitalize font-light  text-white text-sm">
           {description}
         </p>
-        <h4 className="uppercase font-medium text-base md:mt-3 text-white">
-          {position}
-        </h4>
       </div>
     </div>
   );

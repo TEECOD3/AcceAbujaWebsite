@@ -16,10 +16,10 @@ const Header = (props: Props) => {
             <AcceLogo className="h-20 w-20 lg:h-32 lg:w-32 cursor-pointer" />
           </Link>
         </div>
-        <div className="hidden lg:inline-flex">
+        <div className="hidden xl:inline-flex">
           <NavigationMenuDemo />
         </div>
-        <div className=" cursor-pointer  lg:hidden">
+        <div className=" cursor-pointer  xl:hidden">
           <MobileNavigation />
         </div>
       </div>

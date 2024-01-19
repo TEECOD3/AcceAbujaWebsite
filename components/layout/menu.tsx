@@ -154,14 +154,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/Vacancy" target="_blank" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <Button className="capitalize text-white bg-orange-400 rounded-none border-white border-[1px]">
-                apply now
-              </Button>
-            </NavigationMenuLink>
-          </Link>
+        {/* <NavigationMenuItem>
           <Link href="/Vacancy" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <Button className="capitalize text-orange-400 bg-white rounded-none border-white border-[1px]">
@@ -169,7 +162,15 @@ export function NavigationMenuDemo() {
               </Button>
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
+
+        <li>
+          <Button className="capitalize text-white bg-orange-400 rounded-none border-white border-[1px]">
+            <Link href="http://acce.edves.net" target="_blank">
+              apply now
+            </Link>
+          </Button>
+        </li>
       </NavigationMenuList>
     </NavigationMenu>
   );

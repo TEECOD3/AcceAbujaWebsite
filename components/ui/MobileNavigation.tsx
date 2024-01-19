@@ -120,6 +120,12 @@ export function MobileNavigation() {
                       </SheetClose>
                     </li>
                   ))}
+
+                  <li>
+                    <Link href="http://acce.edves.net" target="_blank">
+                      apply now
+                    </Link>
+                  </li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
