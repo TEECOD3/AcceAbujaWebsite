@@ -27,8 +27,8 @@ const accordiondata = [
     linkname: "Career",
     item: "item-1",
     extralinks: [
-      { id: 1, extralinkname: "Vacancy", link: "/Vacancy" },
-      { id: 1, extralinkname: "Apply now", link: "/Vacancy" },
+      { id: 1, extralinkname: "Home", link: "/" },
+      { id: 1, extralinkname: "About", link: "/" },
     ],
   },
   {
@@ -122,7 +122,11 @@ export function MobileNavigation() {
                   ))}
 
                   <li>
-                    <Link href="http://acce.edves.net" target="_blank">
+                    <Link
+                      href="http://acce.edves.net"
+                      target="_blank"
+                      className="text-xl capitalize"
+                    >
                       apply now
                     </Link>
                   </li>
