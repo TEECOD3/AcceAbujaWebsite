@@ -58,11 +58,11 @@ export function NavigationMenuDemo() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex flex-col justify-end w-full h-full p-6 no-underline rounded-md outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
                     href="/"
                   >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
-                    <div className="mb-2 mt-4 text-lg font-medium">
+                    {/* <Icons.logo className="w-6 h-6" /> */}
+                    <div className="mt-4 mb-2 text-lg font-medium">
                       Acce university
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
@@ -100,7 +100,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="border-none  bg-transparent hover:bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent border-none hover:bg-transparent">
             Admission
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -118,7 +118,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="border-none  bg-transparent hover:bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent border-none hover:bg-transparent">
             Academics
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -137,7 +137,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="border-none  bg-transparent hover:bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent border-none hover:bg-transparent">
             department
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -154,7 +154,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
+        {<NavigationMenuItem>
           <Link href="/Vacancy" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <Button className="capitalize text-orange-400 bg-white rounded-none border-white border-[1px]">
@@ -162,12 +162,12 @@ export function NavigationMenuDemo() {
               </Button>
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>}
 
         <li>
           <Button className="capitalize text-white bg-orange-400 rounded-none border-white border-[1px]">
             <Link href="http://acce.edves.net" target="_blank">
-              apply now
+              Portal
             </Link>
           </Button>
         </li>
@@ -192,7 +192,7 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <p className="text-sm leading-snug line-clamp-2 text-muted-foreground">
             {children}
           </p>
         </a>
