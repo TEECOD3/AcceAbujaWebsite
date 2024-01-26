@@ -35,7 +35,7 @@
 // export default InspiringSection;
 "use client";
 
-const accePeople = [
+export const accePeople = [
   {
     name: "John Doe",
     position: "Teacher",

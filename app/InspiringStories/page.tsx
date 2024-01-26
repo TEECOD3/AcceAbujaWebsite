@@ -1,3 +1,4 @@
+import { accePeople } from "@/components/Home/InspiringSection";
 import HighlightBox from "@/components/ui/HighlightBox";
 import Inspirationboxs from "@/components/ui/Inspirationboxs";
 import { Button } from "@/components/ui/button";
@@ -19,8 +20,8 @@ const InspiringPage = (props: Props) => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 mt-10 max-w-7xl max-lg:w-[80%] mx-auto gap-y-16">
-        {[1, 2, 3, 4, 56, 7, 7, 8].map((inspiration, i) => (
-          <Inspirationboxs key={i} />
+        {accePeople.map((person, i) => (
+          <Inspirationboxs key={i} persondets={person} />
         ))}
       </div>
       <div className=" mt-10 max-w-7xl mx-auto max-lg:w-[80%] flex items-center justify-center ">
