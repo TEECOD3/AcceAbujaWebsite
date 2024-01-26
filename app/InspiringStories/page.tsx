@@ -1,3 +1,4 @@
+"use client";
 import { accePeople } from "@/components/Home/InspiringSection";
 import HighlightBox from "@/components/ui/HighlightBox";
 import Inspirationboxs from "@/components/ui/Inspirationboxs";
