@@ -5,9 +5,7 @@ import AcceLogo from "../icons/AcceIcons";
 import { MobileNavigation } from "../ui/MobileNavigation";
 import Link from "next/link";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <header className="w-full bg-gradient-to-r from-[#fac61b]  from-10% via-[#f39f20] via-30% to-[#f38120] to-90% ">
       <div className=" px-4 xl:w-[80%] mx-auto flex items-center justify-between ">
