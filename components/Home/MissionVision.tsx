@@ -15,7 +15,7 @@ const MissionVision = (props: Props) => {
         className="h-full w-full object-cover"
       />
       <div className="w-full lg:w-[80%] mx-auto mt-8 h-full flex justify-end lg:mr-[24%] relative z-[40]">
-        <div className="h-full w-full lg:w-[40%] bg-[#394360]">
+        <div className="h-full w-full lg:w-[40%] bg-[#394360]/80">
           <BrandcoreSlider />
         </div>
       </div>

@@ -33,8 +33,41 @@
 // };
 
 // export default InspiringSection;
-
 "use client";
+
+const accePeople = [
+  {
+    name: "John Doe",
+    position: "Teacher",
+    description:
+      "Dedicated to kindling the flame of knowledge, John believes in the transformative power of education. With a passion for fostering curiosity and critical thinking, he aims to empower students to become lifelong learners and responsible global citizens.",
+  },
+  {
+    name: "Jane Smith",
+    position: "Student",
+    description:
+      "In the halls of ACCE School, Jane is not just a student; she's a dreamer, an achiever. Her journey is a testament to resilience and the pursuit of dreams. With each challenge, she sees an opportunity, and with each success, she shares the joy of learning.",
+  },
+  {
+    name: "Dr. James Brown",
+    position: "Principal",
+    description:
+      "Dr. Brown envisions ACCE School as a beacon of educational excellence. His leadership is driven by the belief that education goes beyond textbooks. With a commitment to nurturing creativity and critical thinking, he guides the school towards a future of innovation and success.",
+  },
+  {
+    name: "Mary Johnson",
+    position: "Head of School",
+    description:
+      "As the Head of School, Mary sees ACCE as more than an institution; it's a community where potentials are unlocked. Her leadership is characterized by inclusivity and collaboration. She believes in creating an environment where every member is valued and heard.",
+  },
+  {
+    name: "Samuel White",
+    position: "Parent",
+    description:
+      "Samuel, a proud parent, finds inspiration in the growth he witnesses in his child. ACCE School is not just a place of learning for him; it's a partner in his child's journey. He values the school's commitment to holistic education and a nurturing environment.",
+  },
+  // Add more objects as needed
+];
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
@@ -142,12 +175,9 @@ export const InfiniteMovingCards = ({
             pauseOnHover && "hover:[animation-play-state:paused]"
           )}
         >
-          <Inspirationboxs />
-          <Inspirationboxs />
-          <Inspirationboxs />
-          <Inspirationboxs />
-          <Inspirationboxs />
-          <Inspirationboxs />
+          {accePeople.map((person, i) => (
+            <Inspirationboxs key={i} persondets={person} />
+          ))}
         </ul>
 
         <div className=" lg:hidden flex items-center justify-center mt-5">

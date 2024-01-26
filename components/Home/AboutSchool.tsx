@@ -4,25 +4,26 @@ import React from "react";
 import image from "../../public/cutekids.jpg";
 import image2 from "../../public/cuterkids.jpg";
 import image3 from "../../public/childwithtestingtool.jpg";
+import Link from "next/link";
 
 type Props = {};
 
 const somedata = [
   {
     image: image,
-    text: "we offer the best education",
+    text: "Team Diversity and Inclusiveness",
   },
   {
     image: image2,
-    text: "education at it peak,",
+    text: "ACCE's Inclusive Working Environment",
   },
   {
     image: image3,
-    text: "   an educational and international comunity",
+    text: "Exciting Career at ACCE",
   },
   {
     image: image,
-    text: "   an educational and international comunity",
+    text: "People-Centric Approach",
   },
 ];
 
@@ -90,8 +91,15 @@ function AboutCard(props: AboutCardProps) {
           className="object-cover object-top"
         />
         <div className="absolute bg-black/40 p-6 bottom-8 left-4 w-[80%] md:w-[50%] text-white">
-          <h2 className="capitalize  text-base lg:text-xl">{aboutdata.text}</h2>
-          <p className="uppercase text-sm lg:text-base">read more</p>
+          <h2 className="capitalize  text-base lg:text-[17px]">
+            {aboutdata.text}
+          </h2>
+          <Link
+            className="uppercase text-[14px] font-bold cursor-pointer"
+            href={"/WhyJoinUs"}
+          >
+            read more
+          </Link>
         </div>
       </div>
     </>

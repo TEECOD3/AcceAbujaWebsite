@@ -20,40 +20,40 @@ const tabsdata = [
   {
     id: 1,
     tabsvalue: {
-      name: "nusery section",
-      ageGrade: "11-12 years",
+      name: "EARLY YEARS FOUNDATION",
+      ageGrade: "Starting at age 3",
       about:
-        "We have a well-established Nursery, which caters for children aged 3 to 5 years. The welcoming and stimulating environ ensures children are always happy away from home. The experience and expertise are of the highest quality and we provide the best quality child care",
+        "Early Years Foundation stage comprises Nursery 1, Nursery2 and Reception classes, starting at age 3. Here, learning is completely experiential in abeautifully equipped, technological and resource-filled environment",
       image: image1,
     },
   },
   {
     id: 2,
     tabsvalue: {
-      name: "primary section",
-      ageGrade: "6-11 years",
+      name: "PRIMARY",
+      ageGrade: "Comprises year 1 - 6",
       about:
-        "The Primary School consists of Grade 1 to 5. Our main focus at this level is to give 21st Century education to all Pupils and at the same time seek to develop reasoning skills, problem-solving ability and creative thinking in them. It is at this level they will be introduced to basic skills in technology and computing",
+        "Primary comprises Year 1-6, offering British Curriculum delivered through athematic based approach capturing religious/cultural perspectives.",
       image: image2,
     },
   },
   {
     id: 3,
     tabsvalue: {
-      name: "junior school",
-      ageGrade: "11-14 years",
+      name: "SECONDARY",
+      ageGrade: "starts at age 11 and spans Years 7-12",
       about:
-        "Our Secondary school consists of JSS1 —JSS3. Our main focus in addition to classroom learning is to build character, nurture values, and raise literate, confident, and engaged citizens who can think critically to develop their religion and societies.",
+        "Secondary starts at age 11 and spans Years 7-12. Our curriculum covers Nigerian National Curriculum, Standard Islamic Curriculum and Cambridge International Curriculum.",
       image: image3,
     },
   },
   {
     id: 4,
     tabsvalue: {
-      name: "Senior school",
-      ageGrade: "11-14 years",
+      name: "ATIP",
+      ageGrade: "Adults and Children",
       about:
-        "Our Secondary school consists of JSS1 —JSS3. Our main focus in addition to classroom learning is to build character, nurture values, and raise literate, confident, and engaged citizens who can think critically to develop their religion and societies.",
+        "Al-Ansar Tahfeez and Islamic Studies Program is a unique program targeted at imparting deep Islamic and Arabic Language education. It is designated to provide intensive classes for children and adults within and outside the school community",
       image: image1,
     },
   },
