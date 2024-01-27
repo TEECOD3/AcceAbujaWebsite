@@ -45,11 +45,11 @@ const AboutSchool = (props: Props) => {
           policy, but a belief in the strength of diversity and a commitment to
           inclusion. We will continue to strive for fair representation in our
           recruitment process without compromising on skills and fit.
-        </p>{" "}
+        </p>
         <ClientButton
           href="/WhyJoinUs"
           variant={"link"}
-          className="text-orange-400 font-bold text-sm inline-block px-0 max-w-max"
+          className="text-orange-400 font-bold text-sm inline-block px-0 max-lg:w-full max-lg:text-center lg:max-w-max "
         >
           Readmore
         </ClientButton>
