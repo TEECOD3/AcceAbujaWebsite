@@ -1,8 +1,66 @@
+"use client";
 import React from "react";
 import AcceLogo from "../icons/AcceIcons";
+import Link from "next/link";
 
 type Props = {};
 
+const linksprivacy = [
+  {
+    id: 1,
+    linkName: "privacy policy",
+    link: "/",
+  },
+
+  {
+    id: 2,
+    linkName: "terms of service",
+    link: "/",
+  },
+  {
+    id: 3,
+    linkName: "website information",
+    link: "/",
+  },
+  {
+    id: 4,
+    linkName: "disclaimer",
+    link: "/",
+  },
+];
+
+const linkscursory = [
+  {
+    id: 2,
+    linkName: "About us",
+    link: "/AboutUs",
+  },
+  {
+    id: 3,
+    linkName: "Founder Message",
+    link: "/Founder",
+  },
+  {
+    id: 4,
+    linkName: "careers",
+    link: "/WhyJoinUs",
+  },
+  {
+    id: 5,
+    linkName: "weeklyHighlights",
+    link: "/WeeklyHighLights",
+  },
+  {
+    id: 6,
+    linkName: "inspiring stories",
+    link: "/InspiringStories",
+  },
+  {
+    id: 7,
+    linkName: "vacancy",
+    link: "/Vacancy",
+  },
+];
 const Footer = (props: Props) => {
   return (
     <footer className="bg-[#f38120] to-90% font-medium">
@@ -14,24 +72,28 @@ const Footer = (props: Props) => {
 
           <div className="flex text-white mt-8 flex-1 justify-between flex-wrap">
             <ul className="space-y-2">
-              <h1 className="font-bold  text-xl mb-3 uppercase">company</h1>
-              <li>About us</li>
-              <li>Become a Member</li>
-              <li>Referral Program</li>
-              <li>Contact us</li>
+              <h1 className="font-bold  text-xl mb-3 uppercase">Navigations</h1>
+              {linkscursory.map((link) => (
+                <Link href={link.link} key={link.id}>
+                  <li className="capitalize hover:underline hover:underline-offset-2">
+                    {link.linkName}
+                  </li>
+                </Link>
+              ))}
             </ul>
             <ul className="space-y-2">
-              <h1 className="font-bold  text-xl mb-3 uppercase">
-                registration
-              </h1>
-              <li>About us</li>
-              <li>Become a Member</li>
-              <li>Referral Program</li>
-              <li>Contact us</li>
+              <h1 className="font-bold  text-xl mb-3 uppercase">Regulations</h1>
+              {linksprivacy.map((link) => (
+                <Link href={link.link} key={link.id}>
+                  <li className="capitalize hover:underline hover:underline-offset-2">
+                    {link.linkName}
+                  </li>
+                </Link>
+              ))}
             </ul>
             <ul className="space-y-2">
               <h1 className="font-bold text-xl mb-3 uppercase max-sm:mt-8">
-                contacts
+                affiliate companies
               </h1>
               <li>About us</li>
               <li>Become a Member</li>
@@ -43,14 +105,6 @@ const Footer = (props: Props) => {
 
         <div className="w-full border-t border-t-white py-4 lg:py-10 flex justify-between flex-col lg:flex-row text-white">
           <p>All right reserved 2023</p>
-
-          <ul className=" max-lg:gap-y-4 lg:justify-between lg:items-center flex flex-col lg:flex-row max-md:mt-8 gap-x-4">
-            <li>End user privacy policy</li>
-            <li>privacy policy</li>
-            <li>cookies policies</li>
-            <li>terms and conditions</li>
-            <li>DPA</li>
-          </ul>
         </div>
       </div>
     </footer>

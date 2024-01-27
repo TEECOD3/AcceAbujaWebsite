@@ -8,11 +8,20 @@ type Props = {
   href: string;
   className: string;
   children: ReactNode;
+  variant?:
+    | "default"
+    | "destructive"
+    | "outline"
+    | "secondary"
+    | "ghost"
+    | "link"
+    | null
+    | undefined;
 };
 
-const ClientButton = ({ href, children, className }: Props) => {
+const ClientButton = ({ href, children, className, variant }: Props) => {
   return (
-    <Button asChild className={cn(`${className}`)}>
+    <Button asChild className={cn(`${className}`)} variant={variant}>
       <Link href={href}>{children}</Link>
     </Button>
   );

@@ -20,7 +20,7 @@ const tabsdata = [
   {
     id: 1,
     tabsvalue: {
-      name: "EARLY YEARS FOUNDATION",
+      name: "NURSERY",
       ageGrade: "Starting at age 3",
       about:
         "Early Years Foundation stage comprises Nursery 1, Nursery2 and Reception classes, starting at age 3. Here, learning is completely experiential in abeautifully equipped, technological and resource-filled environment",

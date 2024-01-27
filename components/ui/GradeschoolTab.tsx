@@ -23,7 +23,7 @@ const GradeschoolTab = (props: Props) => {
           {gradetype.name}
         </h1>
         <div className="flex flex-col max-sm:items-center max-sm:justify-center  gap-y-4 lg:gap-y-8 ">
-          <p className="text-base">{gradetype.about}</p>
+          <p className="">{gradetype.about}</p>
           <Button className="w-56  bg-orange-500 rounded-none text-white py-4 px-2">
             READ MORE
           </Button>

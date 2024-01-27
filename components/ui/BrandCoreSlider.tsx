@@ -65,7 +65,7 @@ export const testimoonials = [
 const BrandcoreSlider = (props: Props) => {
   return (
     <>
-      <div className="mx-auto mt-4 flex h-full flex-col lg:flex-row xl:mt-8 ">
+      <div className="mx-auto mt-4 flex h-full flex-col lg:flex-row xl:my-8 ">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -73,6 +73,7 @@ const BrandcoreSlider = (props: Props) => {
             delay: 3500,
             disableOnInteraction: false,
           }}
+          grabCursor
           modules={[Autoplay, Pagination, Navigation]}
           speed={2500}
           loop={true}
@@ -115,7 +116,7 @@ function TestimonialCard(props: TestimonialProps) {
       <div className="w-full flex items-start flex-col mt-10 gap-y-16">
         <ul className="flex flex-col gap-y-2">
           {description.map((des, i) => (
-            <li className="capitalize font-light  text-white text-sm" key={i}>
+            <li className="capitalize font-light  text-white text-base" key={i}>
               <p>- {des}</p>
             </li>
           ))}

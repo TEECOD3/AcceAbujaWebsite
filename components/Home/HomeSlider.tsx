@@ -24,13 +24,40 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const images = [
-  slide_image_1,
-  slide_image_2,
-  slide_image_3,
-  slide_image_4,
-  slide_image_5,
+  {
+    id: 1,
+    image: slide_image_1,
+    description: [
+      "We commit ourselves to stimulating the intellectual, spiritual, moral, emotional and physical development of our pupils to bring the best out of them and to make them engineers of change in the society and make them upright citizens who fear Allah SWT in all their affairs.",
+    ],
+    name: "Our Mission Statement",
+  },
+  {
+    id: 1,
+    image: slide_image_2,
+    description:
+      "Each student is a unique and valued individual whose self-esteem is enhanced by mutual respect between students and staff",
+
+    name: "our Beliefs",
+  },
+  {
+    id: 1,
+    image: slide_image_3,
+    description:
+      "To build and maintain a culture of academic excellence, integrity, and citizenship",
+    name: "our Goals",
+  },
+  {
+    id: 1,
+    image: slide_image_4,
+    description:
+      "At Al-Ansar, we endeavour to instil in our pupils the fear of Allah (SWT). Our overall code of conduct is guided by developing good moral character and inspiring our pupils to becomegood ambassadors of the society. Our core values are",
+    name: "our core values",
+  },
 ];
 function HomeSlider() {
   const breakpoints = {
@@ -78,24 +105,26 @@ function HomeSlider() {
           >
             <motion.div className="relative">
               <Image
-                src={image}
+                src={image.image}
                 alt="sliderimage"
                 loading="lazy"
                 placeholder="blur"
                 className={cn(
-                  `h-[400px] lg:h-[500px] w-full object-cover rounded-sm `
+                  `h-[400px] lg:h-[500px] w-full object-cover rounded-sm transition-all duration-1000 ease-out`
                 )}
               />
               <div className="absolute top-0 left-0 h-full w-full bg-black/40 z-[10] text-white">
                 <div className=" absolute bottom-10 left-8 lg:w-[80%]">
-                  <p className="max-md:leading-[44px] text-5xl font-semibold text-white capitalize mb-4">
-                    inspiring excellence
+                  <p className="max-md:leading-[44px] text-5xl  text-white capitalize mb-4">
+                    {image.name}
                   </p>
-                  <p className="text-white font-semibold  lg:w-3/4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Itaque accusamus quibusdam, assumenda iusto velit earum
-                    voluptas cupiditate officiis fuga dignissimos
-                  </p>
+                  <p className="text-white  lg:w-3/4">{image.description}</p>
+                  <Link
+                    className="text-sm font-bold flex gap-x-2 items-center"
+                    href={"/AboutUs"}
+                  >
+                    <span>Readmore</span> <ArrowRight className="h-4 w-4" />
+                  </Link>
                 </div>
               </div>
             </motion.div>

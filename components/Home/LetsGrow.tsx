@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import logo from "../../public/__after.png";
+import ClientButton from "../ui/ClientButton";
+import { ArrowRightIcon } from "lucide-react";
 
 type Props = {};
 
@@ -19,11 +21,23 @@ const LetsGrow = (props: Props) => {
             Lets grow together
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-            maxime repellendus praesentium maiores quam sunt asperiores
-            distinctio odio vel. Quae deserunt quo voluptatem consequuntur,
-            illum eveniet nemo debitis illo nulla.
+            The sum total of all that the ACCE-ABUJA represents today is rooted
+            in our Culture. The ACCE&apos;s culture is built on its shared
+            values and corporate philosophy. It&apos;s really the people that
+            differentiate the Authority. We hire people who are disciplined,
+            focused, smart and we favor ability over experience. Although our
+            employees imbibe and embody the common goals and visions of the
+            Authority, we hail from a broad and diverse background, reflecting
+            the diversity and inclusiveness of our teams
           </p>
+          <ClientButton
+            href="#contact"
+            className=" text-base font-bold uppercase max-w-max px-0 cursor-pointer z-[20]"
+            variant={"link"}
+          >
+            <span>lets partner.</span>{" "}
+            <ArrowRightIcon className="h-4 w-4 ml-2" />
+          </ClientButton>
         </div>
       </div>
     </div>

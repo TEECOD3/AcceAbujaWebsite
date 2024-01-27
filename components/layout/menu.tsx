@@ -15,6 +15,19 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "../ui/button";
 
+const careers: { title: string; href: string; description: string }[] = [
+  {
+    title: "why join us",
+    href: "/WhyJoinUs",
+    description: "Acce's culture to talents",
+  },
+  {
+    title: "Vacancy",
+    href: "/Vacancy",
+    description: "Application for Vancancy",
+  },
+];
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Alert Dialog",
@@ -57,28 +70,32 @@ export function NavigationMenuDemo() {
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <a
+                  <Link
                     className="flex flex-col justify-end w-full h-full p-6 no-underline rounded-md outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
-                    href="/"
+                    href="/AboutUs"
                   >
                     {/* <Icons.logo className="w-6 h-6" /> */}
                     <div className="mt-4 mb-2 text-lg font-medium">
-                      Acce university
+                      About ACCE
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed website built by temitope
+                      our mission, our Goals, our beliefs and values
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/docs" title="Our Mission">
+                We commit ourselves to stimulating the intellectual, spiritual,
+                moral, emotional and physical development of our pupils to bring
+                the best out ....
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/docs/installation" title="Our Goals">
+                Each student is a unique and valued individual whose self-esteem
+                is enhanced by mutual respect between students and staff...
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/docs/primitives/typography" title="Our Beliefs">
+                To equip students with the skills necessary to be successful in
+                the global community...
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -87,7 +104,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger>Career</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+              {careers.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
@@ -161,15 +178,17 @@ export function NavigationMenuDemo() {
             </Link>
           </Button>
         </li>
-        {<NavigationMenuItem>
-          <Link href="/Vacancy" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <Button className="capitalize text-orange-400 bg-white rounded-none border-white border-[1px]">
-                apply for vacancy
-              </Button>
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>}
+        {
+          <NavigationMenuItem>
+            <Link href="/Vacancy" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <Button className="capitalize text-orange-400 bg-white rounded-none border-white border-[1px]">
+                  apply for vacancy
+                </Button>
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+        }
       </NavigationMenuList>
     </NavigationMenu>
   );

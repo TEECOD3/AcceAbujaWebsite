@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import founderImage from "../../public/image/president-removebg-preview.png";
 import logo from "../../public/image2.png";
+import ClientButton from "@/components/ui/ClientButton";
 
 type Props = {};
 
@@ -117,6 +118,19 @@ const Founderpage = (props: Props) => {
           teachings of the Qur’an and Sunnah. We look forward to receiving you
           and your child in ACCE, Abuja
         </p>
+
+        <div className="flex flex-wrap items-center">
+          <span>
+            Read more about our goals , our values , our mission and our beliefs
+          </span>{" "}
+          <ClientButton
+            className="text-orange-400 font-bold"
+            href="/AboutUs"
+            variant={"link"}
+          >
+            Here
+          </ClientButton>
+        </div>
 
         <div className="font-bold space-y-2">
           <em>Here&apos;s a wonderful year!</em>

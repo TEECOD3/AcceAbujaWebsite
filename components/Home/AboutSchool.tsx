@@ -5,6 +5,7 @@ import image from "../../public/cutekids.jpg";
 import image2 from "../../public/cuterkids.jpg";
 import image3 from "../../public/childwithtestingtool.jpg";
 import Link from "next/link";
+import ClientButton from "../ui/ClientButton";
 
 type Props = {};
 
@@ -31,11 +32,28 @@ const AboutSchool = (props: Props) => {
   return (
     <section className="bg-gray-300/40  py-20">
       <div className="max-lg:px-4 md:w-[80%] mx-auto  flex flex-col ">
-        <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto">
+        <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto mb-4">
           Why Choose Our School
         </h1>
-
-        <div className="flex flex-col gap-y-6">
+        <p>
+          In our short period of existence, we have assembled an exceptional
+          team with a broad mix of educational and professional experiences.
+          Diversity and inclusiveness are a strong business imperative for us as
+          we respect the competencies, talents and differences of our diverse
+          group of employees. The representation of the Nigeria system in our
+          workforce is not merely to comply with the corporate philosophy and
+          policy, but a belief in the strength of diversity and a commitment to
+          inclusion. We will continue to strive for fair representation in our
+          recruitment process without compromising on skills and fit.
+        </p>{" "}
+        <ClientButton
+          href="/WhyJoinUs"
+          variant={"link"}
+          className="text-orange-400 font-bold text-sm inline-block px-0 max-w-max"
+        >
+          Readmore
+        </ClientButton>
+        <div className="flex flex-col gap-y-6 ">
           <section className="w-full flex flex-col lg:flex-row gap-x-8 gap-y-6  justify-between mt-16">
             {
               <AboutCard
