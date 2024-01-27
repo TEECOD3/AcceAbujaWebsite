@@ -12,11 +12,11 @@ const Page = (props: Props) => {
         <Image
           src="/image/handstogether.jpg"
           alt="Hands on deck"
-          height={600}
-          width={1200}
           placeholder="blur"
+          loading="lazy"
+          fill
           blurDataURL="/image/handstogetherBlur.jpg"
-          className="h-full w-full object-cover object-center transition-all duration-1000 ease-in-out"
+          className="h-full w-full object-cover object-center transition-all  duration-1000 ease-out"
         />
       </div>
 
