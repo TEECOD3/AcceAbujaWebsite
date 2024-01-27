@@ -28,7 +28,7 @@ const Page = (props: Props) => {
         </div>
       </div>
 
-      <section className="my-10 mx-auto w-[80%] text-xl">
+      <section className="my-10 mx-auto max-lg:px-5 lg:w-[80%] text-xl">
         <h1 className=" text-2xl mb-2 lg:text-3xl font-bold uppercase ">
           Careers
         </h1>

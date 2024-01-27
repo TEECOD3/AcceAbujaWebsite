@@ -35,7 +35,7 @@ const AboutSchool = (props: Props) => {
         <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto mb-4">
           Why Choose Our School
         </h1>
-        <p>
+        <p className="max-md:text-center">
           In our short period of existence, we have assembled an exceptional
           team with a broad mix of educational and professional experiences.
           Diversity and inclusiveness are a strong business imperative for us as

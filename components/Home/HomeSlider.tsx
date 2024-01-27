@@ -115,12 +115,12 @@ function HomeSlider() {
               />
               <div className="absolute top-0 left-0 h-full w-full bg-black/40 z-[10] text-white">
                 <div className=" absolute bottom-10 left-8 lg:w-[80%]">
-                  <p className="max-md:leading-[44px] text-5xl  text-white capitalize mb-4">
+                  <p className="lg:leading-[44px] lg:text-5xl  text-3xl text-white capitalize mb-4 tracking-tight">
                     {image.name}
                   </p>
                   <p className="text-white  lg:w-3/4">{image.description}</p>
                   <Link
-                    className="text-sm font-bold flex gap-x-2 items-center"
+                    className="text-sm font-bold flex gap-x-2 items-center mt-3"
                     href={"/AboutUs"}
                   >
                     <span>Readmore</span> <ArrowRight className="h-4 w-4" />

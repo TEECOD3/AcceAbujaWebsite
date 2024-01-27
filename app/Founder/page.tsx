@@ -124,7 +124,7 @@ const Founderpage = (props: Props) => {
             Read more about our goals , our values , our mission and our beliefs
           </span>{" "}
           <ClientButton
-            className="text-orange-400 font-bold"
+            className="text-orange-400 font-bold px-0 "
             href="/AboutUs"
             variant={"link"}
           >

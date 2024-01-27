@@ -71,8 +71,10 @@ const Footer = (props: Props) => {
           </div>
 
           <div className="flex text-white mt-8 flex-1 justify-between flex-wrap">
-            <ul className="space-y-2">
-              <h1 className="font-bold  text-xl mb-3 uppercase">Navigations</h1>
+            <ul className="space-y-4">
+              <h1 className="font-bold text-base lg:text-xl mb-3 uppercase">
+                Navigations
+              </h1>
               {linkscursory.map((link) => (
                 <Link href={link.link} key={link.id}>
                   <li className="capitalize hover:underline hover:underline-offset-2">
@@ -81,8 +83,10 @@ const Footer = (props: Props) => {
                 </Link>
               ))}
             </ul>
-            <ul className="space-y-2">
-              <h1 className="font-bold  text-xl mb-3 uppercase">Regulations</h1>
+            <ul className="space-y-4">
+              <h1 className="font-bold text-base lg:text-xl mb-3 uppercase">
+                Regulations
+              </h1>
               {linksprivacy.map((link) => (
                 <Link href={link.link} key={link.id}>
                   <li className="capitalize hover:underline hover:underline-offset-2">
@@ -104,7 +108,7 @@ const Footer = (props: Props) => {
         </div>
 
         <div className="w-full border-t border-t-white py-4 lg:py-10 flex justify-between flex-col lg:flex-row text-white">
-          <p>All right reserved 2023</p>
+          <p>All right reserved 2024</p>
         </div>
       </div>
     </footer>
