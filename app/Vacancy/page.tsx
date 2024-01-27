@@ -27,7 +27,7 @@ const Vacancy = (props: Props) => {
               the ACCE&apos;s four-step recruitment process as summarized below:
             </p>
             <p>
-              <span className="font-bold text-2xl">Step 1:</span> Entry Testing
+              <span className="font-bold text-xl">Step 1:</span> Entry Testing
               School Assessments/Tests will be administered on all eligible
               entry level applicants and/or candidates for specialised roles. If
               found eligible and shortlisted, the candidate will be invited to
@@ -39,7 +39,7 @@ const Vacancy = (props: Props) => {
               and competency requirements needed to succeed in the School.
             </p>
             <p>
-              <span className="font-bold text-2xl">Step 2:</span> Pre-Interview
+              <span className="font-bold text-xl">Step 2:</span> Pre-Interview
               Candidates who are successful at the first stage would then be
               invited to a panel interview which will be largely
               competency-based. Candidates are expected to demonstrate key
@@ -47,15 +47,15 @@ const Vacancy = (props: Props) => {
               requires.
             </p>
             <p>
-              <span className="font-bold text-2xl">Step 3:</span> Final
-              Interview This stage involves a one-on-one interview with one or
-              more members of the Executive Management Team. In addition to more
+              <span className="font-bold text-xl">Step 3:</span> Final Interview
+              This stage involves a one-on-one interview with one or more
+              members of the Executive Management Team. In addition to more
               competency questions, candidates are expected to demonstrate
               industry knowledge and passion required to work in the ACCE.
             </p>
 
             <p>
-              <span className="font-bold text-2xl">Step 4:</span> Offer and
+              <span className="font-bold text-xl">Step 4:</span> Offer and
               Acceptance Candidates who are successful at the Final Interview
               will be invited for an informal chat with a member of the Human
               Resources Team, where evidence of relevant

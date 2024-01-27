@@ -118,7 +118,7 @@ function HomeSlider() {
                   <p className="lg:leading-[44px] lg:text-5xl  text-3xl text-white capitalize mb-4 tracking-tight">
                     {image.name}
                   </p>
-                  <p className="text-white  lg:w-3/4">{image.description}</p>
+                  <p className="text-white  w-11/12">{image.description}</p>
                   <Link
                     className="text-sm font-bold flex gap-x-2 items-center mt-3"
                     href={"/AboutUs"}

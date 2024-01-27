@@ -13,7 +13,7 @@ const Hero = (props: Props) => {
         <p className="max-md:leading-[44px] text-5xl font-semibold text-white capitalize mb-4">
           inspiring excellence
         </p>
-        <p className="text-white max-sm:text-[14px]  max-sm:px-3">
+        <p className="text-white   max-sm:px-3">
           We commit ourselves to stimulating the intellectual, spiritual, moral,
           emotional and physical development of our pupils to bring the best out
           of them and to make them engineers of change in the society and make

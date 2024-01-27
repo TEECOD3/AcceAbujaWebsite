@@ -11,7 +11,7 @@ const OurTeam = (props: Props) => {
           meet our team of experts
         </h1>
       </div>
-      <div className="w-full md:w-[65%] lg:w-[80%] mx-auto  grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 x1place-items-center gap-20">
+      <div className="w-full md:w-[65%] lg:w-[80%] mx-auto  grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 x1place-items-center gap-y-6 gap-x-20">
         <OurTeamItem />
         <OurTeamItem />
         <OurTeamItem />

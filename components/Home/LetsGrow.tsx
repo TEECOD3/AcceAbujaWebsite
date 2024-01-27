@@ -15,7 +15,7 @@ const LetsGrow = (props: Props) => {
         fill
         className="h-full w-full bg-fixed object-cover"
       />
-      <div className="w-[80%] mx-auto ">
+      <div className="max-lg:px-5 lg:w-[80%] mx-auto ">
         <div className="w-full lg:w-1/2 flex-col gap-y-8 flex">
           <h3 className="text-3xl lg:text-6xl  capitalize font-bold text-texts">
             Lets grow together
