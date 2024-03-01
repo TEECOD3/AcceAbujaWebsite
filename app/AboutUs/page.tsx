@@ -1,6 +1,6 @@
 "use client";
 import { testimoonials } from "@/components/ui/BrandCoreSlider";
-// import ClientButton from "@/components/ui/ClientButton";
+import ClientButton from "@/components/ui/ClientButton";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -20,14 +20,14 @@ const AboutUs = (props: Props) => {
         />
 
         <div className="absolute top-0 left-0 z-10 flex items-center justify-center w-full h-full bg-black/20">
-          <p className="text-3xl font-bold text-white uppercase  lg:text-8xl">
+          <p className="text-3xl font-bold text-white uppercase lg:text-8xl">
             About us
           </p>
         </div>
       </div>
 
       <section className="my-10 mx-auto  max-lg:px-5 lg:w-[80%] ">
-        <h1 className="mb-2 text-2xl font-bold uppercase  lg:text-3xl">
+        <h1 className="mb-2 text-2xl font-bold uppercase lg:text-3xl">
           Brief history
         </h1>
 
@@ -53,7 +53,7 @@ const AboutUs = (props: Props) => {
         </div>
 
         <div className="mt-10 space-y-6">
-          <h2 className="text-xl font-bold uppercase  lg:text-2xl">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our mission statement
           </h2>
           <p>
@@ -66,7 +66,7 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className="px-0 text-base font-bold uppercase  max-w-max"
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
             <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
@@ -74,7 +74,7 @@ const AboutUs = (props: Props) => {
         </div>
 
         <div className="mt-10 space-y-6">
-          <h2 className="text-xl font-bold uppercase  lg:text-2xl">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our Beliefs
           </h2>
           <ul>
@@ -89,7 +89,7 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className="px-0 text-base font-bold uppercase  max-w-max"
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
             <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
@@ -97,7 +97,7 @@ const AboutUs = (props: Props) => {
         </div>
 
         <div className="mt-10 space-y-6">
-          <h2 className="text-xl font-bold uppercase  lg:text-2xl">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our Goals
           </h2>
           <ul>
@@ -112,7 +112,7 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className="px-0 text-base font-bold uppercase  max-w-max"
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
             <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
@@ -120,7 +120,7 @@ const AboutUs = (props: Props) => {
         </div>
 
         <div className="mt-10 space-y-6">
-          <h2 className="text-xl font-bold uppercase  lg:text-2xl">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our core Values
           </h2>
           <ul>
@@ -135,7 +135,7 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className="px-0 text-base font-bold uppercase  max-w-max"
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
             <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
