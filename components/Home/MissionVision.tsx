@@ -7,7 +7,7 @@ type Props = {};
 
 const MissionVision = (props: Props) => {
   return (
-    <section className="relative lg:h-[700px] bg-[#232323] max-[400px]:mt-44 sm:mt-32 lg:mt-10">
+    <section className="relative lg:h-[700px] bg-[#232323] my-44 ">
       <Image
         alt="school image"
         src={image}
