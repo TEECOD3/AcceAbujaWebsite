@@ -87,3 +87,25 @@
 .simple-slider:not(.slick-initialized) .simple-slide-container:after {
   display: none;
 }
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: scrollbar;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: white;
+  color: white;
+}
+
+::selection {
+  background-color: white;
+  color: white;
+}

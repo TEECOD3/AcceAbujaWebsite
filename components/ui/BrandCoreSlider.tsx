@@ -109,14 +109,15 @@ type TestimonialProps = {
 function TestimonialCard(props: TestimonialProps) {
   const { description, name, position } = props;
   return (
-    <div className="flex flex-col py-10 px-4 sm:px-6 md:px-8 ">
-      <p className="text-white text-lg md:text-2xl xl:text-xl mt-8 capitalize">
-        {name}
-      </p>
+    <div className="flex flex-col pb-4 px-4 sm:px-6 md:px-8 ">
+      <p className="text-white text-lg lg:text-2xl mt-2 uppercase">{name}</p>
       <div className="w-full flex items-start flex-col mt-10 gap-y-16">
         <ul className="flex flex-col gap-y-2">
           {description.map((des, i) => (
-            <li className="capitalize font-light  text-white text-base" key={i}>
+            <li
+              className="capitalize font-light  text-white text-base lg:text-xl"
+              key={i}
+            >
               <p>- {des}</p>
             </li>
           ))}

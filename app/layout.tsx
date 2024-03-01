@@ -1,13 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Syne } from "next/font/google";
 import Provider from "../Providers/providers";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-const lato = Lato({
+const syne = Syne({
   subsets: ["latin"],
-  weight: ["100", "400", "300", "700", "900"],
+  // weight: ["100", "400", "300", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.className} font-[400] `}>
+      <body className={`${syne.className} font-[400] text-base lg:text-xl`}>
         <Provider>
           <Header />
           {children}

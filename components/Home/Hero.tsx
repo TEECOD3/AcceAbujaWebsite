@@ -4,7 +4,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="w-full h-[40%] bg-gradient-to-r from-[#fac61b] from-10% via-[#f39f20] via-30% pt-16 pb-40 to-[#f38120] to-90% ">
+    <div className="w-full h-[40%] bg-gradient-to-b  lg:bg-gradient-to-r from-[#fac61b] from-10% via-[#f39f20] via-30% pt-16 pb-40 to-[#f38120] to-90% ">
       <div className="flex flex-col gap-y-2 lg:w-[50%] h-full mx-auto text-center items-center justify-center ">
         <p className="uppercase text-center  text-base text-white mb-2 font-semibold">
           Al-Ansar Centre for Comprehensive{" "}

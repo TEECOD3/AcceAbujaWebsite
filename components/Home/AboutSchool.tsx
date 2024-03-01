@@ -35,7 +35,7 @@ const AboutSchool = (props: Props) => {
         <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto mb-4">
           Why Choose Our School
         </h1>
-        <p className="max-md:text-center">
+        <p className="max-md:text-center leading-snug">
           In our short period of existence, we have assembled an exceptional
           team with a broad mix of educational and professional experiences.
           Diversity and inclusiveness are a strong business imperative for us as
@@ -48,10 +48,9 @@ const AboutSchool = (props: Props) => {
         </p>
         <ClientButton
           href="/WhyJoinUs"
-          variant={"link"}
-          className="text-orange-400 font-bold text-sm inline-block px-0 max-lg:w-full max-lg:text-center lg:max-w-max "
+          className=" uppercase max-xl:mx-auto max-w-max py-6 bg-orange-400 text-white  mt-10 rounded-none"
         >
-          Readmore
+          read more
         </ClientButton>
         <div className="flex flex-col gap-y-6 ">
           <section className="w-full flex flex-col lg:flex-row gap-x-8 gap-y-6  justify-between mt-16">

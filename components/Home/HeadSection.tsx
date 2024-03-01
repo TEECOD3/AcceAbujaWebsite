@@ -13,7 +13,7 @@ const HeadSection = (props: Props) => {
         <div className="w-full flex items-center justify-center max-lg:mt-10">
           <div className="flex flex-col  max-xl:text-center xl:items-start justify-center gap-y-4 lg:gap-y-6 w-full lg:w-[70%] text-texts ">
             <p className="text-orange-500  text-[18px] uppercase max-md:font-bold font-bold ">
-              Head of school
+              Founder
             </p>
 
             <p className="font-bold max-md:text-center text-3xl leading-[38.4px] ">
@@ -36,7 +36,7 @@ const HeadSection = (props: Props) => {
 
             <ClientButton
               href="/Founder"
-              className=" uppercase max-xl:mx-auto w-2/4 py-6 bg-orange-400 text-white  mt-10 rounded-none"
+              className=" uppercase max-xl:mx-auto w-2/4 py-6 bg-orange-400 max-w-max text-white  mt-10 rounded-none"
             >
               read more
             </ClientButton>

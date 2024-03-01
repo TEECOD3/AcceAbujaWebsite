@@ -19,6 +19,10 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        base: ["18px", "22px"],
+        xl: ["20px", "24px"],
+      },
       colors: {
         texts: "#000",
         border: "hsl(var(--border))",
