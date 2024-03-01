@@ -16,18 +16,18 @@ const AboutUs = (props: Props) => {
           alt="Hands on deck"
           loading="lazy"
           fill
-          className="h-full w-full object-cover object-center transition-all  duration-1000 ease-out"
+          className="object-cover object-center w-full h-full transition-all duration-1000 ease-out"
         />
 
-        <div className="absolute top-0 left-0 bg-black/20 z-10 h-full w-full flex items-center justify-center">
-          <p className=" text-3xl font-bold uppercase lg:text-8xl text-white">
+        <div className="absolute top-0 left-0 z-10 flex items-center justify-center w-full h-full bg-black/20">
+          <p className="text-3xl font-bold text-white uppercase lg:text-8xl">
             About us
           </p>
         </div>
       </div>
 
       <section className="my-10 mx-auto  max-lg:px-5 lg:w-[80%] ">
-        <h1 className=" text-2xl mb-2 lg:text-3xl font-bold uppercase ">
+        <h1 className="mb-2 text-2xl font-bold uppercase lg:text-3xl">
           Brief history
         </h1>
 
@@ -52,8 +52,8 @@ const AboutUs = (props: Props) => {
           </p>
         </div>
 
-        <div className="space-y-6 mt-10">
-          <h2 className=" text-xl  lg:text-2xl font-bold uppercase">
+        <div className="mt-10 space-y-6">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our mission statement
           </h2>
           <p>
@@ -66,15 +66,15 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className=" text-base font-bold uppercase max-w-max px-0 "
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
-            <span>Join us.</span> <ArrowRightIcon className="h-4 w-4 ml-2" />
+            <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
           </ClientButton> */}
         </div>
 
-        <div className="space-y-6 mt-10">
-          <h2 className=" text-xl  lg:text-2xl font-bold uppercase">
+        <div className="mt-10 space-y-6">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our Beliefs
           </h2>
           <ul>
@@ -89,15 +89,15 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className=" text-base font-bold uppercase max-w-max px-0 "
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
-            <span>Join us.</span> <ArrowRightIcon className="h-4 w-4 ml-2" />
+            <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
           </ClientButton> */}
         </div>
 
-        <div className="space-y-6 mt-10">
-          <h2 className=" text-xl  lg:text-2xl font-bold uppercase">
+        <div className="mt-10 space-y-6">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our Goals
           </h2>
           <ul>
@@ -112,15 +112,15 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className=" text-base font-bold uppercase max-w-max px-0 "
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
-            <span>Join us.</span> <ArrowRightIcon className="h-4 w-4 ml-2" />
+            <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
           </ClientButton> */}
         </div>
 
-        <div className="space-y-6 mt-10">
-          <h2 className=" text-xl  lg:text-2xl font-bold uppercase">
+        <div className="mt-10 space-y-6">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
             Our core Values
           </h2>
           <ul>
@@ -135,10 +135,10 @@ const AboutUs = (props: Props) => {
 
           {/* <ClientButton
             href="/Vacancy"
-            className=" text-base font-bold uppercase max-w-max px-0 "
+            className="px-0 text-base font-bold uppercase max-w-max"
             variant={"link"}
           >
-            <span>Join us.</span> <ArrowRightIcon className="h-4 w-4 ml-2" />
+            <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
           </ClientButton> */}
         </div>
       </section>
