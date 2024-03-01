@@ -9,14 +9,12 @@ type Props = {};
 const HeadSection = (props: Props) => {
   return (
     <section className="bg-gray-300/40 pt-36 -mt-32">
-      <div className="px-3 md:w-[90%] py-10 xl:w-[95%] mx-auto flex flex-col-reverse xl:flex-row font-[500]">
+      <div className="px-3 md:w-[90%] py-10 xl:w-[95%] mx-auto flex flex-col-reverse xl:flex-row">
         <div className="w-full flex items-center justify-center max-lg:mt-10">
           <div className="flex flex-col  max-xl:text-center xl:items-start justify-center gap-y-4 lg:gap-y-6 w-full lg:w-[70%] text-texts ">
-            <p className="text-orange-500  text-[18px] uppercase max-md:font-bold font-bold ">
-              Founder
-            </p>
+            <p className="text-orange-500  text-[18px] uppercase ">Founder</p>
 
-            <p className="font-bold max-md:text-center text-3xl leading-[38.4px] ">
+            <p className="font-bold max-md:text-center text-3xl leading-[38.4px] tracking-tight ">
               You are welcome to our <br />
               School
             </p>
