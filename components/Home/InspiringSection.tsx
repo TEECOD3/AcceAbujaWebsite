@@ -1,39 +1,12 @@
-// "use client";
-
-// import { cn } from "@/lib/utils";
-// import React, { useEffect, useState } from "react";
-// import { Button } from "../ui/button";
-
-// type Props = {};
-
-// const InspiringSection = (props: Props) => {
-//   return (
-//     <section className="w-[80%] mx-auto mt-8">
-//       <div className="flex justify-between max-lg:justify-center  ">
-//         <div className="">
-//           <h2 className="text-texts text-3xl font-bold tracking-tight max-lg:text-center max-lg:my-8">
-//             Inspiring stories
-//           </h2>
-//         </div>
-//         <div className="hidden lg:block">
-//           <Button className="w-56  bg-orange-500 rounded-none text-white py-4 px-2 uppercase">
-//             see all testimonies
-//           </Button>
-//         </div>
-//       </div>
-
-//       <div className="flex mt-5 gap-x-5  overflow-x-scroll items-center  scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-100">
-//         <Inspirationboxs />
-//         <Inspirationboxs />
-//         <Inspirationboxs />
-//         <Inspirationboxs />
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default InspiringSection;
 "use client";
+
+import { cn } from "@/lib/utils";
+import React, { useEffect, useState } from "react";
+import { Button } from "../ui/button";
+import Image from "next/image";
+import logo from "../../public/image2.png";
+import Inspirationboxs from "../ui/Inspirationboxs";
+import Link from "next/link";
 
 export const accePeople = [
   {
@@ -69,13 +42,6 @@ export const accePeople = [
   // Add more objects as needed
 ];
 
-import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
-import { Button } from "../ui/button";
-import Image from "next/image";
-import logo from "../../public/image2.png";
-import Inspirationboxs from "../ui/Inspirationboxs";
-import { useRouter } from "next/navigation";
 export const InfiniteMovingCards = ({
   direction = "left",
   speed = "fast",
@@ -89,7 +55,6 @@ export const InfiniteMovingCards = ({
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
-  const Router = useRouter();
 
   useEffect(() => {
     addAnimation();
@@ -152,11 +117,8 @@ export const InfiniteMovingCards = ({
           </h2>
         </div>
         <div className="hidden lg:block">
-          <Button
-            className="w-56  bg-orange-500 rounded-none text-white py-4 px-2 uppercase"
-            onClick={() => Router.push("/InspiringStories")}
-          >
-            see all testimonies
+          <Button className="w-56 mx-auto bg-orange-500 rounded-none text-white py-4 px-2 uppercase">
+            <Link href="/InspiringStories">see all testimonies</Link>
           </Button>
         </div>
       </div>
@@ -181,11 +143,8 @@ export const InfiniteMovingCards = ({
         </ul>
 
         <div className=" lg:hidden flex items-center justify-center mt-5">
-          <Button
-            className="w-56 mx-auto bg-orange-500 rounded-none text-white py-4 px-2 uppercase"
-            onClick={() => Router.push("/InspiringStories")}
-          >
-            see all testimonies
+          <Button className="w-56 mx-auto bg-orange-500 rounded-none text-white py-4 px-2 uppercase">
+            <Link href="/InspiringStories">see all testimonies</Link>
           </Button>
         </div>
       </div>

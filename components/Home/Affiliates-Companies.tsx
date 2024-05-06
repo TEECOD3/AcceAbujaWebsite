@@ -1,31 +1,16 @@
 import React from "react";
 import AcceLogo from "../icons/AcceIcons";
-import company1 from "../../public/logo/acc900.jpeg";
-import company2 from "../../public/logo/acce00.jpeg";
 import company3 from "../../public/logo/acce0003.jpeg";
-import company4 from "../../public/logo/acce20.jpeg";
-import company5 from "../../public/logo/acce9220.jpeg";
 import company6 from "../../public/logo/accelog2.jpeg";
 import company7 from "../../public/logo/accelog3.jpeg";
-import company9 from "../../public/logo/accelog4.jpeg";
-import company10 from "../../public/logo/accelog5.jpeg";
-import company11 from "../../public/logo/accelog6.jpeg";
-import company12 from "../../public/logo/accelog7.jpeg";
 import company13 from "../../public/logo/accelogo.jpeg";
 import Image from "next/image";
 
 const companies = [
-  { name: "Acholiland Security", image: company1 },
-  { name: "Acholiland Security", image: company2 },
   { name: "Acholiland Security", image: company3 },
-  { name: "Acholiland Security", image: company4 },
-  { name: "Acholiland Security", image: company5 },
   { name: "Acholiland Security", image: company6 },
   { name: "Acholiland Security", image: company7 },
-  { name: "Acholiland Security", image: company9 },
-  { name: "Acholiland Security", image: company10 },
-  { name: "Acholiland Security", image: company11 },
-  { name: "Acholiland Security", image: company12 },
+
   { name: "Acholiland Security", image: company13 },
 ];
 

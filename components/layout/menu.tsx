@@ -84,16 +84,16 @@ export function NavigationMenuDemo() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Our Mission">
+              <ListItem href="/AboutUs" title="Our Mission">
                 We commit ourselves to stimulating the intellectual, spiritual,
                 moral, emotional and physical development of our pupils to bring
                 the best out ....
               </ListItem>
-              <ListItem href="/docs/installation" title="Our Goals">
+              <ListItem href="/AboutUs" title="Our Goals">
                 Each student is a unique and valued individual whose self-esteem
                 is enhanced by mutual respect between students and staff...
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Our Beliefs">
+              <ListItem href="/AboutUs" title="Our Beliefs">
                 To equip students with the skills necessary to be successful in
                 the global community...
               </ListItem>
@@ -116,7 +116,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent border-none hover:bg-transparent">
             Admission
           </NavigationMenuTrigger>
@@ -133,8 +133,8 @@ export function NavigationMenuDemo() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
+        </NavigationMenuItem> */}
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent border-none hover:bg-transparent">
             Academics
           </NavigationMenuTrigger>
@@ -151,8 +151,8 @@ export function NavigationMenuDemo() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-
+        </NavigationMenuItem> */}
+        {/* 
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent border-none hover:bg-transparent">
             department
@@ -170,7 +170,7 @@ export function NavigationMenuDemo() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <li>
           <Button className="capitalize text-white bg-orange-400 rounded-none border-white border-[1px]">
             <Link href="http://acce.edves.net" target="_blank">

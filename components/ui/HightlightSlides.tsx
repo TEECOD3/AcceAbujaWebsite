@@ -12,26 +12,24 @@ import {
   Navigation,
   Autoplay,
 } from "swiper/modules";
-import slide_image_1 from "../../public/image/7.jpg";
-import slide_image_2 from "../../public/image/gallery2.jpeg";
-import slide_image_3 from "../../public/image/jaiz.jpg";
-import slide_image_5 from "../../public/image/fac-boarding.png";
-import slide_image_4 from "../../public/image/fac-canteen.png";
 import { cn } from "@/lib/utils";
-
 import HighlightBox from "./HighlightBox";
 import SwiperbuttonHighlight from "./SwiperbuttonHighlight";
 
-// todo:convert to an array of objects
-const images = [
-  slide_image_1,
-  slide_image_2,
-  slide_image_3,
-  slide_image_4,
-  slide_image_5,
-];
+type IHighlighslidesProps = {
+  highlightsData: {
+    id: number;
+    title: string;
+    image: string;
+    slug: string;
+    author: string;
+    create_at: string;
+  }[];
+};
 
-function Hightlightlides() {
+function Hightlightlides(props: IHighlighslidesProps) {
+  const { highlightsData } = props;
+
   const breakpoints = {
     480: {
       slidesPerView: 3,
@@ -77,14 +75,22 @@ function Hightlightlides() {
         breakpoints={breakpoints}
         className="!mx-0 !px-0 w-full flex items-center justify-center"
       >
-        {images.map((image, idx) => (
+        {highlightsData?.map((image, idx) => (
           <SwiperSlide
             className={cn(
               `rounded-lg flex items-center justify-center mt-24  `
             )}
             key={idx}
           >
-            <HighlightBox image={image} />
+            <HighlightBox
+              image={image.image}
+              author={image.author}
+              create_at={image.create_at}
+              slug={image.slug}
+              id={image.id}
+              title={image.title}
+              // summary={image.summary}
+            />
           </SwiperSlide>
         ))}
         <div className="absolute top-0 right-0 z-[4000] w-full flex items-center lg:mt-2">

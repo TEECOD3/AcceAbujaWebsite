@@ -71,38 +71,49 @@ const Footer = (props: Props) => {
           </div>
 
           <div className="flex text-white mt-8 flex-1 justify-between flex-wrap">
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               <h1 className="font-bold text-base lg:text-xl mb-3 uppercase">
                 Navigations
               </h1>
               {linkscursory.map((link) => (
-                <Link href={link.link} key={link.id}>
-                  <li className="capitalize hover:underline hover:underline-offset-2">
+                <Link
+                  href={link.link}
+                  key={link.id}
+                  className="text-base font-semibold"
+                >
+                  <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
                     {link.linkName}
                   </li>
                 </Link>
               ))}
             </ul>
-            <ul className="space-y-4">
-              <h1 className="font-bold text-base lg:text-xl mb-3 uppercase">
+            <ul className="space-y-6 text-base">
+              <h1 className="font-bold text-xl lg:text-xl mb-3 uppercase">
                 Regulations
               </h1>
               {linksprivacy.map((link) => (
-                <Link href={link.link} key={link.id}>
-                  <li className="capitalize hover:underline hover:underline-offset-2">
+                <Link
+                  href={link.link}
+                  key={link.id}
+                  className="font-semibold font-base "
+                >
+                  <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
                     {link.linkName}
                   </li>
                 </Link>
               ))}
             </ul>
-            <ul className="space-y-2">
-              <h1 className="font-bold text-xl mb-3 uppercase max-sm:mt-8">
+            <ul className="space-y-2 text-base cursor-pointer ">
+              <h1 className="font-bold text-xl mb-3 uppercase max-sm:mt-8 ">
                 affiliate companies
               </h1>
-              <li>About us</li>
-              <li>Become a Member</li>
-              <li>Referral Program</li>
-              <li>Contact us</li>
+              <li>Alaasu</li>
+              <li>Alansar Foundation</li>
+              <li>Acce Kano</li>
+              <li>Al-AnsarHospital</li>
+              <li>Al-aama</li>
+              <li>Al-ansarRadio</li>
+              <li>Al-ansarmasjid</li>
             </ul>
           </div>
         </div>

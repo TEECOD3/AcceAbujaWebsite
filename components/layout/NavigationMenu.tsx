@@ -5,14 +5,6 @@ import Image from "next/image";
 import logo from "@/public/AcceLogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigationLinks = [
-  { id: 1, name: " our Agency", href: "/" },
-  { id: 1, name: " our Economy", href: "/" },
-  { id: 1, name: " our demography", href: "/" },
-  { id: 1, name: " our research", href: "/" },
-  { id: 1, name: " our contacts", href: "/" },
-  { id: 1, name: " our ", href: "/" },
-];
 interface MobileNavProps {
   hideModalHandler: (barstate: boolean) => void;
   barstate: boolean;

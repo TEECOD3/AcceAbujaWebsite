@@ -1,9 +1,12 @@
 import React from "react";
 import OurTeamItem from "../ui/OurTeam-Item";
+import getTeams from "@/lib/getTeam";
 
 type Props = {};
 
-const OurTeam = (props: Props) => {
+const OurTeam = async (props: Props) => {
+  // const Teamdata = await getTeams();
+
   return (
     <section className="  bg-[#FFF7F0] flex items-center justify-center flex-col gap-8 lg:gap-y-20  lg:px-0 py-10 lg:py-20">
       <div className="flex flex-wrap items-center justify-center w-full capitalize">
@@ -17,7 +20,7 @@ const OurTeam = (props: Props) => {
         <OurTeamItem />
         <OurTeamItem />
       </div>
-      <div className="w-full lg:w-[80%] mx-auto  grid grid-cols-1 max-md:grid-rows-3 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-6">
+      <div className="w-full lg:w-[80%] mx-auto  grid grid-cols-1 max-md:grid-rows-3 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-4">
         <OurTeamItem />
         <OurTeamItem />
         <OurTeamItem />

@@ -10,6 +10,7 @@ import OurTeam from "@/components/Home/Our-Team";
 import AffiliatedCompanies from "@/components/Home/Affiliates-Companies";
 import LetsGrow from "@/components/Home/LetsGrow";
 import Hero from "@/components/Home/Hero";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -20,9 +21,7 @@ export default function Home() {
       <AboutSchool />
       <LetsGrow />
       <GradeLevels />
-      <InfiniteMovingCards />
       <MissionVision />
-      <Highlights />
       <OurTeam />
       <EnquiresSection />
       <AffiliatedCompanies />

@@ -22,7 +22,7 @@ const Header = () => {
               <AcceLogo className="w-20 h-20 cursor-pointer lg:h-32 lg:w-32" />
             </Link>
           </div>
-          <div className="hidden xl:inline-flex">
+          <div className="hidden xl:inline-flex z-[3000]">
             <NavigationMenuDemo />
           </div>
 
