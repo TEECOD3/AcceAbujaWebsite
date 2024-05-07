@@ -45,16 +45,16 @@ const linkscursory = [
     linkName: "careers",
     link: "/WhyJoinUs",
   },
-  {
-    id: 5,
-    linkName: "weeklyHighlights",
-    link: "/WeeklyHighLights",
-  },
-  {
-    id: 6,
-    linkName: "inspiring stories",
-    link: "/InspiringStories",
-  },
+  // {
+  //   id: 5,
+  //   linkName: "weeklyHighlights",
+  //   link: "/WeeklyHighLights",
+  // },
+  // {
+  //   id: 6,
+  //   linkName: "inspiring stories",
+  //   link: "/InspiringStories",
+  // },
   {
     id: 7,
     linkName: "vacancy",
