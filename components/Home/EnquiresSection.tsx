@@ -11,10 +11,7 @@ const EnquiresSection = (props: Props) => {
           Want to make enquires?
         </h1>
 
-        <p className="text-base text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
-          impedit. Nihil sit eum impedit delectus earum itaque
-        </p>
+        <p className="text-base text-center">reach out for more enquiries</p>
 
         <EnquiresForm />
       </div>

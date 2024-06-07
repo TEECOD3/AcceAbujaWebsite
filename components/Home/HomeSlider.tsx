@@ -58,6 +58,13 @@ const images = [
       "At Al-Ansar, we endeavour to instil in our pupils the fear of Allah (SWT). Our overall code of conduct is guided by developing good moral character and inspiring our pupils to becomegood ambassadors of the society. Our core values are",
     name: "our core values",
   },
+  {
+    id: 1,
+    image: slide_image_5,
+    description:
+      "To provide world-class education and prepare our pupils for success in this life and the next.",
+    name: "our vision",
+  },
 ];
 function HomeSlider() {
   const breakpoints = {

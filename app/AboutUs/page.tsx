@@ -63,14 +63,16 @@ const AboutUs = (props: Props) => {
             and make them upright citizens who fear Allah SWT in all their
             affairs
           </p>
+        </div>
 
-          {/* <ClientButton
-            href="/Vacancy"
-            className="px-0 text-base font-bold uppercase max-w-max"
-            variant={"link"}
-          >
-            <span>Join us.</span> <ArrowRightIcon className="w-4 h-4 ml-2" />
-          </ClientButton> */}
+        <div className="mt-10 space-y-6">
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">
+            Our vision
+          </h2>
+          <p>
+            To provide world-class education and prepare our pupils for success
+            in this life and the next.
+          </p>
         </div>
 
         <div className="mt-10 space-y-6">
@@ -97,9 +99,7 @@ const AboutUs = (props: Props) => {
         </div>
 
         <div className="mt-10 space-y-6">
-          <h2 className="text-xl font-bold uppercase lg:text-2xl">
-            Our Goals
-          </h2>
+          <h2 className="text-xl font-bold uppercase lg:text-2xl">Our Goals</h2>
           <ul>
             <ul className="flex flex-col gap-y-2">
               {testimoonials[2].description.map((des, i) => (

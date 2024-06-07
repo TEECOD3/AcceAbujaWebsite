@@ -24,15 +24,15 @@ const AffiliatedCompanies = (props: Props) => {
           affliated companies
         </h1>
       </div>
-      <div className="flex flex-col-reverse gap-8 lg:gap-y-10  lg:flex-col w-full max-lg:px-5">
-        <div className="w-full lg:w-[80%] mx-auto  flex flex-wrap justify-between gap-y-4 lg:gap-8">
+      <div className="flex flex-col-reverse gap-4 lg:gap-y-10  lg:flex-col w-full max-lg:px-5">
+        <div className="w-full lg:w-[50%] mx-auto  flex flex-wrap justify-between gap-y-4 lg:gap-4">
           {/* <AcceLogo className="h-28 w-28" />
           <AcceLogo className="h-28 w-28" />
           <AcceLogo className="h-28 w-28" />
           <AcceLogo className="h-28 w-28" />
           <AcceLogo className="h-28 w-28" /> */}
-          {companies.slice(0, 5).map((company, idx) => (
-            <div className="relative h-28 w-28" key={idx}>
+          {companies.map((company, idx) => (
+            <div className="relative h-28 w-28 bg-white" key={idx}>
               <Image
                 src={company.image}
                 alt="companylogo"

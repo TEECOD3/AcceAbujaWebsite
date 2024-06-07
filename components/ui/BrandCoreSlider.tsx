@@ -60,6 +60,14 @@ export const testimoonials = [
     name: "our core values",
     position: "Operations Director",
   },
+  {
+    id: 4,
+    description: [
+      "To provide world-class education and prepare our pupils for success in this life and the next.",
+    ],
+    name: "our vision",
+    position: "Operations Director",
+  },
 ];
 
 const BrandcoreSlider = (props: Props) => {
