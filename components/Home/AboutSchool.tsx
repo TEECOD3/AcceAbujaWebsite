@@ -1,9 +1,10 @@
 import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import image from "../../public/cutekids.jpg";
-import image2 from "../../public/cuterkids.jpg";
-import image3 from "../../public/childwithtestingtool.jpg";
+import image from "../../public/LatestImage/diversity.jpg";
+import image2 from "../../public/LatestImage/welcome.jpg";
+import image3 from "../../public/LatestImage/jangilover.jpg";
+import image4 from "../../public/LatestImage/clasactivity.jpg";
 import Link from "next/link";
 import ClientButton from "../ui/ClientButton";
 
@@ -23,7 +24,7 @@ const somedata = [
     text: "Exciting Career at ACCE",
   },
   {
-    image: image,
+    image: image4,
     text: "People-Centric Approach",
   },
 ];

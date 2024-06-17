@@ -1,10 +1,7 @@
 "use client";
 import { testimoonials } from "@/components/ui/BrandCoreSlider";
-import ClientButton from "@/components/ui/ClientButton";
-import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
-import React from "react";
-
+import Aboutimage from "@/public/LatestImage/schoolcompound.jpg";
 type Props = {};
 
 const AboutUs = (props: Props) => {
@@ -12,11 +9,11 @@ const AboutUs = (props: Props) => {
     <section className="">
       <div className="w-full h-[400px] lg:h-[600px] relative">
         <Image
-          src="/image/AboutUsImage.jpg"
+          src={Aboutimage}
           alt="Hands on deck"
           loading="lazy"
           fill
-          className="object-cover object-center w-full h-full transition-all duration-1000 ease-out"
+          className="object-cover object-center w-full h-full transition-all duration-1000 ease-out brightness-75"
         />
 
         <div className="absolute top-0 left-0 z-10 flex items-center justify-center w-full h-full bg-black/20">

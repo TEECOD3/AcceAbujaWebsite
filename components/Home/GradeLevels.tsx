@@ -1,20 +1,9 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import GradeschoolTab from "../ui/GradeschoolTab";
+import image3 from "../../public/LatestImage/SECONDARYSTUDENT.,..jpg";
 import image1 from "../../public/cutekids.jpg";
-import image2 from "../../public/cuterkids.jpg";
-import image3 from "../../public/childwithtestingtool.jpg";
+import image2 from "../../public/LatestImage/primaryschoolstud.jpg";
+import image4 from "../../public/LatestImage/Adudlt.jpg";
+import GradeschoolTab from "../ui/GradeschoolTab";
 
 const tabsdata = [
   {
@@ -54,14 +43,12 @@ const tabsdata = [
       ageGrade: "Adults and Children",
       about:
         "Al-Ansar Tahfeez and Islamic Studies Program is a unique program targeted at imparting deep Islamic and Arabic Language education. It is designated to provide intensive classes for children and adults within and outside the school community",
-      image: image1,
+      image: image4,
     },
   },
 ];
 
-type Props = {};
-
-const GradeLevels = (props: Props) => {
+const GradeLevels = () => {
   return (
     <>
       <div className="w-full flex items-center justify-center py-4 lg:py-6 mt-24  lg:mt-8 relative">

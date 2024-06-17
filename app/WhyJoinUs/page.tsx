@@ -15,18 +15,18 @@ const Page = (props: Props) => {
           loading="lazy"
           fill
           blurDataURL="/image/handstogetherBlur.jpg"
-          className="h-full w-full object-cover object-center transition-all  duration-1000 ease-out"
+          className="h-full w-full object-cover object-center transition-all  duration-1000 ease-out brightness-75"
         />
 
         <div className="absolute top-0 left-0 bg-black/20 z-10 h-full w-full flex items-center justify-center">
-          <p className=" text-3xl font-bold uppercase lg:text-8xl text-white">
+          <p className=" text-3xl font-bold uppercase lg:text-8xl text-white mb-2">
             Careers
           </p>
         </div>
       </div>
 
-      <section className="my-10 mx-auto max-lg:px-5 lg:w-[80%] ">
-        <h1 className=" text-2xl mb-2 lg:text-3xl font-bold uppercase ">
+      <section className="my-16 mx-auto max-lg:px-5 lg:w-[80%] ">
+        <h1 className=" text-2xl lg:text-3xl font-bold uppercase mb-10 ">
           Careers
         </h1>
         <h2 className=" text-xl mb-2 lg:text-2xl font-bold uppercase">

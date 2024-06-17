@@ -1,16 +1,13 @@
 import AboutSchool from "@/components/Home/AboutSchool";
+import AffiliatedCompanies from "@/components/Home/Affiliates-Companies";
+import EnquiresSection from "@/components/Home/EnquiresSection";
 import GradeLevels from "@/components/Home/GradeLevels";
 import HeadSection from "@/components/Home/HeadSection";
-import Highlights from "@/components/Home/Highlights";
-import { InfiniteMovingCards } from "@/components/Home/InspiringSection";
+import Hero from "@/components/Home/Hero";
 import HomeSlider from "@/components/Home/HomeSlider";
-import EnquiresSection from "@/components/Home/EnquiresSection";
+import LetsGrow from "@/components/Home/LetsGrow";
 import MissionVision from "@/components/Home/MissionVision";
 import OurTeam from "@/components/Home/Our-Team";
-import AffiliatedCompanies from "@/components/Home/Affiliates-Companies";
-import LetsGrow from "@/components/Home/LetsGrow";
-import Hero from "@/components/Home/Hero";
-import { Suspense } from "react";
 
 export default function Home() {
   return (

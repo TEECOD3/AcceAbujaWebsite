@@ -109,3 +109,11 @@ html {
   background-color: white;
   color: white;
 }
+
+.styled-scrollbar::-webkit-scrollbar {
+  @apply w-1;
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-white rounded-full;
+}

@@ -15,10 +15,10 @@ import {
 } from "swiper/modules";
 
 import slide_image_1 from "../../public/image/gallery1.jpeg";
-import slide_image_2 from "../../public/image/gallery2.jpeg";
-import slide_image_3 from "../../public/image/gallery3.jpeg";
-import slide_image_5 from "../../public/image/5.jpg";
-import slide_image_4 from "../../public/image/1.jpg";
+import slide_image_2 from "../../public/LatestImage/qurangirl.jpg";
+import slide_image_3 from "../../public/LatestImage/cuteclass.jpg";
+import slide_image_5 from "../../public/LatestImage/primrystudent.jpg";
+import slide_image_4 from "../../public/LatestImage/computerclass.jpg";
 
 import Image from "next/image";
 import { cn } from "@/lib/utils";
