@@ -99,6 +99,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("@tailwindcss/typography"),
     require("tailwindcss-animate"),
     nextui(),
     require("tailwind-scrollbar")({ nocompatible: true }),

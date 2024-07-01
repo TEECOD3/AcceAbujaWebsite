@@ -40,7 +40,7 @@ const AboutSchool = (props: Props) => {
         <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto mb-4">
           {data?.title}
         </h1>
-        <p className="max-md:text-center leading-snug">
+        <p className="max-md:text-center leading-snug prose">
           {data?.summary ? <PortableText value={data?.summary} /> : null}
         </p>
         <ClientButton
