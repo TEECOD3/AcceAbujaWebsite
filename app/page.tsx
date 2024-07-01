@@ -9,8 +9,12 @@ import LetsGrow from "@/components/Home/LetsGrow";
 import { MissionVision } from "@/components/Home/MissionVision";
 
 import OurTeam from "@/components/Home/Our-Team";
+import { getheros } from "@/sanity/Queries/homepage";
 
-export default function Home() {
+export default async function Home() {
+  const data = await getheros();
+  console.log(data);
+
   return (
     <main className="">
       <Hero />

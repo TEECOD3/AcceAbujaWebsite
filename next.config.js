@@ -8,6 +8,10 @@ const nextConfig = {
         hostname: "dashboard.acce-abuja.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
     ],
   },
 };

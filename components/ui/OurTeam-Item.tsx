@@ -2,19 +2,19 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import president from "../../public/president.jpg";
 
-type Props = {
-  data: {
-    id: number;
-    name: string;
-    title: string;
-    iamge: string;
-  };
-};
+// type Props = {
+//   data: {
+//     id: number;
+//     name: string;
+//     title: string;
+//     iamge: string;
+//   };
+// };
 
-const OurTeamItem = (props: Props) => {
-  const {
-    data: { iamge, name, title },
-  } = props;
+const OurTeamItem = () => {
+  // const {
+  //   data: { iamge, name, title },
+  // } = props;
   return (
     <>
       <div className="flex flex-col items-center">
