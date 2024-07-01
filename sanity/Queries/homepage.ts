@@ -47,19 +47,10 @@ const gethero = groq`*[_type == "homepage"][0] {
     title,
     summary,
     imagegrid[] {
-      image {
-        asset->{
-          _id,
-          url,
-          metadata {
-            dimensions {
-              width,
-              height
-            },
-            lqip
-          }
-        },
-        alt
+      image {       
+    "url": asset -> url,
+    "blurdataUrl": asset->metadata.lqip,
+      alt
       },
       shortimagetext
     }
@@ -69,21 +60,21 @@ const gethero = groq`*[_type == "homepage"][0] {
     title,
     sliderdescription,
     sliderimage {
-      asset->{
-        _id,
-        url,
-        metadata {
-          dimensions {
-            width,
-            height
-          },
-          lqip
-        }
-      },
+    "url": asset -> url,
+    "blurdataUrl": asset->metadata.lqip,
       alt
     }
   },
-  founder,
+  founder {
+    foundersectiontitle,
+    subtitle,
+    summarymessage,
+    founderimage {
+      "url": asset -> url,
+      "blurdataUrl": asset-> metadata.lqip,
+      alt
+    }
+  },
   letsgrowtogethersection {
     title,
     description
@@ -113,14 +104,3 @@ const gethero = groq`*[_type == "homepage"][0] {
 export async function getheros() {
   return await client.fetch(gethero, {});
 }
-
-
-
-// # Warning: Do not add secrets (API keys and similar) to this file, as it source controlled!
-// # Use `.env.local` for any secrets, and ensure it is not added to source control
-
-// # Warning: Do not add secrets (API keys and similar) to this file, as it source controlled!
-// # Use `.env.local` for any secrets, and ensure it is not added to source control
-
-// NEXT_PUBLIC_SANITY_PROJECT_ID="krybqexj"
-// NEXT_PUBLIC_SANITY_DATASET="production"

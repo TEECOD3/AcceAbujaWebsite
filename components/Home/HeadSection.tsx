@@ -4,9 +4,13 @@ import image from "../../public/president.jpg";
 import { Button } from "../ui/button";
 import ClientButton from "../ui/ClientButton";
 
-type Props = {};
+type Props = {
+  data: FounderSection;
+};
 
 const HeadSection = (props: Props) => {
+  const { data } = props;
+
   return (
     <section className="bg-gray-300/40 pt-36 -mt-32">
       <div className="px-3 md:w-[90%] py-10 xl:w-[95%] mx-auto flex flex-col-reverse xl:flex-row">

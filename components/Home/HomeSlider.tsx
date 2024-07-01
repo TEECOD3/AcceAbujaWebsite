@@ -66,7 +66,13 @@ const images = [
     name: "our vision",
   },
 ];
-function HomeSlider() {
+
+type THomesliders = {
+  data: HeroSlider[];
+};
+function HomeSlider(props: THomesliders) {
+  const { data } = props;
+
   const breakpoints = {
     480: {
       slidesPerView: 2,
@@ -105,17 +111,24 @@ function HomeSlider() {
         breakpoints={breakpoints}
         className="!mx-0 !px-0 h-[500px] lg:h-[600px] w-full flex items-center justify-center"
       >
-        {images.map((image, idx) => (
+        {data?.map((herodata: HeroSlider, idx) => (
           <SwiperSlide
             className={cn(`rounded-lg flex items-center justify-center   `)}
             key={idx}
           >
             <motion.div className="relative">
               <Image
-                src={image.image}
-                alt="sliderimage"
+                src={herodata?.sliderimage.url}
+                alt={herodata?.sliderimage.alt
+                  ?.toLowerCase()
+                  ?.replace(/ /g, "-")}
                 loading="lazy"
-                placeholder="blur"
+                {...(herodata?.sliderimage.blurdataUrl && {
+                  placeholder: "blur",
+                  blurDataURL: herodata?.sliderimage.blurdataUrl,
+                })}
+                height={700}
+                width={800}
                 className={cn(
                   `h-[400px] lg:h-[500px] w-full object-cover rounded-sm transition-all duration-1000 ease-out`
                 )}
@@ -123,9 +136,11 @@ function HomeSlider() {
               <div className="absolute top-0 left-0 h-full w-full bg-black/40 z-[10] text-white">
                 <div className=" absolute bottom-10 left-8 lg:w-[80%]">
                   <p className="lg:leading-[44px] lg:text-5xl  text-3xl text-white capitalize mb-4 tracking-tight">
-                    {image.name}
+                    {herodata.title}
                   </p>
-                  <p className="text-white  w-11/12">{image.description}</p>
+                  <p className="text-white  w-11/12">
+                    {herodata.sliderdescription}
+                  </p>
                   <Link
                     className="text-sm font-bold flex gap-x-2 items-center mt-3"
                     href={"/AboutUs"}

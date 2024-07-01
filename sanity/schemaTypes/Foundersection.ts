@@ -21,19 +21,19 @@ const foundersection = defineType({
       type: "blockContent",
     }),
     defineField({
-      name: "Founderimage",
+      name: "founderimage",
       type: "image",
       title: "founder - Image",
       options: {
         hotspot: true,
       },
       fields: [
-        {
+        defineField({
           name: "alt",
           type: "string",
           title: "Alternative text",
           description: "Important for SEO and accessibility.",
-        },
+        }),
       ],
     }),
   ],
