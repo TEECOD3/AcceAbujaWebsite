@@ -113,3 +113,14 @@ const gethero = groq`*[_type == "homepage"][0] {
 export async function getheros() {
   return await client.fetch(gethero, {});
 }
+
+
+
+// # Warning: Do not add secrets (API keys and similar) to this file, as it source controlled!
+// # Use `.env.local` for any secrets, and ensure it is not added to source control
+
+// # Warning: Do not add secrets (API keys and similar) to this file, as it source controlled!
+// # Use `.env.local` for any secrets, and ensure it is not added to source control
+
+// NEXT_PUBLIC_SANITY_PROJECT_ID="krybqexj"
+// NEXT_PUBLIC_SANITY_DATASET="production"
