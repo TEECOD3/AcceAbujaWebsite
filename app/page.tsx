@@ -13,10 +13,15 @@ import { getheros } from "@/sanity/Queries/homepage";
 
 export default async function Home() {
   const data: SchoolData = await getheros();
-  const { Headertext, schoolname, herodescription, herosliders, founder } =
-    data;
 
-  console.log(founder.founderimage);
+  const {
+    Headertext,
+    schoolname,
+    herodescription,
+    herosliders,
+    founder,
+    whyjoinourschoolfields,
+  } = data;
 
   return (
     <main className="">
@@ -26,8 +31,8 @@ export default async function Home() {
         herodescription={herodescription}
       />
       <HomeSlider data={herosliders} />
-      <HeadSection />
-      <AboutSchool />
+      <HeadSection data={founder} />
+      <AboutSchool data={whyjoinourschoolfields} />
       <LetsGrow />
       <GradeLevels />
       <MissionVision />

@@ -4,18 +4,25 @@ type herodescription = string;
 type TeamMember = {
   title: string;
   position: string;
-  Tabimage: null; // This could be defined further based on the actual structure of Tabimage
+  Tabimage: null;
 };
 
 type AffiliateCompany = {
   companyname: string;
-  companylogo: any; // Define a type for companylogo based on its actual structure
+  companylogo: any;
 };
 
 type WhyChooseOurSchoolField = {
   title: string;
-  summary: any[]; // Define a type for summary based on its actual structure
-  imagegrid: any[][]; // Define a type for imagegrid based on its actual structure
+  summary: any[];
+  imagegrid: {
+    image: {
+      url: string;
+      alt: string;
+      blurdataUrl: string;
+    };
+    shortimagetext: string;
+  }[];
 };
 
 type GradeLevel = {

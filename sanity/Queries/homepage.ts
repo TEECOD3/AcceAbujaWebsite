@@ -46,7 +46,7 @@ const gethero = groq`*[_type == "homepage"][0] {
  whyjoinourschoolfields {
     title,
     summary,
-    imagegrid[] {
+    imagegrid [] {
       image {       
     "url": asset -> url,
     "blurdataUrl": asset->metadata.lqip,
