@@ -28,8 +28,6 @@ export default async function Home() {
     affiliatecompany,
   } = data;
 
-  console.log(affiliatecompany);
-
   return (
     <main className="">
       <Hero

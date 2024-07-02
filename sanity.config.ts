@@ -12,7 +12,8 @@ import { structureTool } from "sanity/structure";
 import { apiVersion, dataset, projectId } from "./sanity/env";
 import { schema } from "./sanity/schema";
 import { pageStructure, singletonPlugin } from "./sanity/Structure";
-import homepage from "./sanity/schemaTypes/Homepage";
+import homepage from "./sanity/schemaTypes/pages/Homepage";
+import Aboutpage from "./sanity/schemaTypes/pages/Aboutpage";
 
 export default defineConfig({
   basePath: "/studio",
@@ -22,7 +23,7 @@ export default defineConfig({
   schema,
   plugins: [
     structureTool({
-      structure: pageStructure([homepage]),
+      structure: pageStructure([homepage, Aboutpage]),
     }),
     // Vision is a tool that lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
@@ -32,6 +33,7 @@ export default defineConfig({
       "foundersection",
       "whyjoinourschool",
       "schoolbrandcore",
+      "aboutpage",
     ]),
   ],
 });
