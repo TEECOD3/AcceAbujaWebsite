@@ -1,3 +1,4 @@
+import Reveal from "@/components/Animations/Reveal";
 import AboutSchool from "@/components/Home/AboutSchool";
 import AffiliatedCompanies from "@/components/Home/Affiliates-Companies";
 import EnquiresSection from "@/components/Home/EnquiresSection";
@@ -36,14 +37,30 @@ export default async function Home() {
         herodescription={herodescription}
       />
       <HomeSlider data={herosliders} />
-      <HeadSection data={founder} />
-      <AboutSchool data={whyjoinourschoolfields} />
-      <LetsGrow data={letsgrowtogethersection} />
-      <GradeLevels data={gradelevels} />
-      <MissionVision data={SchoolBrandcores} />
-      <OurTeam data={teamofexperts} />
-      <EnquiresSection />
-      <AffiliatedCompanies data={affiliatecompany} />
+      <Reveal>
+        <HeadSection data={founder} />
+      </Reveal>
+      <Reveal>
+        <AboutSchool data={whyjoinourschoolfields} />
+      </Reveal>
+      <Reveal>
+        <LetsGrow data={letsgrowtogethersection} />
+      </Reveal>
+      <Reveal>
+        <GradeLevels data={gradelevels} />
+      </Reveal>
+      <Reveal>
+        <MissionVision data={SchoolBrandcores} />
+      </Reveal>
+      <Reveal>
+        <OurTeam data={teamofexperts} />
+      </Reveal>
+      <Reveal>
+        <EnquiresSection />
+      </Reveal>
+      <Reveal>
+        <AffiliatedCompanies data={affiliatecompany} />
+      </Reveal>
     </main>
   );
 }
