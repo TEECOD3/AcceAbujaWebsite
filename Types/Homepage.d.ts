@@ -1,15 +1,24 @@
 type HeaderText = string;
 type schoolname = string;
 type herodescription = string;
+
 type TeamMember = {
   title: string;
   position: string;
-  Tabimage: null;
+  image: {
+    url: string;
+    alt: string;
+    blurdataUrl: string;
+  };
 };
 
 type AffiliateCompany = {
   companyname: string;
-  companylogo: any;
+  companylogo: {
+    url: string;
+    alt: string;
+    blurdataUrl: string;
+  };
 };
 
 type WhyChooseOurSchoolField = {
@@ -29,10 +38,14 @@ type GradeLevel = {
   Tabtitle: string;
   TabSubtitle: string;
   Tabdescription: string;
-  Tabimage: any; // Define a type for Tabimage based on its actual structure
+  Tabimage: {
+    url: string;
+    alt: string;
+    blurdataUrl: string;
+  };
 };
 
-type BrandCoreContent = any[]; // Define a type for BrandCoreContent based on its actual structure
+type BrandCoreContent = any;
 
 type SchoolBrandCore = {
   title: string;

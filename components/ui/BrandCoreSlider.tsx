@@ -5,8 +5,11 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { PortableText } from "@/sanity/Structure/PortableText";
 
-type Props = {};
+type Props = {
+  data: SchoolBrandCore[];
+};
 
 export const testimoonials = [
   {
@@ -71,6 +74,7 @@ export const testimoonials = [
 ];
 
 const BrandcoreSlider = (props: Props) => {
+  const { data } = props;
   return (
     <>
       <div className="mx-auto mt-4 flex h-full flex-col lg:flex-row xl:my-8 ">
@@ -87,17 +91,12 @@ const BrandcoreSlider = (props: Props) => {
           loop={true}
           className="relative flex w-full items-center justify-start rounded-2xl "
         >
-          {testimoonials.map((testimony) => (
+          {data.map((testimony) => (
             <SwiperSlide
-              key={testimony.id}
+              key={testimony.title}
               className="h-full w-full transition-all delay-75 ease-in-out "
             >
-              <TestimonialCard
-                name={testimony.name}
-                description={testimony.description}
-                key={testimony.id}
-                position={testimony.position}
-              />
+              <TestimonialCard content={testimony} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -109,26 +108,19 @@ const BrandcoreSlider = (props: Props) => {
 export default BrandcoreSlider;
 
 type TestimonialProps = {
-  description: string[];
-  name: string;
-  position: string;
+  content: SchoolBrandCore;
 };
 
 function TestimonialCard(props: TestimonialProps) {
-  const { description, name, position } = props;
+  const { content } = props;
   return (
     <div className="flex flex-col pb-4 px-4 sm:px-6 md:px-8 ">
-      <p className="text-white text-lg lg:text-2xl mt-2 uppercase">{name}</p>
-      <div className="w-full flex items-start flex-col mt-10 gap-y-16">
-        <ul className="flex flex-col gap-y-2">
-          {description.map((des, i) => (
-            <li
-              className="capitalize font-light  text-white text-base lg:text-xl"
-              key={i}
-            >
-              <p>- {des}</p>
-            </li>
-          ))}
+      <p className="text-white text-lg lg:text-2xl mt-2 uppercase">
+        {content.title}
+      </p>
+      <div className="w-full flex items-start flex-col gap-y-16">
+        <ul className="flex flex-col gap-y-2 prose text-white mt-4">
+          {content ? <PortableText value={content.Brandcorecontent} /> : null}
         </ul>
       </div>
     </div>

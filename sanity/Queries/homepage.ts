@@ -5,39 +5,21 @@ const gethero = groq`*[_type == "homepage"][0] {
   schoolname,
   Headertext,
   teamofexperts[] {
-    title,
-   position,
-    Tabimage {
-      asset->{
-        _id,
-        url,
-        metadata {
-          dimensions {
-            width,
-            height
-          },
-          lqip
-        }
-      },
+  title,
+  position,
+ image {
+    "url": asset -> url,
+    "blurdataUrl": asset-> metadata.lqip,
       alt
     }
   },
    affiliatecompany[] {
    companyname,
     companylogo {
-      asset->{
-        _id,
-        url,
-        metadata {
-          dimensions {
-            width,
-            height
-          },
-          lqip
-        }
-      },
+      "url": asset -> url,
+      "blurdataUrl": asset-> metadata.lqip,
       alt
-    }
+      },
   },
   SchoolBrandcores []-> {
     title,
@@ -84,17 +66,8 @@ const gethero = groq`*[_type == "homepage"][0] {
     TabSubtitle,
     Tabdescription,
     Tabimage {
-      asset->{
-        _id,
-        url,
-        metadata {
-          dimensions {
-            width,
-            height
-          },
-          lqip
-        }
-      },
+      "url": asset -> url,
+      "blurdataUrl": asset-> metadata.lqip,
       alt
     }
   }

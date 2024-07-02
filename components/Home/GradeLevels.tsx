@@ -48,7 +48,12 @@ const tabsdata = [
   },
 ];
 
-const GradeLevels = () => {
+type TgradlevelsProps = {
+  data: GradeLevel[];
+};
+
+const GradeLevels = (props: TgradlevelsProps) => {
+  const { data } = props;
   return (
     <>
       <div className="w-full flex items-center justify-center py-4 lg:py-6 mt-24  lg:mt-8 relative">
@@ -58,23 +63,23 @@ const GradeLevels = () => {
       </div>
 
       <Tabs
-        defaultValue={tabsdata[0].tabsvalue.name}
+        defaultValue={data[0].Tabtitle}
         className="max-lg:px-3 lg:w-[80%] mx-auto mt-8 mb-20 "
       >
         <TabsList className="grid lg:w-[80%] mx-auto grid-cols-4 space-x-1 lg:space-x-4 !bg-transparent">
-          {tabsdata.map((tabs) => (
+          {data.map((tabs) => (
             <TabsTrigger
-              key={tabs.id}
-              value={tabs.tabsvalue.name}
+              key={tabs.Tabtitle}
+              value={tabs.Tabtitle}
               className="font-bold text-[9px] lg:text-[14px] uppercase rounded-none text-orange-400 px-2 py-2 lg:py-4 bg-[#F38120]/20  "
             >
-              {tabs.tabsvalue.name}
+              {tabs.Tabtitle}
             </TabsTrigger>
           ))}
         </TabsList>
-        {tabsdata.map((tab) => (
-          <TabsContent value={tab.tabsvalue.name} key={tab.id} className="mt-5">
-            <GradeschoolTab gradetype={tab.tabsvalue} />
+        {data.map((tab) => (
+          <TabsContent value={tab.Tabtitle} key={tab.Tabtitle} className="mt-5">
+            <GradeschoolTab gradetype={tab} />
           </TabsContent>
         ))}
       </Tabs>

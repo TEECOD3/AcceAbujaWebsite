@@ -14,9 +14,12 @@ const companies = [
   { name: "Acholiland Security", image: company13 },
 ];
 
-type Props = {};
+type Props = {
+  data: AffiliateCompany[];
+};
 
 const AffiliatedCompanies = (props: Props) => {
+  const { data } = props;
   return (
     <section className="  bg-[#f7f7f7] flex items-center justify-center flex-col gap-8 lg:gap-y-10  lg:px-0 py-20">
       <div className="flex flex-wrap items-center justify-center w-full capitalize">
@@ -26,33 +29,11 @@ const AffiliatedCompanies = (props: Props) => {
       </div>
       <div className="flex flex-col-reverse gap-4 lg:gap-y-10  lg:flex-col w-full max-lg:px-5">
         <div className="w-full lg:w-[50%] mx-auto  flex flex-wrap justify-between gap-y-4 lg:gap-4">
-          {/* <AcceLogo className="h-28 w-28" />
-          <AcceLogo className="h-28 w-28" />
-          <AcceLogo className="h-28 w-28" />
-          <AcceLogo className="h-28 w-28" />
-          <AcceLogo className="h-28 w-28" /> */}
-          {companies.map((company, idx) => (
+          {data.map((company, idx) => (
             <div className="relative h-28 w-28 bg-white" key={idx}>
               <Image
-                src={company.image}
-                alt="companylogo"
-                className="h-full w-full object-cover"
-                fill
-                loading="eager"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="w-full lg:w-[80%] mx-auto flex flex-wrap justify-between  lg:gap-8 place-items-center gap-y-4">
-          {/* <AcceLogo className="h-28 w-28" />
-          <AcceLogo className="h-28 w-28" />
-          <AcceLogo className="h-28 w-28" />
-          <AcceLogo className="h-28 w-28" /> */}
-          {companies.slice(6, 13).map((company, idx) => (
-            <div className="relative h-28 w-28" key={idx}>
-              <Image
-                src={company.image}
-                alt="companylogo"
+                src={company.companylogo.url}
+                alt={company.companylogo.alt}
                 className="h-full w-full object-cover"
                 fill
                 loading="eager"

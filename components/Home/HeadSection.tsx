@@ -24,7 +24,7 @@ const HeadSection = (props: Props) => {
             <p className="font-bold max-md:text-center text-3xl leading-[38.4px] tracking-tight capitalize ">
               {data?.subtitle}
             </p>
-            <p className="max-md:text-center text-base lg:text-xl">
+            <p className="max-md:text-center text-base lg:text-xl prose">
               {data?.summarymessage ? (
                 <PortableText value={data?.summarymessage} />
               ) : null}

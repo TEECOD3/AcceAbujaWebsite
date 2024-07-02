@@ -21,7 +21,14 @@ export default async function Home() {
     herosliders,
     founder,
     whyjoinourschoolfields,
+    letsgrowtogethersection,
+    gradelevels,
+    SchoolBrandcores,
+    teamofexperts,
+    affiliatecompany,
   } = data;
+
+  console.log(affiliatecompany);
 
   return (
     <main className="">
@@ -33,12 +40,12 @@ export default async function Home() {
       <HomeSlider data={herosliders} />
       <HeadSection data={founder} />
       <AboutSchool data={whyjoinourschoolfields} />
-      <LetsGrow />
-      <GradeLevels />
-      <MissionVision />
-      <OurTeam />
+      <LetsGrow data={letsgrowtogethersection} />
+      <GradeLevels data={gradelevels} />
+      <MissionVision data={SchoolBrandcores} />
+      <OurTeam data={teamofexperts} />
       <EnquiresSection />
-      <AffiliatedCompanies />
+      <AffiliatedCompanies data={affiliatecompany} />
     </main>
   );
 }
