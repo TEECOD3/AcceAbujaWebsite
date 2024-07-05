@@ -12,12 +12,12 @@ const LetsGrow = (props: Props) => {
   const { data } = props;
   return (
     <div className="py-32 bg-[#FEF4EA] relative">
-      <Image
+      {/* <Image
         src={logo}
         alt="watermark logo"
         fill
         className="h-full w-full bg-fixed object-cover"
-      />
+      /> */}
       <div className="max-lg:px-5 lg:w-[80%] mx-auto ">
         <div className="w-full lg:w-1/2 flex-col gap-y-8 flex">
           <h3 className="text-3xl lg:text-4xl  capitalize font-bold text-texts">
