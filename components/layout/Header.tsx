@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between px-4 mx-auto max-lg:px-4 xl:w-4/5">
           <div className="">
             <Link href={"/"} className="">
-              <AcceLogo className="w-20 h-20 cursor-pointer lg:h-32 lg:w-32" />
+              <AcceLogo className="w-20 h-20 cursor-pointer lg:h-28 lg:w-28" />
             </Link>
           </div>
           <div className="hidden xl:inline-flex z-[3000]">
