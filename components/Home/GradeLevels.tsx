@@ -71,7 +71,7 @@ const GradeLevels = (props: TgradlevelsProps) => {
             <TabsTrigger
               key={tabs.Tabtitle}
               value={tabs.Tabtitle}
-              className="font-bold text-[9px] lg:text-[14px] uppercase rounded-none text-orange-400 px-2 py-2 lg:py-4 bg-[#F38120]/20  "
+              className="font-bold text-[9px] lg:text-[14px] uppercase break-words rounded-none text-orange-400 px-2 py-2 lg:py-4 bg-[#F38120]/20  "
             >
               {tabs.Tabtitle}
             </TabsTrigger>
