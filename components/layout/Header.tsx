@@ -1,12 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import { NavigationMenuDemo } from "./menu";
-import AcceLogo from "../icons/AcceIcons";
-import { MobileNavigation } from "../ui/MobileNavigation";
-import Link from "next/link";
-import { AnimatePresence } from "framer-motion";
 import Navigation from "@/components/layout/NavigationMenu";
+import { AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { useState } from "react";
+import AcceLogo from "../icons/AcceIcons";
 import Hamburger from "./Hamburger";
+import { NavigationMenuDemo } from "./menu";
 
 const Header = () => {
   const [bar, setbar] = useState<boolean>(false);
