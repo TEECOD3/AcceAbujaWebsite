@@ -7,8 +7,8 @@ const nextConfig = {
         has: [
           {
             type: "header",
-            key: "x-forwarded-proto",
-            value: "htttp",
+            key: "host",
+            value: "www.acce-abuja.com",
           },
         ],
         destination: "https://acce-abuja.com/:path",
