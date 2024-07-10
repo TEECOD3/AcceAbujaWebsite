@@ -11,7 +11,7 @@ const nextConfig = {
             value: "http",
           },
         ],
-        destination: "https://acce-abuja.com/:path",
+        destination: "https://acce-abuja.com/:path*",
         permanent: true,
       },
     ];
