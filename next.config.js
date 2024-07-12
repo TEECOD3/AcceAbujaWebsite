@@ -8,7 +8,7 @@ const nextConfig = {
           {
             type: "header",
             key: "host",
-            value: "acce-abuja.com",
+            value: "https://acce-abuja.com/",
           },
         ],
         destination: "https://www.acce-abuja.com/:path*",

@@ -28,14 +28,15 @@ const AffiliatedCompanies = (props: Props) => {
         </h1>
       </div>
       <div className="flex flex-col-reverse gap-4 lg:gap-y-10  lg:flex-col w-full max-lg:px-5">
-        <div className="w-full lg:w-[50%] mx-auto  flex flex-wrap justify-between gap-y-4 lg:gap-4">
+        <div className="w-full lg:w-[30%] mx-auto  flex flex-wrap justify-between gap-y-4 lg:gap-4">
           {data.map((company, idx) => (
-            <div className="relative h-28 w-28 bg-white" key={idx}>
+            <div className=" bg-white" key={idx}>
               <Image
                 src={company.companylogo.url}
                 alt={company.companylogo.alt}
-                className="h-full w-full object-cover"
-                fill
+                className="h-full w-full object-cover "
+                height={70}
+                width={70}
                 loading="eager"
               />
             </div>

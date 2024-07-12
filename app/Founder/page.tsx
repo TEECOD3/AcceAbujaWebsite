@@ -9,7 +9,7 @@ type Props = {};
 const Founderpage = (props: Props) => {
   return (
     <>
-      <section className="relative w-full h-[600px] flex bg-white">
+      <section className="relative w-full h-[720px] lg:h-[800px] flex bg-white">
         <div className="absolute z-4 h-full w-full">
           <Image
             src={logo}
@@ -45,7 +45,7 @@ const Founderpage = (props: Props) => {
         </div>
       </section>
 
-      <section className="my-10 w-[80%] mx-auto flex  flex-col gap-y-8 max-sm:w-[90%]  text-base">
+      <section className="mb-10 w-[80%] mx-auto flex  flex-col gap-y-8 max-sm:w-[90%]  text-base">
         <div className=" space-y-2">
           <p className="text-xl lg:text-2xl font-bold text-orange-400 capitalize ">
             welcome message from the founder

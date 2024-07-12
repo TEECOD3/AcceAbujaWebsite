@@ -10,7 +10,7 @@ const AboutUs = async () => {
 
   return (
     <section className="">
-      <div className="w-full h-[400px] lg:h-[600px] relative">
+      <div className="w-full  h-[720px] lg:h-[800px] relative">
         <Image
           src={Aboutherosection?.image.url}
           alt={Aboutherosection?.image.alt}

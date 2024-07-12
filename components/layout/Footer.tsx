@@ -63,7 +63,7 @@ const linkscursory = [
 ];
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-[#f38120] to-90% font-medium">
+    <footer className="bg-[#f38120] to-90% font-medium mt-auto">
       <div className="max-lg:px-4 md:w-[80%] mx-auto  ">
         <div className="flex flex-col lg:flex-row justify-between py-10 ">
           <div className=" w-full lg:w-[40%]">

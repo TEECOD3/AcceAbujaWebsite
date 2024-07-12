@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -13,7 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 
 const careers: { title: string; href: string; description: string }[] = [
   {
@@ -64,8 +63,14 @@ export function NavigationMenuDemo() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
+        <Link
+          href={"/"}
+          className="text-white text-sm uppercase font-semibold cursor-pointer mr-6"
+        >
+          Home
+        </Link>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>home</NavigationMenuTrigger>
+          <NavigationMenuTrigger>About us</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -84,18 +89,20 @@ export function NavigationMenuDemo() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/AboutUs" title="Our Mission">
-                We commit ourselves to stimulating the intellectual, spiritual,
-                moral, emotional and physical development of our pupils to bring
-                the best out ....
+              <ListItem href="/Founder" title="Founder welcome">
+                I am tremendously proud to lead a dedicated and hardworking
+                team. Our priority is our pupils and our society. My team and I
+                will strive to provide the highest possible standard of
+                education at all times for ...
               </ListItem>
-              <ListItem href="/AboutUs" title="Our Goals">
-                Each student is a unique and valued individual whose self-esteem
-                is enhanced by mutual respect between students and staff...
+              <ListItem href="/Principal-welcome" title="Principal welcome">
+                I am tremendously proud to lead a dedicated and hardworking
+                team. Our priority is our pupils and our society. My team and I
+                will strive to provide the highest possible standard of
+                education at all times for...
               </ListItem>
-              <ListItem href="/AboutUs" title="Our Beliefs">
-                To equip students with the skills necessary to be successful in
-                the global community...
+              <ListItem href="/executive-team" title="Executive Team">
+                meet our wonderful team....
               </ListItem>
             </ul>
           </NavigationMenuContent>

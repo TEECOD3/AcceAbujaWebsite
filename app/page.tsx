@@ -52,9 +52,9 @@ export default async function Home() {
       <Reveal>
         <MissionVision data={SchoolBrandcores} />
       </Reveal>
-      <Reveal>
+      {/* <Reveal>
         <OurTeam data={teamofexperts} />
-      </Reveal>
+      </Reveal> */}
       <Reveal>
         <EnquiresSection />
       </Reveal>

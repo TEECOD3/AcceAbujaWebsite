@@ -105,7 +105,7 @@ export function MobileNavigation() {
         </div>
       </SheetTrigger>
       <SheetContent className="w-full">
-        <Accordion type="single" collapsible className="w-full mt-10">
+        <Accordion type="single" collapsible className="w-full mt-10 t">
           {accordiondata.map((data) => (
             <AccordionItem value={data.item} key={data.id}>
               <AccordionTrigger className="uppercase w-1/2">

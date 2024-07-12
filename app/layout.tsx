@@ -25,7 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} font-[400] text-base lg:text-xl`}>
+      <body
+        className={`${raleway.className} font-[400] text-base lg:text-xl flex flex-col min-h-screen`}
+      >
         <Provider>
           <Header />
           {children}

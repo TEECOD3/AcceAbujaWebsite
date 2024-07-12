@@ -52,7 +52,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
             <Image
               src={logo}
               alt="BSBS logo"
-              className={` h-20 -ml-5   cursor-pointer`}
+              className={` h-20 -ml-5 cursor-pointer`}
               height={200}
               width={150}
               priority
@@ -123,6 +123,20 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 Portal
               </motion.li>
             </Link>
+            <Link href="/Principal-welcome" className="w-full" target="_blank">
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="max-lg:px-5"
+                transition={{ delay: 1.3 }}
+                exit={{ opacity: 0, transition: { delay: 0.7 } }}
+                onClick={() => {
+                  hideModalHandler(!barstate);
+                }}
+              >
+                our principal
+              </motion.li>
+            </Link>
             <Link href="/Founder" className="w-full">
               <motion.li
                 initial={{ opacity: 0 }}
@@ -135,6 +149,20 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 }}
               >
                 Our Founder
+              </motion.li>
+            </Link>
+            <Link href="/executive-team" className="w-full" target="_blank">
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="max-lg:px-5"
+                transition={{ delay: 1.3 }}
+                exit={{ opacity: 0, transition: { delay: 0.7 } }}
+                onClick={() => {
+                  hideModalHandler(!barstate);
+                }}
+              >
+                Portal
               </motion.li>
             </Link>
             <Link href="/WhyJoinUs" className="w-full">
@@ -187,208 +215,3 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
 };
 
 export default Mobilenav;
-
-{
-  /* <div className="container max-w-7xl mx-auto w-full mt-10 lg:mt-20">
-  <div className="h-[80vh] w-full mt-20 xl:mt-16 flex items-center justify-center">
-    <div className="w-full h-[90%]  border-[2px] relative border-white flex flex-col lg:flex-row divide-x-[2px] divide-white">
-      <div className="w-full h-full relative">
-        <div className="rounded-full size-[150px] bg-white text-green absolute top-10 right-10 text-sm flex items-center justify-center uppercase font-medium">
-          contact
-        </div>
-        <div className="absolute bottom-10 left-[20%]">
-          <ul className="flex flex-col gap-y-2 text-left text-sm lg:text-xl capitalize tracking-tight font-[500]">
-            <li>instagram</li>
-            <li> twitter</li>
-            <li> facebook </li>
-            <li> linkdin </li>
-          </ul>
-        </div>
-      </div>
-      <div className="w-full h-full relative">
-        <div className="absolute left-[20%] bottom-10">
-          <ul className="flex flex-col gap-y-2 text-left text-xl lg:text-4xl capitalize tracking-tight font-[500]">
-            <li>Home</li>
-            <li>Work</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>; */
-}
-
-{
-  /* <ul className=" w-full flex flex-col items-center gap-y-8 tracking-wider lg:px-5  py-4 capitalize font-[500]  text-2xl lg:text-[40px] leading-[30px] mt-36 lg:mt-40 ">
-  <Link href="/" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="max-lg:px-5"
-      transition={{ delay: 1.2 }}
-      exit={{ opacity: 0, transition: { delay: 0.6 } }}
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      Home
-    </motion.li>
- 
-  </Link>
-  <Link href="/" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="max-lg:px-5"
-      transition={{ delay: 1.3 }}
-      exit={{ opacity: 0, transition: { delay: 0.7 } }}
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      About
-    </motion.li>
-  
-  </Link>
-  <Link href="/" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.4 }}
-      exit={{ opacity: 0, transition: { delay: 0.6 } }}
-      className="max-lg:px-5"
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      work
-    </motion.li>
-
-  </Link>
-  <Link href="/" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.5 }}
-      exit={{ opacity: 0, transition: { delay: 0.5 } }}
-      className="max-lg:px-5"
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      contact
-    </motion.li>
-    
-  </Link>
-</ul>; */
-}
-
-/* <ul className=" w-full flex flex-col items-center gap-y-8 tracking-wider lg:px-5  py-4 capitalize font-[500]  text-2xl lg:text-[40px] leading-[30px] mt-36 lg:mt-40 ">
-  <Link href="/" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="max-lg:px-5"
-      transition={{ delay: 1.2 }}
-      exit={{ opacity: 0, transition: { delay: 0.6 } }}
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      Our Home
-    </motion.li>
-   
-  </Link>
-  <Link href="/OurAgency" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="max-lg:px-5"
-      transition={{ delay: 1.3 }}
-      exit={{ opacity: 0, transition: { delay: 0.7 } }}
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      our Agency
-    </motion.li>
-   
-  </Link>
-  <Link href="/OurEconomy" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.4 }}
-      exit={{ opacity: 0, transition: { delay: 0.6 } }}
-      className="max-lg:px-5"
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      our economy
-    </motion.li>
-
-  </Link>
-  <Link href="/OurDemography" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.5 }}
-      exit={{ opacity: 0, transition: { delay: 0.5 } }}
-      className="max-lg:px-5"
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      our demography
-    </motion.li>
-   
-  </Link>
-  <Link href="/OurResearch" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.6 }}
-      exit={{ opacity: 0, transition: { delay: 0.4 } }}
-      className="max-lg:px-5"
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      our research
-    </motion.li>
-  
-  </Link>
-  <Link href="/OurContacts" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.7 }}
-      exit={{ opacity: 0, transition: { delay: 0.3 } }}
-      className="max-lg:px-5"
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      our contacts
-    </motion.li>
-    
-  </Link>
-  <Link href="/OurPolicies" className="w-full">
-    <motion.li
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.8 }}
-      exit={{ opacity: 0, transition: { delay: 0.2 } }}
-      className="max-lg:px-5"
-      onClick={() => {
-        hideModalHandler(!barstate);
-      }}
-    >
-      our policies
-    </motion.li>
-   
-  </Link>
-</ul> */
