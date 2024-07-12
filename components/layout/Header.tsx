@@ -14,7 +14,7 @@ const Header = () => {
       <AnimatePresence>
         {bar && <Navigation hideModalHandler={setbar} barstate={bar} />}
       </AnimatePresence>
-      <header className="w-full bg-[#fac61b]  lg:bg-gradient-to-r from-[#fac61b] fixed z-[5000000000000000000000]  from-10% via-[#f39f20] via-30% to-[#f38120] to-90% ">
+      <header className="w-full bg-[#fac61b]  lg:bg-gradient-to-r from-[#fac61b]  from-10% via-[#f39f20] via-30% to-[#f38120] to-90% ">
         <div className="flex items-center justify-between px-4 mx-auto max-lg:px-4 xl:w-4/5">
           <div className="">
             <Link href={"/"} className="">
