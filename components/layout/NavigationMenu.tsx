@@ -123,7 +123,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 Portal
               </motion.li>
             </Link>
-            <Link href="/Principal-welcome" className="w-full" target="_blank">
+            <Link href="/Principal-welcome" className="w-full">
               <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
