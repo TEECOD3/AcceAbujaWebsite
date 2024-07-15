@@ -9,7 +9,7 @@ type Props = {};
 const Founderpage = (props: Props) => {
   return (
     <>
-      <section className="relative w-full  h-96 lg:h-[700px] flex bg-white">
+      <section className="relative w-full  h-[600px] lg:h-[700px] flex bg-white">
         <div className="absolute z-4 h-full w-full">
           <Image
             src={logo}
