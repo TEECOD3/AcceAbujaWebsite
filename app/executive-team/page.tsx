@@ -20,7 +20,7 @@ const page = async () => {
         </div>
       </div>
 
-      <section className="py-20 max-w-5xl mx-auto space-y-16 ">
+      <section className="pb-20 max-w-5xl mx-auto space-y-16 container ">
         <div className="grid grid-cols-1 lg:grid-cols-[10rem_1fr] gap-x-9 mt-10 place-content-center max-lg:text-center gap-y-4">
           <div className="relative h-[150px] w-[150px] rounded-full overflow-hidden max-lg:mx-auto">
             <Image

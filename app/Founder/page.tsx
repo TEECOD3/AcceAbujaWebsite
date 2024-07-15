@@ -14,13 +14,15 @@ const Founderpage = (props: Props) => {
           <Image
             src={logo}
             alt="watermark logo"
-            fill
+            height={400}
+            width={350}
             className="h-full w-full bg-fixed object-cover"
+            priority
           />
         </div>
-        <div className="lg:max-w-[80%] md:w-[80%] mx-auto relative flex gap-x-4  lg:flex-row justify-between items-center h-full">
+        <div className="lg:max-w-[80%] sm:w-[100%] xl:w-[60%] mx-auto relative flex gap-x-4  lg:flex-row justify-between items-center h-full">
           <div className=" sm:w-[40%] lg-w-1/2 max-md:hidden lg:block text-white max-sm:px-10 ">
-            <div className=" bg-orange-500 h-[150px] w-[300px]  lg:w-[500px] outline outline-4 outline-offset-8 outline-orange-500">
+            <div className=" bg-orange-500 h-[150px] w-[300px]  xl:w-[500px] outline outline-4 outline-offset-8 outline-orange-500">
               <div className="text-center uppercase flex flex-col items-center justify-center h-full w-full">
                 <div className="lg:w-3/4 space-y-4">
                   <h1 className="text-base lg:text-xl">Founder</h1>
@@ -31,13 +33,14 @@ const Founderpage = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="relative h-[600px] w-full lg:w-[600px] ">
+          <div className="relative flex items-center justify-center w-full">
             <Image
               src={founderImage}
               alt="acce founder image"
               className="object-cover object-top h-[600px] w-full brightness-90"
               height={600}
-              width={1200}
+              width={700}
+              priority
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAdEAABBAIDAAAAAAAAAAAAAAABAAMEBQIGESJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADETH/2gAMAwEAAhEDEQA/AJVtjdazqlBXTHQHo+HYA+8IiK1FXOQriQ5Gz//Z"
             />
