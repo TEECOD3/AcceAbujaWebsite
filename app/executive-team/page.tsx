@@ -5,7 +5,7 @@ import teamimage from "@/public/president.jpg";
 const page = async () => {
   return (
     <section className="">
-      <div className="w-full h-[400px] lg:h-[700px] relative py-28">
+      <div className="w-full h-96 lg:h-[700px] relative py-28">
         <Image
           src={Aboutimage}
           alt="team hero image"
