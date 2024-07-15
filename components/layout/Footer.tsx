@@ -87,7 +87,7 @@ const Footer = (props: Props) => {
                 </Link>
               ))}
             </ul>
-            <ul className="space-y-6 text-base">
+            <ul className="space-y-6 text-sm">
               <h1 className="font-bold text-xl lg:text-xl mb-3 uppercase">
                 Regulations
               </h1>
@@ -103,8 +103,8 @@ const Footer = (props: Props) => {
                 </Link>
               ))}
             </ul>
-            <ul className="space-y-2 text-base cursor-pointer ">
-              <h1 className="font-bold text-xl mb-3 uppercase max-sm:mt-8 ">
+            <ul className="space-y-2 text-sm cursor-pointer ">
+              <h1 className="font-bold text-base lg:text-xl mb-3 uppercase max-sm:mt-8 ">
                 affiliate companies
               </h1>
               <li>Alaasu</li>
