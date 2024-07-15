@@ -75,7 +75,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
             />
           </motion.p>
         </div>
-        <div className="flex justify-center w-full max-lg:px-5  max-w-7xl mx-auto mt-20">
+        <div className="flex justify-center w-full max-lg:px-5  max-w-7xl mx-auto mt-8 lg:mt-20">
           <ul className="flex flex-col justify-start text-center items-center gap-y-8 tracking-tight underline underline-offset-8  py-4 capitalize font-[500] text-3xl  lg:text-4xl leading-[30px] mt-32 lg:mt-40 text-orange-500">
             <Link href="/" className="w-full">
               <motion.li
