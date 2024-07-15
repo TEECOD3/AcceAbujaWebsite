@@ -48,7 +48,7 @@ const Founderpage = (props: Props) => {
         </div>
       </section>
 
-      <section className="mb-10 w-[80%] mx-auto flex  flex-col gap-y-8 max-sm:w-[90%]  text-base">
+      <section className="mb-10 mt-10 w-[80%] mx-auto flex  flex-col gap-y-8 max-sm:w-[90%]  text-base">
         <div className=" space-y-2">
           <p className="text-xl lg:text-2xl font-bold text-orange-400 capitalize ">
             welcome message from the founder
