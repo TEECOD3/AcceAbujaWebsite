@@ -20,8 +20,8 @@ const Founderpage = (props: Props) => {
             priority
           />
         </div>
-        <div className="lg:max-w-[80%] sm:w-[100%] xl:w-[60%] mx-auto relative flex gap-x-4  lg:flex-row justify-between items-center h-full">
-          <div className=" sm:w-[40%] lg-w-1/2 max-md:hidden lg:block text-white max-sm:px-10 ">
+        <div className="lg:max-w-[80%] sm:w-[100%] xl:w-[68%] mx-auto relative flex gap-x-4  lg:flex-row justify-between items-center h-full">
+          <div className=" sm:w-[40%] lg:w-1/2 max-md:hidden lg:block text-white max-sm:px-10 ">
             <div className=" bg-orange-500 h-[150px] w-[300px]  xl:w-[500px] outline outline-4 outline-offset-8 outline-orange-500">
               <div className="text-center uppercase flex flex-col items-center justify-center h-full w-full">
                 <div className="lg:w-3/4 space-y-4">
