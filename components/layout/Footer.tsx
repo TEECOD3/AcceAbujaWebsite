@@ -118,7 +118,7 @@ const Footer = (props: Props) => {
           </div>
         </div>
 
-        <div className="w-full border-t border-t-white py-4 lg:py-10 flex justify-between flex-col lg:flex-row text-white">
+        <div className="w-full border-t text-[14px] border-t-white py-4 lg:py-10 flex justify-between flex-col lg:flex-row text-white">
           <p>All right reserved 2024</p>
         </div>
       </div>
