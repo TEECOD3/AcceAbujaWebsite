@@ -65,7 +65,7 @@ export function NavigationMenuDemo() {
       <NavigationMenuList>
         <Link
           href={"/"}
-          className="text-white text-sm uppercase font-semibold cursor-pointer mr-6"
+          className="text-white text-sm uppercase font-medium cursor-pointer mr-4"
         >
           Home
         </Link>
