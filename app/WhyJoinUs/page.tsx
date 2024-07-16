@@ -7,7 +7,7 @@ type Props = {};
 const Page = (props: Props) => {
   return (
     <section className="">
-      <div className="w-full h-[400px] lg:h-[700px] relative">
+      <div className="w-full h-96 lg:h-[700px] relative">
         <Image
           src="/image/7.jpg"
           alt="Hands on deck"
