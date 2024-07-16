@@ -21,14 +21,14 @@ type Props = {
 const AffiliatedCompanies = (props: Props) => {
   const { data } = props;
   return (
-    <section className="  bg-[#f7f7f7] flex items-center justify-center flex-col gap-8 lg:gap-y-10  lg:px-0 py-20">
+    <section className="  bg-[#f7f7f7] flex items-center justify-center flex-col container mx-auto gap-8 lg:gap-y-10  lg:px-0 py-20">
       <div className="flex flex-wrap items-center justify-center w-full capitalize">
         <h1 className=" text-2xl lg:text-4xl font-bold text-texts">
           affliated companies
         </h1>
       </div>
       <div className="">
-        <div className="w-full lg:w-[30%] mx-auto  place-content-center grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="w-full lg:w-[30%] mx-auto  place-content-center grid grid-cols-3 gap-4">
           {data.map((company, idx) => (
             <Image
               src={company.companylogo.url}
