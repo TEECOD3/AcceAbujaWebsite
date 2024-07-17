@@ -70,8 +70,8 @@ const Footer = (props: Props) => {
             <AcceLogo className="h-20 w-20 lg:h-28 lg:w-28" />
           </div>
 
-          <div className="flex text-white mt-8 flex-1 justify-between flex-wrap">
-            <ul className="space-y-6">
+          <div className="flex text-white mt-8 flex-1 justify-between flex-wrap ">
+            <ul className="space-y-6 text-sm">
               <h1 className="font-bold text-base lg:text-xl mb-3 uppercase">
                 Navigations
               </h1>
