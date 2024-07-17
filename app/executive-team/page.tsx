@@ -80,7 +80,9 @@ const page = async () => {
             <h4 className="font-semibold uppercase text-base">
               David Temitope
             </h4>
-            <h4 className="font-semibold   capitalize">head principal</h4>
+            <h4 className="font-semibold text-sm  capitalize">
+              head principal
+            </h4>
             <p className=" text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               vitae tempora, perspiciatis voluptate est sed aperiam consequatur
@@ -123,7 +125,9 @@ const page = async () => {
             <h4 className="font-semibold uppercase text-base">
               David Temitope
             </h4>
-            <h4 className="font-semibold   capitalize">head principal</h4>
+            <h4 className="font-semibold text-sm  capitalize">
+              head principal
+            </h4>
             <p className="text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               vitae tempora, perspiciatis voluptate est sed aperiam consequatur
@@ -166,7 +170,9 @@ const page = async () => {
             <h4 className="font-semibold uppercase text-base">
               David Temitope
             </h4>
-            <h4 className="font-semibold   capitalize">head principal</h4>
+            <h4 className="font-semibold text-sm  capitalize">
+              head principal
+            </h4>
             <p className="text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               vitae tempora, perspiciatis voluptate est sed aperiam consequatur
