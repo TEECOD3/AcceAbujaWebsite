@@ -79,7 +79,7 @@ const Footer = (props: Props) => {
                 <Link
                   href={link.link}
                   key={link.id}
-                  className="text-base font-semibold"
+                  className="text-sm font-semibold"
                 >
                   <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
                     {link.linkName}
