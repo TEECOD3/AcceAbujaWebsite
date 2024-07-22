@@ -19,6 +19,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        bodo: ["var(--font-bodo)"],
+      },
       fontSize: {
         base: ["18px", "22px"],
         xl: ["20px", "24px"],
