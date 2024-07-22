@@ -137,7 +137,9 @@ const Founderpage = (props: Props) => {
 
         <div className="font-bold space-y-2">
           <em>Here&apos;s a wonderful year!</em>
-          <p>Dr. M. K. Dikwa, mni</p>
+          <p className="font-bold  text-2xl text-orange-500 font-bodo ">
+            Dr. M. K. Dikwa, mni
+          </p>
         </div>
       </section>
     </>
