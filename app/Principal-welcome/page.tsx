@@ -30,8 +30,8 @@ const Founderpage = (props: Props) => {
           </div>
           <div className="relative h-[600px] w-full lg:w-[600px] ">
             <Image
-              src="/HOS4.jpg"
-              alt="acce founder image"
+              src="/HOS4.JPG"
+              alt="acce head of school image"
               className="object-cover object-top h-[600px] w-full brightness-90"
               height={600}
               width={1200}

@@ -36,24 +36,24 @@ const Executiveteamdata = [
     name: "Mohammed Al-Rachid ",
     position: "head of school",
     description: "/md-files/head-of-sch-desc.md",
-    image: "/HOS4.jpg",
+    image: "/HOS4.JPG",
   },
   {
     name: "Mohammed Al-Rachid ",
     position: "head of school",
     description: "/md-files/head-of-sch-desc.md",
-    image: "/HOS4.jpg",
+    image: "/HOS4.JPG",
   },
   {
     name: "Mohammed Al-Rachid ",
     position: "head of school",
     description: "/md-files/head-of-sch-desc.md",
-    image: "/HOS4.jpg",
+    image: "/HOS4.JPG",
   },
   {
     name: "Mohammed Al-Rachid ",
     position: "head of school",
     description: "/md-files/head-of-sch-desc.md",
-    image: "/HOS4.jpg",
+    image: "/HOS4.JPG",
   },
 ];
