@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import founderImage from "../../public/founderimage.jpg";
+import founderImage from "../../public/foundermain.jpg";
 import logo from "../../public/image2.png";
 import ClientButton from "@/components/ui/ClientButton";
 
