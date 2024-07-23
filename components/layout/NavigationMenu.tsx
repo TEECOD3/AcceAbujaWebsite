@@ -137,7 +137,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 Our Founder
               </motion.li>
             </Link>
-            <Link href="/executive-team" className="w-full">
+            <Link href="/executive-team" className="w-full max-sm:text-base">
               <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
