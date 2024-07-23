@@ -1,8 +1,5 @@
 import Image from "next/image";
-import React from "react";
-import founderImage from "../../public/teacherimage.png";
 import logo from "../../public/image2.png";
-import ClientButton from "@/components/ui/ClientButton";
 
 type Props = {};
 
@@ -33,7 +30,7 @@ const Founderpage = (props: Props) => {
           </div>
           <div className="relative h-[600px] w-full lg:w-[600px] ">
             <Image
-              src="/HOS.jpg"
+              src="/HOS4.jpg"
               alt="acce founder image"
               className="object-cover object-top h-[600px] w-full brightness-90"
               height={600}

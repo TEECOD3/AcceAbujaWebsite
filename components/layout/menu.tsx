@@ -89,19 +89,19 @@ export function NavigationMenuDemo() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/Founder" title="Founder welcome">
+              <ListItem href="/Founder" title="Our founder">
                 I am tremendously proud to lead a dedicated and hardworking
                 team. Our priority is our pupils and our society. My team and I
                 will strive to provide the highest possible standard of
                 education at all times for ...
               </ListItem>
-              <ListItem href="/Principal-welcome" title="Principal welcome">
+              <ListItem href="/Principal-welcome" title="Head of school">
                 I am tremendously proud to lead a dedicated and hardworking
                 team. Our priority is our pupils and our society. My team and I
                 will strive to provide the highest possible standard of
                 education at all times for...
               </ListItem>
-              <ListItem href="/executive-team" title="Executive Team">
+              <ListItem href="/executive-team" title="Senior management team">
                 meet our wonderful team....
               </ListItem>
             </ul>
