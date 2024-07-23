@@ -1,9 +1,6 @@
-import Image from "next/image";
-import React from "react";
-import image from "../../public/president.jpg";
-import { Button } from "../ui/button";
-import ClientButton from "../ui/ClientButton";
 import { PortableText } from "@/sanity/Structure/PortableText";
+import Image from "next/image";
+import ClientButton from "../ui/ClientButton";
 
 type Props = {
   data: FounderSection;
