@@ -96,10 +96,9 @@ export function NavigationMenuDemo() {
                 education at all times for ...
               </ListItem>
               <ListItem href="/Principal-welcome" title="Head of school">
-                I am tremendously proud to lead a dedicated and hardworking
-                team. Our priority is our pupils and our society. My team and I
-                will strive to provide the highest possible standard of
-                education at all times for...
+                It is with great pleasure and a profound sense of responsibility
+                that I welcome you to Al-Ansar Center, an institution dedicated
+                to nurturing our students&apos; academic and spiritual growth...
               </ListItem>
               <ListItem href="/executive-team" title="Senior management team">
                 meet our wonderful team....
