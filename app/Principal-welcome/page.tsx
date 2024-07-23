@@ -20,9 +20,9 @@ const Founderpage = (props: Props) => {
             <div className=" bg-orange-500 h-[150px] w-[300px]  lg:w-[500px] outline outline-4 outline-offset-8 outline-orange-500">
               <div className="text-center uppercase flex flex-col items-center justify-center h-full w-full">
                 <div className="lg:w-3/4 space-y-4">
-                  <h1 className="text-base lg:text-xl">principal</h1>
+                  <h1 className="text-base lg:text-xl">head of school</h1>
                   <p className="text-xl lg:text-2xl font-bold">
-                    welcome message from our principal
+                    welcome message from our Head of school
                   </p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const Founderpage = (props: Props) => {
       <section className="my-10 w-[80%] mx-auto flex  flex-col gap-y-8 max-sm:w-[90%]  text-base">
         <div className=" space-y-1">
           <p className="text-xl lg:text-2xl font-bold text-orange-400 capitalize ">
-            welcome message from our principal
+            welcome message from our head of school
           </p>
         </div>
         <p>Dear Parents, Students, and Community Members,</p>
