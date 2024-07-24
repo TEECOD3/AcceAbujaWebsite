@@ -45,6 +45,11 @@ const linkscursory = [
     linkName: "careers",
     link: "/WhyJoinUs",
   },
+  {
+    id: 4,
+    linkName: "head of school",
+    link: "/principal-welcome",
+  },
   // {
   //   id: 5,
   //   linkName: "weeklyHighlights",
