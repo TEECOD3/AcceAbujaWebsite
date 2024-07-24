@@ -75,8 +75,8 @@ const Footer = (props: Props) => {
             <AcceLogo className="h-20 w-20 lg:h-28 lg:w-28" />
           </div>
 
-          <div className="flex text-white mt-8 flex-1 justify-between flex-wrap">
-            <ul className="space-y-6">
+          <div className="flex text-white mt-8 flex-1 justify-between flex-wrap ">
+            <ul className="space-y-6 text-sm">
               <h1 className="font-bold text-base lg:text-xl mb-3 uppercase">
                 Navigations
               </h1>
@@ -84,7 +84,7 @@ const Footer = (props: Props) => {
                 <Link
                   href={link.link}
                   key={link.id}
-                  className="text-base font-semibold"
+                  className="text-sm font-semibold"
                 >
                   <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
                     {link.linkName}
@@ -123,7 +123,7 @@ const Footer = (props: Props) => {
           </div>
         </div>
 
-        <div className="w-full border-t border-t-white py-4 lg:py-10 flex justify-between flex-col lg:flex-row text-white">
+        <div className="w-full border-t text-[14px] border-t-white py-4 lg:py-10 flex justify-between flex-col lg:flex-row text-white">
           <p>All right reserved 2024</p>
         </div>
       </div>

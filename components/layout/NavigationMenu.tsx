@@ -1,9 +1,9 @@
-import { FC } from "react";
-import Link from "next/link";
-import { motion, stagger } from "framer-motion";
-import Image from "next/image";
 import logo from "@/public/AcceLogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { FC } from "react";
 
 interface MobileNavProps {
   hideModalHandler: (barstate: boolean) => void;
@@ -123,20 +123,6 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 Portal
               </motion.li>
             </Link>
-            <Link href="/Principal-welcome" className="w-full">
-              <motion.li
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="max-lg:px-5"
-                transition={{ delay: 1.3 }}
-                exit={{ opacity: 0, transition: { delay: 0.7 } }}
-                onClick={() => {
-                  hideModalHandler(!barstate);
-                }}
-              >
-                our principal
-              </motion.li>
-            </Link>
             <Link href="/Founder" className="w-full">
               <motion.li
                 initial={{ opacity: 0 }}
@@ -162,9 +148,24 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                   hideModalHandler(!barstate);
                 }}
               >
-                executive team
+                senior management team
               </motion.li>
             </Link>
+            <Link href="/Principal-welcome" className="w-full">
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="max-lg:px-5"
+                transition={{ delay: 1.3 }}
+                exit={{ opacity: 0, transition: { delay: 0.7 } }}
+                onClick={() => {
+                  hideModalHandler(!barstate);
+                }}
+              >
+                Head of school
+              </motion.li>
+            </Link>
+
             <Link href="/WhyJoinUs" className="w-full">
               <motion.li
                 initial={{ opacity: 0 }}

@@ -1,9 +1,6 @@
-import Image from "next/image";
-import React from "react";
-import image from "../../public/president.jpg";
-import { Button } from "../ui/button";
-import ClientButton from "../ui/ClientButton";
 import { PortableText } from "@/sanity/Structure/PortableText";
+import Image from "next/image";
+import ClientButton from "../ui/ClientButton";
 
 type Props = {
   data: FounderSection;
@@ -24,7 +21,7 @@ const HeadSection = (props: Props) => {
             <p className="font-bold max-md:text-center text-3xl leading-[38.4px] tracking-tight capitalize ">
               {data?.subtitle}
             </p>
-            <p className="max-md:text-center text-base lg:text-xl prose">
+            <p className="max-md:text-center text-base lg:text-xl prose mx-auto">
               {data?.summarymessage ? (
                 <PortableText value={data?.summarymessage} />
               ) : null}
@@ -39,7 +36,7 @@ const HeadSection = (props: Props) => {
           </div>
         </div>
         <div className="w-full max-xl:mt-8">
-          <div className=" mx-auto w-[90%] h-[500px] lg:h-[684px] lg:w-[566px] relative ">
+          <div className=" mx-auto w-[80%] h-[400px] md:h-[600px] aspect-square lg:h-[684px] lg:w-[566px] relative ">
             <Image
               src={data?.founderimage?.url}
               alt={data?.founderimage.alt?.toLowerCase()?.replace(/ /g, "-")}

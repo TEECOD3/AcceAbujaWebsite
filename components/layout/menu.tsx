@@ -65,7 +65,7 @@ export function NavigationMenuDemo() {
       <NavigationMenuList>
         <Link
           href={"/"}
-          className="text-white text-sm uppercase font-semibold cursor-pointer mr-6"
+          className="text-white text-sm uppercase font-medium cursor-pointer mr-4"
         >
           Home
         </Link>
@@ -89,19 +89,18 @@ export function NavigationMenuDemo() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/Founder" title="Founder welcome">
+              <ListItem href="/Founder" title="Our founder">
                 I am tremendously proud to lead a dedicated and hardworking
                 team. Our priority is our pupils and our society. My team and I
                 will strive to provide the highest possible standard of
                 education at all times for ...
               </ListItem>
-              <ListItem href="/Principal-welcome" title="Principal welcome">
-                I am tremendously proud to lead a dedicated and hardworking
-                team. Our priority is our pupils and our society. My team and I
-                will strive to provide the highest possible standard of
-                education at all times for...
+              <ListItem href="/Principal-welcome" title="Head of school">
+                It is with great pleasure and a profound sense of responsibility
+                that I welcome you to Al-Ansar Center, an institution dedicated
+                to nurturing our students&apos; academic and spiritual growth...
               </ListItem>
-              <ListItem href="/executive-team" title="Executive Team">
+              <ListItem href="/executive-team" title="Senior management team">
                 meet our wonderful team....
               </ListItem>
             </ul>

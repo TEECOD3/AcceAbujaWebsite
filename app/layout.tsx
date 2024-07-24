@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Raleway, Bodoni_Moda } from "next/font/google";
 import Provider from "../Providers/providers";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -8,6 +8,11 @@ import Footer from "@/components/layout/Footer";
 const raleway = Raleway({
   subsets: ["latin"],
   // weight: ["100", "400", "300", "700", "900"],
+});
+
+const bodo = Bodoni_Moda({
+  subsets: ["latin"],
+  variable: "--font-bodo",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.className} font-[400] text-base lg:text-xl flex flex-col min-h-screen`}
+        className={`${raleway.className} ${bodo.variable} font-[400] text-base lg:text-xl flex flex-col min-h-screen`}
       >
         <Provider>
           <Header />
