@@ -48,7 +48,7 @@ const linkscursory = [
   {
     id: 4,
     linkName: "head of school",
-    link: "/principal-welcome",
+    link: "/Principal-welcome",
   },
   // {
   //   id: 5,
@@ -77,7 +77,7 @@ const Footer = (props: Props) => {
 
           <div className="flex text-white mt-8 flex-1 justify-between flex-wrap ">
             <ul className="space-y-6 text-sm">
-              <h1 className="font-bold text-base lg:text-xl mb-3 uppercase">
+              <h1 className="font-semibold  text-base lg:text-xl mb-3 uppercase">
                 Navigations
               </h1>
               {linkscursory.map((link) => (
@@ -93,7 +93,7 @@ const Footer = (props: Props) => {
               ))}
             </ul>
             <ul className="space-y-6 text-sm">
-              <h1 className="font-bold text-xl lg:text-xl mb-3 uppercase">
+              <h1 className="font-semibold  text-xl lg:text-xl mb-3 uppercase">
                 Regulations
               </h1>
               {linksprivacy.map((link) => (
@@ -109,11 +109,11 @@ const Footer = (props: Props) => {
               ))}
             </ul>
             <ul className="space-y-2 text-sm cursor-pointer ">
-              <h1 className="font-bold text-base lg:text-xl mb-3 uppercase max-sm:mt-8 ">
+              <h1 className="font-semibold text-base lg:text-xl mb-3 uppercase max-sm:mt-8 ">
                 affiliate companies
               </h1>
-              <li>Alaasu</li>
-              <li>Alansar Foundation</li>
+              <li>Al-aasu</li>
+              <li>Al-Ansar Foundation</li>
               <li>Acce Kano</li>
               <li>Al-AnsarHospital</li>
               <li>Al-aama</li>
