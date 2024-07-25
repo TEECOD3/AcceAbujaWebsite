@@ -8,6 +8,7 @@ import image4 from "../../public/LatestImage/clasactivity.jpg";
 import Link from "next/link";
 import ClientButton from "../ui/ClientButton";
 import { PortableText } from "@/sanity/Structure/PortableText";
+import Reveal from "../Animations/Reveal";
 
 type Props = {
   data: WhyChooseOurSchoolField;
@@ -37,12 +38,16 @@ const AboutSchool = (props: Props) => {
   return (
     <section className="bg-gray-300/40  py-20">
       <div className="max-lg:px-4 md:w-[80%] mx-auto  flex flex-col ">
-        <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto mb-4">
-          {data?.title}
-        </h1>
-        <p className="max-md:text-center leading-snug prose max-lg:mx-auto dark:prose-invert prose-a:text-primary text-base lg:text-xl">
-          {data?.summary ? <PortableText value={data?.summary} /> : null}
-        </p>
+        <Reveal>
+          <h1 className="text-3xl font-bold leading-[38.6px] text-texts max-md:text-center max-lg:mx-auto mb-4">
+            {data?.title}
+          </h1>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <p className="max-md:text-center leading-snug prose max-lg:mx-auto dark:prose-invert prose-a:text-primary text-base lg:text-xl">
+            {data?.summary ? <PortableText value={data?.summary} /> : null}
+          </p>
+        </Reveal>
         <ClientButton
           href="/WhyJoinUs"
           className=" uppercase max-xl:mx-auto max-w-max py-6 bg-orange-400 text-white  mt-10 rounded-none"

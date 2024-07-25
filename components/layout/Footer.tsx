@@ -2,6 +2,7 @@
 import React from "react";
 import AcceLogo from "../icons/AcceIcons";
 import Link from "next/link";
+import Reveal from "../Animations/Reveal";
 
 type Props = {};
 
@@ -77,18 +78,22 @@ const Footer = (props: Props) => {
 
           <div className="flex text-white mt-8 flex-1 justify-between flex-wrap ">
             <ul className="space-y-6 text-sm">
-              <h1 className="font-semibold  text-base lg:text-xl mb-3 uppercase">
-                Navigations
-              </h1>
-              {linkscursory.map((link) => (
+              <Reveal>
+                <h1 className="font-semibold  text-base lg:text-xl mb-3 uppercase">
+                  Navigations
+                </h1>
+              </Reveal>
+              {linkscursory.map((link, i) => (
                 <Link
                   href={link.link}
                   key={link.id}
                   className="text-sm font-semibold"
                 >
-                  <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
-                    {link.linkName}
-                  </li>
+                  <Reveal delay={i * 0.1}>
+                    <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
+                      {link.linkName}
+                    </li>
+                  </Reveal>
                 </Link>
               ))}
             </ul>
@@ -96,30 +101,36 @@ const Footer = (props: Props) => {
               <h1 className="font-semibold  text-xl lg:text-xl mb-3 uppercase">
                 Regulations
               </h1>
-              {linksprivacy.map((link) => (
+              {linksprivacy.map((link, i) => (
                 <Link
                   href={link.link}
                   key={link.id}
                   className="font-semibold font-base "
                 >
-                  <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
-                    {link.linkName}
-                  </li>
+                  <Reveal delay={i * 0.1}>
+                    <li className="capitalize hover:underline hover:underline-offset-2 mt-2">
+                      {link.linkName}
+                    </li>
+                  </Reveal>
                 </Link>
               ))}
             </ul>
-            <ul className="space-y-2 text-sm cursor-pointer ">
-              <h1 className="font-semibold text-base lg:text-xl mb-3 uppercase max-sm:mt-8 ">
-                affiliate companies
-              </h1>
-              <li>Al-aasu</li>
-              <li>Al-Ansar Foundation</li>
-              <li>Acce Kano</li>
-              <li>Al-AnsarHospital</li>
-              <li>Al-aama</li>
-              <li>Al-ansarRadio</li>
-              <li>Al-ansarmasjid</li>
-            </ul>
+            <Reveal>
+              <ul className="space-y-2 text-sm cursor-pointer ">
+                <Reveal>
+                  <h1 className="font-semibold text-base lg:text-xl mb-3 uppercase max-sm:mt-8 ">
+                    affiliate companies
+                  </h1>
+                </Reveal>
+                <li>Al-aasu</li>
+                <li>Al-Ansar Foundation</li>
+                <li>Acce Kano</li>
+                <li>Al-AnsarHospital</li>
+                <li>Al-aama</li>
+                <li>Al-ansarRadio</li>
+                <li>Al-ansarmasjid</li>
+              </ul>
+            </Reveal>
           </div>
         </div>
 

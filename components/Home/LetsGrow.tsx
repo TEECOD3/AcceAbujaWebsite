@@ -3,6 +3,7 @@ import React from "react";
 import logo from "../../public/__after.png";
 import ClientButton from "../ui/ClientButton";
 import { ArrowRightIcon } from "lucide-react";
+import Reveal from "../Animations/Reveal";
 
 type Props = {
   data: LetsGrowTogetherSection;
@@ -15,10 +16,14 @@ const LetsGrow = (props: Props) => {
       <div className="flex container">
         <div className="max-lg:px-5 lg:w-full">
           <div className="w-full  flex-col gap-y-8 flex">
-            <h3 className="text-3xl lg:text-4xl  capitalize font-bold text-texts">
-              {data?.title}
-            </h3>
-            <p>{data?.description}</p>
+            <Reveal>
+              <h3 className="text-3xl lg:text-4xl  capitalize font-bold text-texts">
+                {data?.title}
+              </h3>
+            </Reveal>
+            <Reveal>
+              <p>{data?.description}</p>
+            </Reveal>
             <ClientButton
               href="#contact"
               className=" text-base font-bold uppercase max-w-max px-0 cursor-pointer z-[20]"

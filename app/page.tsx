@@ -9,7 +9,6 @@ import HomeSlider from "@/components/Home/HomeSlider";
 import LetsGrow from "@/components/Home/LetsGrow";
 import { MissionVision } from "@/components/Home/MissionVision";
 
-import OurTeam from "@/components/Home/Our-Team";
 import { getheros } from "@/sanity/Queries/homepage";
 
 export default async function Home() {
