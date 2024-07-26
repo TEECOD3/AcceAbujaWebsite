@@ -7,7 +7,7 @@ type Props = {};
 
 const NotFoundPage = (props: Props) => {
   return (
-    <div className="min-h-screen text-orange h-screen w-screen flex  items-center justify-center text-center">
+    <div className=" text-orange h-screen w-screen flex  items-center justify-center text-center">
       <div className="flex flex-col gap-y-4">
         <span className=" text-xl lg:text-3xl font-bold capitalize animate-pulse">
           Requested page not Found

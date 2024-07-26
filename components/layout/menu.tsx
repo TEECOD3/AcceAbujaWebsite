@@ -122,6 +122,68 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Portal</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <li className="row-span-3">
+                <NavigationMenuLink asChild>
+                  <Link
+                    rel="noreferrer"
+                    target="_blank"
+                    className="flex flex-col justify-end w-full h-full p-6 no-underline rounded-md outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
+                    href="https://acce.edves.net/students/"
+                  >
+                    {/* <Icons.logo className="w-6 h-6" /> */}
+                    <div className="mt-4 mb-2 text-lg font-medium">
+                      Student portal
+                    </div>
+                    <p className="text-sm leading-tight text-muted-foreground">
+                      Get access to students portal
+                    </p>
+                  </Link>
+                </NavigationMenuLink>
+              </li>
+              <ListItem
+                rel="noreferrer"
+                target="_blank"
+                href="https://acce.edves.net/parents/#/"
+                title="Parent Portal"
+              >
+                Get access to parent portal
+              </ListItem>
+              <ListItem
+                rel="noreferrer"
+                target="_blank"
+                href="https://acce.edves.net/login/"
+                title="staff portal"
+                className="capitalize"
+              >
+                Get access to staff portal
+              </ListItem>
+              {/* <ListItem href="/executive-team" title="Senior management team">
+                meet our wonderful team....
+              </ListItem> */}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        {/* <NavigationMenuItem>
+          <NavigationMenuTrigger>portal</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {careers.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem> */}
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent border-none hover:bg-transparent">
             Admission
@@ -177,13 +239,13 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem> */}
-        <li>
+        {/* <li>
           <Button className="capitalize text-white bg-orange-400 rounded-none border-white border-[1px]">
             <Link href="http://acce.edves.net" target="_blank">
               Portal
             </Link>
           </Button>
-        </li>
+        </li> */}
         {
           <NavigationMenuItem>
             <Link href="/Vacancy" legacyBehavior passHref>

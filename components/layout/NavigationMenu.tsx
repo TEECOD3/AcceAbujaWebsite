@@ -29,7 +29,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
     <>
       <motion.div
         className="fixed top-0 left-0 right-0 overflow-hidden flex flex-col items-center  text-white text-2xl lg:text-4xl  h-screen w-screen bg-white
-         z-[40000000] text-center"
+         z-[4000] text-center"
         variants={item}
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: "100vh", opacity: 1 }}
@@ -76,7 +76,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
           </motion.p>
         </div>
         <div className="flex justify-center w-full max-lg:px-5  max-w-7xl mx-auto mt-8 lg:mt-20">
-          <ul className="flex flex-col justify-start text-center items-center gap-y-8 tracking-tight underline underline-offset-8  py-4 capitalize font-[500] text-3xl  lg:text-4xl leading-[30px] mt-32 lg:mt-40 text-orange-500">
+          <ul className="flex flex-col justify-start text-center items-center gap-y-5 tracking-tight underline underline-offset-8  py-4 capitalize font-[500] text-2xl  lg:text-4xl leading-[30px] mt-32 lg:mt-40 text-orange-500">
             <Link href="/" className="w-full">
               <motion.li
                 initial={{ opacity: 0 }}
@@ -105,24 +105,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 About us
               </motion.li>
             </Link>
-            <Link
-              href="http://acce.edves.net"
-              className="w-full"
-              target="_blank"
-            >
-              <motion.li
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="max-lg:px-5"
-                transition={{ delay: 1.3 }}
-                exit={{ opacity: 0, transition: { delay: 0.7 } }}
-                onClick={() => {
-                  hideModalHandler(!barstate);
-                }}
-              >
-                Portal
-              </motion.li>
-            </Link>
+
             <Link href="/Founder" className="w-full">
               <motion.li
                 initial={{ opacity: 0 }}
@@ -165,47 +148,61 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 Head of school
               </motion.li>
             </Link>
-
-            <Link href="/WhyJoinUs" className="w-full">
+            <Link
+              href="https://acce.edves.net/login/"
+              className="w-full"
+              target="_blank"
+              rel="noreferrer"
+            >
               <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5 }}
-                exit={{ opacity: 0, transition: { delay: 0.5 } }}
                 className="max-lg:px-5"
+                transition={{ delay: 1.3 }}
+                exit={{ opacity: 0, transition: { delay: 0.7 } }}
                 onClick={() => {
                   hideModalHandler(!barstate);
                 }}
               >
-                Careers
+                staff portal
               </motion.li>
             </Link>
-            <Link href="/Vacancy" className="w-full">
+            <Link
+              href="https://acce.edves.net/parents/#/"
+              className="w-full"
+              target="_blank"
+              rel="noreferrer"
+            >
               <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5 }}
-                exit={{ opacity: 0, transition: { delay: 0.5 } }}
                 className="max-lg:px-5"
+                transition={{ delay: 1.3 }}
+                exit={{ opacity: 0, transition: { delay: 0.7 } }}
                 onClick={() => {
                   hideModalHandler(!barstate);
                 }}
               >
-                Vacancy
+                parent portal
               </motion.li>
             </Link>
-            <Link href="/" className="w-full">
+            <Link
+              href="https://acce.edves.net/students/"
+              className="w-full"
+              target="_blank"
+              rel="noreferrer"
+            >
               <motion.li
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5 }}
-                exit={{ opacity: 0, transition: { delay: 0.5 } }}
                 className="max-lg:px-5"
+                transition={{ delay: 1.3 }}
+                exit={{ opacity: 0, transition: { delay: 0.7 } }}
                 onClick={() => {
                   hideModalHandler(!barstate);
                 }}
               >
-                Contacts
+                student portal
               </motion.li>
             </Link>
           </ul>
